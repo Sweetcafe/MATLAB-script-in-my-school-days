@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement>
+    <VerticalLayout mouse="false">
+      <VerticalLayout height="32" mouse="false">
+        <HorizontalLayout mouse="false">
+          <VerticalLayout name="logo_container" width="30" mouse="false">
+            <Control name="logo"  float="true" pos="2,6,0,0" width="23" height="23" />
+          </VerticalLayout>
+          <VerticalLayout mouse="false" >
+            <HorizontalLayout mouse="false">
+              <Label name="nickname"  mouse="false" bordersize="0" textpadding="0,8,0,8" align="left"  />
+              <Label name="description" mouse="false" bordersize="0" visible="false"  align="left" endellipsis="true" textcolor="#FF808080"/>
+            </HorizontalLayout>
+          </VerticalLayout>
+          <VerticalLayout visible="false" name="recentcloselayout" width="12" >
+          	<Button name="label_close" height="12"  normalimage="file='close.png' source='0,0,12,12'" hotimage="file='close.png' source='12,0,24,12'" pushedimage="file='close.png' source='24,0,36,12'" />
+          	<Control />
+          </VerticalLayout>	
+        </HorizontalLayout>
+      </VerticalLayout>
+     <!-- <VerticalLayout name="operation" height="18" visible="false">
+        <HorizontalLayout width="72" padding="40, 0, 0, 0">
+          <Button bkimage="file='mail.png' mask='0xffffffff'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='mail.png' mask='0xffffffff'" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+          <Button bkimage="file='mail.png' mask='0xffffffff'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='mail.png' mask='0xffffffff'" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+          <Button bkimage="file='mail.png' mask='0xffffffff'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='mail.png' mask='0xffffffff'" hotimage="file='allbtn_over.png' mask='0xffffffff'" pushedimage="file='allbtn_down.png' mask='0xffffffff'" />
+          <Button bkimage="file='mail.png' mask='0xffffffff'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='mail.png' mask='0xffffffff'" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+        </HorizontalLayout>
+      </VerticalLayout >-->
+    </VerticalLayout>
+  </ListContainerElement>
+</Window>

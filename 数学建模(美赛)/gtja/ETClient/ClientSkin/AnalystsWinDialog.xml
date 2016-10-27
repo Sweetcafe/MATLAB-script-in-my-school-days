@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="573,489" mininfo="573,489" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+    <Font name="宋体" size="12" bold="false" default="true" />
+	  <Font name="宋体" size="12" bold="true"/>
+	   <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />  
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+        	<!--<VerticalLayout name="bg" bordersize="0"  width="573" height="500" bkimage="file='images\bg_chat.png' source='11,11,584,500' mask='0x00000000'">-->
+       
+               <HorizontalLayout height="30">
+									        <VerticalLayout width="40" inset="2,2,0,0">
+									          <Control name="logo" float="true" pos="9,3,0,0" width="19" height="21" bkimage="images\logo.png" />
+								          </VerticalLayout>
+								          <VerticalLayout width="260" inset="2,2,0,0">
+								          	<Label name="title" text=""  width="260" height="23"  textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+					            		</VerticalLayout>
+									        <VerticalLayout />
+									        <VerticalLayout width="104">
+									          <Button name="minbtn" float="true" tooltip="最小化" pos="0,0,28,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_mini_normal.png'" hotimage="Skin\btn_mini_highlight.png" pushedimage="Skin\btn_mini_down.png"  />
+									          <Button name="maxbtn" float="true" tooltip="最大化" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_max_normal.png'" hotimage="Skin\btn_max_highlight.png" pushedimage="Skin\btn_max_down.png"  />
+									          <Button name="restorebtn" visible="false" float="true" tooltip="还原" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_restore_normal.png'" hotimage="Skin\btn_restore_highlight.png" pushedimage="Skin\btn_restore_down.png"  />
+									          <Button name="closebtn" float="true" tooltip="关闭" pos="56,0,95,19" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+									        </VerticalLayout>
+							</HorizontalLayout>
+							
+							<VerticalLayout bkimage="file='Skin\jb.png' corner='2,30,2,2'"> 
+	               <VerticalLayout height="40">
+		                  <Button name="disclaimerBtn" text="免责声明" float="true" pos="140,5,0,0"  width="70" height="24"  textcolor="#FFFF0000" align="center"  hotimage="file='images\btn_hov.png'" pushedimage="file='images\btn_down.png'" />
+								 </VerticalLayout>
+	               <HorizontalLayout >
+		               	 <VerticalLayout width="12"/>
+		               	 <VerticalLayout >
+		               	 	<VerticalLayout bordersize="0" bordercolor="#FF999933" inset="0,0,0,0" bkimage="file='Skin\chat_mid_bk.png' source='0,10,2,26'">
+		               	 		<VerticalLayout height="26" name="tipsBox"  visible="false"  >
+						               	<HorizontalLayout name="tipsBoxBk" height="22" padding="2,2,2,2" bkcolor="#11000000" colorhsl="true">
+		               	 	  	  	  <VerticalLayout width="2"/>
+		               	 	  	  	  <Control name="tipsBoxIcon" width="14" height="15" padding="0,4,0,0" bkimage="file='images\icon_safe.png' fade='255'" />
+		               	 	  	  	  <VerticalLayout width="2"/>
+								               	<Label name="tipsText" colorhsl="true" text="交谈中请勿发送密码,勿轻信汇款、中奖信息,勿轻易拨打陌生电话." textcolor="#FFFF9999" />
+								               	<Button padding="0,5,0,0" name="tipsclosebtn" width="12" height="12"
+							               	 		normalimage="file='close.png' source='0,0,12,12'" 
+							               	 		hotimage="file='close.png' source='12,0,24,12'" 
+							               	 		pushedimage="file='close.png' source='24,0,36,12'"/>
+								               	<VerticalLayout width="2"/>
+													  </HorizontalLayout>
+													</VerticalLayout>
+													<VerticalLayout>
+						               	<ImageRichEdit autovscroll="true"  name="msg_textVBox" padding="5,5,5,5" menu="true" vscrollbar="true" readonly="true"  roundcorner="4,4"	/>
+						              </VerticalLayout>
+			               	</VerticalLayout>
+			               	<HorizontalLayout  height="38"  >
+			               		<VerticalLayout  >
+			               	 		 <Label text="股票代码:" float="true" pos="8,10,0,0"  width="55" height="22"   textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+			               	 		  <Edit name="stockcode" float="true" pos="68,10,0,0"  width="50" height="22" visible="true"  bkimage="images\Edit.png"
+			            	 					 textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+			               	 		 <Label text="快速提问:" float="true" pos="130,10,0,0"  width="55" height="22"   textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+							             <Combo name="questionType" float="true"  pos="190,10,0,0" width="100" height="22"   textcolor="#FF1B4876"
+							             	normalimage="file='images\Combo_nor.png' corner='2,2,24,2'" hotimage="file='images\Combo_push.png' corner='2,2,24,2'" 
+							             	pushedimage="file='images\Combo_push.png' corner='2,2,24,2'" textpadding="1,1,1,1" >
+															<ListLabelElement  text="-请选择-" selected="true" />
+															<ListLabelElement  text="后市如何" />
+															<ListLabelElement  text="后市如何操作" />
+															<ListLabelElement  text="是否继续持股" />
+														</Combo>	
+												</VerticalLayout>
+									      <HorizontalLayout width="80" >
+			                      <Button name="showHistory" text="{x 20}咨询记录"  tooltip="咨询记录" align="left"  showhtml="true" float="true" pos="5,10,0,0"  bkimage="file='images\icon_chat.png' dest='0,1,18,19'" width="72" height="24"  textcolor="#FF1B4876"  />
+		               	    </HorizontalLayout>
+		               	 	</HorizontalLayout>
+		               	 	<HorizontalLayout height="86" bkcolor="#FFFFFFFF" inset="5,0,0,0">
+			               	 			<ImageRichEdit autovscroll="true" name="sendContentTextArea" vscrollbar="true"  roundcorner="4,4"	 />
+			               	 	 </HorizontalLayout>
+						             <HorizontalLayout height="34"  >
+						             	  <HorizontalLayout>
+								          	 		  <Option name="enterBtn" text="{x 15}Enter" userdata="ALL" float="true" pos="82,8,0,0"  width="80" height="16"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="hotKey"  textcolor="#FF1B4876" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13' dest='0,0,13,13'" />
+													        <Option name="ctrlEnterBtn" text="{x 15}Ctrl+Enter" userdata="HD" float="true" pos="142,8,0,0"  width="80" height="16"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="hotKey"  textcolor="#FF1B4876" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+													        <Option name="altSBtn" text="{x 15}Alt+S" userdata="HN"  float="true"  selected="true"  pos="226,8,0,0"  width="80" height="16" showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="hotKey"  textcolor="#FF1B4876" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+													   </HorizontalLayout>    
+											      <HorizontalLayout width="100" >
+											      	 <Button name="sendBtn" padding="0,4,0,0" shortcut="S"  tooltip="发送" text="发送" width="69" height="24" maxheight="24" maxwidth="69" bkimage="file='images\loginBtn.png'" hotimage="file='images\loginBtn_over.png' corner='2,3,2,2'" pushedimage="file='images\loginBtn_push.png' corner='2,5,2,2'"  />
+											      </HorizontalLayout> 
+							           </HorizontalLayout>               	 	
+		               	 </VerticalLayout>
+		               	 
+		               	
+		               	 <HorizontalLayout name="rightInfoLayoutID" width="165" visible="true" >
+		               	 	   <VerticalLayout width="12"/>
+		               	 	   <VerticalLayout>
+				               	 	 	<VerticalLayout bordersize="0" bordercolor="#FF999933" inset="5,0,0,0" bkimage="file='Skin\chat_mid_bk.png' source='0,10,2,26'">
+						               	 	  <VerticalLayout  height="22" padding="2,2,2,2" bkimage="images\itembg.png"  >
+				               	 	 	  <Control  float="true" pos="5,4,0,0" width="16" height="16" bkimage="images\fxsIcon.png" />
+				               	 	 	  <Button name="detailInfoBtn" text="投资顾问详细信息"  float="true" pos="0,0,0,0"  width="150" height="22" align="center"  />					           
+				               	 	 			</VerticalLayout>
+							               	 	 <VerticalLayout name="detailInfoLayout" padding="2,2,2,2" >
+							               	 	 	  <VerticalLayout height="228">
+								               	 	 	  <Control  float="true" pos="25,10,0,0" width="100" height="100" bkimage="images\con_photo_img.png" />
+								               	 	 	  <Label text="姓   名：" float="true" pos="5,125,0,0"  width="50" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />               	 	 	  
+													            <Label text="执业证书编号：" float="true" pos="5,150,0,0"  width="80" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+													            <Label text="所属机构：" float="true" pos="5,175,0,0"  width="55" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+													            
+													            <Label name="realName" float="true" endellipsis="true" pos="60,125,0,0"  width="70" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />               	 	 	  
+													            <Label name="certificatenum" endellipsis="true"  float="true" pos="90,150,0,0"  width="70" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+													            <Label name="branchName" endellipsis="true"  float="true" pos="60,175,0,0"  width="90" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+													            
+													            <Label text="个人简介：" float="true" pos="5,200,0,0"  width="70" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+													            <Control  float="true" pos="5,222,0,0" width="140" height="1" bkcolor="#FF1B4876" />  
+													          </VerticalLayout>
+													            <RichEdit name="introduce" enabled="false" mouse="false" wantreturn="false" wantctrlreturn="false"  inset="5,5,5,5" vscrollbar="true" bkcolor="#22F1FAFF" readonly="true"  roundcorner="4,4"	/>
+								               	 	  
+							               	 	 </VerticalLayout> 
+						               	</VerticalLayout>
+							           		<VerticalLayout height="12"/>
+							         	 </VerticalLayout>	
+		               	 </HorizontalLayout>              	 	
+		               	
+		               	 <HorizontalLayout name="rightChatLayoutID" width="400"  visible="false" >
+		               	 	 <VerticalLayout width="12"/>
+		               	 	 <VerticalLayout>
+				               	 	 <VerticalLayout bordersize="0" bordercolor="#FF999933" inset="5,0,0,0" bkimage="file='Skin\chat_mid_bk.png' source='0,10,2,26'">
+								            
+								            
+							               	 	 	  
+							               	 	 	        <HorizontalLayout height="30" padding="0, 0, 0, 0" inset="4,0,0,0">
+																	          <Option name="myHistoryViewbtn"  float="true" pos="3,4,0,0" selected="true" group="TabHistory" text="我的咨询" width="70" height="26" 
+																	          	selectedimage="file='tab_select.png'  source='0,0,45,23'" 
+																	          	focusedimage="images\btn_down.png" 
+																	          	pushedimage="images\btn_down.png"
+																	          	hotimage="images\btn_hov.png"
+																	          	normalimage="images\btn_a.png"/>
+																	          <Option name="HistoryViewbtn" float="true" pos="73,4,0,0" group="TabHistory" text="全部咨询" width="70" height="26" 
+																	          	selectedimage="file='tab_select.png' source='0,0,45,23'" 
+																	          	focusedimage="images\btn_down.png" 
+																	          	pushedimage="images\btn_down.png"
+																	          	hotimage="images\btn_hov.png"
+																	          	normalimage="images\btn_a.png"/>
+																	         
+																	        </HorizontalLayout>
+							               	 	 	       <VerticalLayout name ="my_historyView"  >
+									               	 	 	   	     
+														               	 	 <VerticalLayout height="6"/>
+														               	 	<VerticalLayout height="30"  bkimage="file='images\box_bg.png'" >
+														               	 		 <Label text="开始日期:" float="true" pos="3,3,0,0"  width="55" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+																			           <Label text="截止日期:" float="true" pos="165,3,0,0"  width="55" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+																			           <Edit name="sDate_my" float="true" pos="60,3,0,0" readonly="true" text="2011-08-18"  width="74" height="22"  bkimage="images\Edit.png"
+																			            	 textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+																								 <Edit name="eDate_my" float="true" pos="225,3,0,0" readonly="true" width="74" height="22"  bkimage="images\Edit.png"
+																			            	  text="2011-12-18" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+																			           <Button name="sDateBtn_my"  bkimage="file='date_grid.png' mask='0xffffffff'" float="true" pos="134,1,0,0"  width="24" height="24" normalimage="file='date_grid.png' mask='0xffffffff'"  hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+																  							 <Button name="eDateBtn_my"  bkimage="file='date_grid.png' mask='0xffffffff'" float="true" pos="300,1,0,0"  width="24" height="24" normalimage="file='date_grid.png' mask='0xffffffff'"  hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+																 
+																			           <Button name="search_my" text="搜索" float="true" pos="330,3,0,0"  width="50" height="24"  textcolor="#FF1B4876" align="center" normalimage="file='images\btn_a.png' mask='0xffffffff'" hotimage="file='images\btn_hov.png' mask='0xffffffff'" pushedimage="file='images\btn_down.png' mask='0xffffffff'" />
+																			       
+														               	 	</VerticalLayout>
+														               	 	
+													               	 	  <VerticalLayout height="6"/>
+													               	 	  <VerticalLayout >
+														               	 		<ImageRichEdit autovscroll="true" name="myHistoryEdit" inset="5,5,5,5" menu="true" vscrollbar="true" readonly="true" />
+														               	 	</VerticalLayout>	
+													               	 	  <VerticalLayout height="6"/>
+														               	 	<VerticalLayout height="30"  bkimage="file='images\box_bg.png'" >
+														               	 		  <Label name="lbtnText_my" text="第1页/共1页  共0条记录" float="true" pos="13,3,0,0"  width="200" height="22" align="center" textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+														               	 	     <Button name="lbtnLast_my" tooltip="第一页" float="true" pos="230,10,0,0" enabled="false"  width="8" height="8"  textcolor="#FF1B4876" align="center" normalimage="file='images\leftFirst_arrow.png' mask='0xffffffff'" disabledimage="file='images\leftFirst_arrow_disable.png' mask='0xffffffff'"  />
+																			        		 <Button name="lbtnNext_my" tooltip="上一页" float="true" pos="260,10,0,0" enabled="false" width="8" height="8"  normalimage="file='images\left_arrow.png' mask='0xffffffff'" disabledimage="file='images\left_arrow_disable.png' mask='0xffffffff'"  />
+																			        		 <Button name="lbtnPrevious_my" tooltip="下一页" float="true" pos="290,10,0,0" enabled="false" width="8" height="8"  normalimage="file='images\right_arrow.png' mask='0xffffffff'" disabledimage="file='images\right_arrow_disable.png' mask='0xffffffff'"  />
+																			        		 <Button name="lbtnFirst_my" tooltip="最后页" float="true" pos="320,10,0,0" enabled="false" width="8" height="8"    normalimage="file='images\rightLast_arrow.png' mask='0xffffffff'" disabledimage="file='images\rightLast_arrow_disable.png' mask='0xffffffff'" />
+																			        </VerticalLayout>													        
+													               	 	  <VerticalLayout height="6"/>
+											               	 		</VerticalLayout>	
+									               	 	 	   <VerticalLayout name ="all_historyView" visible="false">
+									               	 	 	   	    
+									               	 	 	   	    <VerticalLayout height="6"/>
+														               	 	<VerticalLayout height="30"  bkimage="file='images\box_bg.png'" >
+														               	 		 <Label text="开始日期:" float="true" pos="3,3,0,0"  width="55" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+																			           <Label text="截止日期:" float="true" pos="165,3,0,0"  width="55" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+																			           <Edit name="sDate" float="true" pos="60,3,0,0" readonly="true" text="2011-08-18"  width="74" height="22"  bkimage="images\Edit.png"
+																			            	 textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+																								 <Edit name="eDate" float="true" pos="225,3,0,0" readonly="true" width="74" height="22"  bkimage="images\Edit.png"
+																			            	 text="2011-12-18" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+																			           <Button name="sDateBtn"  bkimage="file='date_grid.png' mask='0xffffffff'" float="true" pos="134,1,0,0"  width="24" height="24" normalimage="file='date_grid.png' mask='0xffffffff'"  hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+																  							 <Button name="eDateBtn"  bkimage="file='date_grid.png' mask='0xffffffff'" float="true" pos="300,1,0,0"  width="24" height="24" normalimage="file='date_grid.png' mask='0xffffffff'"  hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+																 
+																			           <Button name="search" text="搜索" float="true" pos="330,3,0,0"  width="50" height="24"  textcolor="#FF1B4876" align="center" normalimage="file='images\btn_a.png' mask='0xffffffff'" hotimage="file='images\btn_hov.png' mask='0xffffffff'" pushedimage="file='images\btn_down.png' mask='0xffffffff'" />
+																			       
+														               	 	</VerticalLayout>
+														               	 	
+													               	 	  <VerticalLayout height="6"/>
+													               	 	  <VerticalLayout >
+														               	 		<ImageRichEdit autovscroll="true" name="allHistoryEdit" inset="5,5,5,5" menu="true" vscrollbar="true" readonly="true" />
+														               	 	</VerticalLayout>	
+													               	 	  <VerticalLayout height="6"/>
+														               	 	<VerticalLayout height="30"  bkimage="file='images\box_bg.png'" >
+														               	 		  <Label name="lbtnText" text="第1页/共1页  共0条记录" float="true" pos="13,3,0,0"  width="200" height="22" align="center" textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+														               	 	     <Button name="lbtnLast" tooltip="第一页" float="true" pos="230,10,0,0" enabled="false"  width="8" height="8"  textcolor="#FF1B4876" align="center" normalimage="file='images\leftFirst_arrow.png' mask='0xffffffff'" disabledimage="file='images\leftFirst_arrow_disable.png' mask='0xffffffff'"  />
+																			        		 <Button name="lbtnNext" tooltip="上一页" float="true" pos="260,10,0,0" enabled="false"  width="8" height="8"  normalimage="file='images\left_arrow.png' mask='0xffffffff'" disabledimage="file='images\left_arrow_disable.png' mask='0xffffffff'"  />
+																			        		 <Button name="lbtnPrevious" tooltip="下一页" float="true" pos="290,10,0,0" enabled="false" width="8" height="8"  normalimage="file='images\right_arrow.png' mask='0xffffffff'" disabledimage="file='images\right_arrow_disable.png' mask='0xffffffff'"  />
+																			        		 <Button name="lbtnFirst" tooltip="最后页" float="true" pos="320,10,0,0" enabled="false" width="8" height="8"    normalimage="file='images\rightLast_arrow.png' mask='0xffffffff'" disabledimage="file='images\rightLast_arrow_disable.png' mask='0xffffffff'" />
+																			        </VerticalLayout>													        
+													               	 	  <VerticalLayout height="6"/>
+											               	 		</VerticalLayout>	
+									               	 	
+									              
+									         </VerticalLayout>
+								           <VerticalLayout height="12"/>
+							         </VerticalLayout>	 	
+		               	 </HorizontalLayout>
+		               	  <VerticalLayout width="12"/>
+	               </HorizontalLayout>
+              </VerticalLayout>       
+				      <HorizontalLayout height="1" /> 
+                    
+    			<!--</VerticalLayout>-->
+    		</VerticalLayout>
+  	</HorizontalLayout>
+</Window>

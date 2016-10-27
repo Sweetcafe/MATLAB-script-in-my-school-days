@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+
+    <VerticalLayout>
+        <HorizontalLayout height="20" width="370">
+            <!--即时通讯设置-->
+            <Text text="即时通讯设置" font="0" textpadding="15,5,15,0"></Text>
+            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <VerticalLayout height="110" inset="30,0,0,0">
+            <HorizontalLayout height="27">
+                <Button name="chat_ddck_checkbtn" text="允许发送和接收抖动窗口" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,4,0,4" width="240" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+            <HorizontalLayout  visible="false" height="27">
+                <Button name="chat_zdtc_checkbtn" text="允许收到消息自动弹出窗口" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,4,0,4" width="240" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+            <HorizontalLayout  visible="false" height="27">
+                <Button name="chat_5tjl_checkbtn" text="在对话框内显示最近5条聊天记录" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,4,0,4" width="240" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+            <HorizontalLayout   height="27">
+                <Button name="chat_ctrlenter_checkbtn" text="使用Ctrl+Enter发送消息" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,4,0,4" width="240" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+        </VerticalLayout>
+
+        <HorizontalLayout  visible="true" height="20" width="370">
+            <!--好友上线提醒-->
+            <Text text="好友上线提醒" font="0" textpadding="15,5,15,0"></Text>
+            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <VerticalLayout  visible="true" height="40" inset="30,0,0,0">
+            <HorizontalLayout height="27">
+                <Button name="chat_hysxtx_checkbtn" text="普通好友上线提醒" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,4,0,4" width="280" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+        </VerticalLayout>
+
+
+        <HorizontalLayout height="20" width="370" visible="false">
+            <!--发送设置-->
+            <Text text="发送设置" font="0" textpadding="15,5,15,0"></Text>
+            <Container  height="2"  bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <VerticalLayout height="90" inset="30,0,0,0"  visible="false">
+            <HorizontalLayout height="24" >
+                <HorizontalLayout width="120">
+                    <Button name="chat_dxRs_checkbtn" padding="0,2,0,0" text="短信发送人数超过" font="0" userdata="noselected" align="left" textpadding="15,4,0,0"  width="116" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+                </HorizontalLayout>
+                <VerticalLayout width="60" >
+                    <Combo name="chat_dxRs_combo" height="24"  itemfont="0"  itemalign="left" itemtextpadding="2,0,0,0" normalimage="file='ServiceImages\Combo2_nor.png' corner='2,2,28,2' " hotimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'" pushedimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'" focusedimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'">
+                        <ListLabelElement text="100"  />
+                        <ListLabelElement text="200"  />
+                        <ListLabelElement text="500"  selected="true" />
+                        <ListLabelElement text="1000"  />
+                    </Combo>
+                </VerticalLayout>
+                <HorizontalLayout>
+                    <Text text="人时弹出提示框" height="19" padding="0,2,0,0" textpadding="2,4,0,0" ></Text>
+                </HorizontalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout height="4" />
+            <HorizontalLayout height="24" >
+                <HorizontalLayout width="120">
+                    <Button name="chat_xxRs_checkbtn" padding="0,2,0,0" text="消息发送人数超过" font="0" userdata="noselected" align="left" textpadding="15,4,0,0"  width="116" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+                </HorizontalLayout>
+                <VerticalLayout width="60" >
+                    <Combo name="chat_xxRs_combo" height="24"  itemfont="0"  itemalign="left" itemtextpadding="2,0,0,0" normalimage="file='ServiceImages\Combo2_nor.png' corner='2,2,28,2' " hotimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'" pushedimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'" focusedimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'">
+                        <ListLabelElement text="100"  />
+                        <ListLabelElement text="200"  />
+                        <ListLabelElement text="500"  selected="true" />
+                        <ListLabelElement text="1000"  />
+                    </Combo>
+                </VerticalLayout>
+                <HorizontalLayout>
+                    <Text text="人时弹出提示框" height="19" padding="0,2,0,0" textpadding="2,4,0,0" ></Text>
+                </HorizontalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout height="4" />
+            <HorizontalLayout height="24" >
+                <HorizontalLayout width="120">
+                    <Button name="chat_yjRs_checkbtn" padding="0,2,0,0" text="邮件发送人数超过" font="0" userdata="noselected" align="left" textpadding="15,4,0,0"  width="116" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+                </HorizontalLayout>
+                <VerticalLayout width="60" >
+                    <Combo name="chat_yjRs_combo" height="24"  itemfont="0"  itemalign="left" itemtextpadding="2,0,0,0" normalimage="file='ServiceImages\Combo2_nor.png' corner='2,2,28,2' " hotimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'" pushedimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'" focusedimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'">
+                        <ListLabelElement text="100"  />
+                        <ListLabelElement text="200"  />
+                        <ListLabelElement text="500"  selected="true" />
+                        <ListLabelElement text="1000"  />
+                    </Combo>
+                </VerticalLayout>
+                <HorizontalLayout>
+                    <Text text="人时弹出提示框" height="19" padding="0,2,0,0" textpadding="2,4,0,0" ></Text>
+                </HorizontalLayout>
+            </HorizontalLayout>
+
+        </VerticalLayout>
+
+        <HorizontalLayout height="20" width="370">
+            <!--文件设置-->
+            <Text text="文件设置" font="0" textpadding="15,5,15,0"></Text>
+            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <VerticalLayout height="100" inset="30,5,0,5">
+            <HorizontalLayout height="20" >
+                <Text text="文件保存在此文件夹" />
+            </HorizontalLayout>
+            <HorizontalLayout height="27" width="320" padding="0,0,0,8">
+                <Edit  name="chat_filepath_edit" text="C:/filepath/fasdfasdff/asdffassdf/asdf/adsfaadsfasdf/sadffasdf" readonly="true" font="0"  height="27"  bkimage="file='ServiceImages\Edit.png'"   />
+            </HorizontalLayout>
+            <HorizontalLayout height="28">
+                <Button name="chat_changepath_btn" text="更改目录" font="0" textcolor="#FFFFFFFF"  width="92" height="27"  normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'"  pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'" />
+                <HorizontalLayout width="5" />
+                <Button name="chat_openpaht_btn" text="打开文件夹" font="0" textcolor="#FFFFFFFF"  width="108" height="27"  normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'" pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'" />
+            </HorizontalLayout>
+        </VerticalLayout>
+        <HorizontalLayout></HorizontalLayout>
+    </VerticalLayout>
+</Window>

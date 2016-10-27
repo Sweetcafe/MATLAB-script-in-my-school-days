@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="886,602" mininfo="886,602" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4"><!--595,540-->
+    <Font name="微软雅黑" size="12" bold="false" default="true" />
+    <Font name="微软雅黑" size="12" bold="true"/>
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+
+            <VerticalLayout bkimage="file='ServiceImages\jb.png' corner='2,30,2,2'">
+                <HorizontalLayout height="40">
+                    <Control  width="20"/>
+                    <HorizontalLayout inset="0,7,0,7">
+                        <Label name="title"  align="left" height="26" endellipsis="true"/>
+                    </HorizontalLayout>
+
+                    <VerticalLayout width="104" >
+                        <Button name="minbtn" float="true" tooltip="最小化" pos="0,0,28,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_mini_normal.png'" hotimage="Skin\btn_mini_highlight.png" pushedimage="Skin\btn_mini_down.png"  />
+                        <Button name="maxbtn" float="true" tooltip="最大化" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_max_normal.png'" hotimage="Skin\btn_max_highlight.png" pushedimage="Skin\btn_max_down.png"  />
+                        <Button name="restorebtn" visible="false" float="true" tooltip="还原" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_restore_normal.png'" hotimage="Skin\btn_restore_highlight.png" pushedimage="Skin\btn_restore_down.png"  />
+                        <Button name="closebtn" float="true" tooltip="关闭" pos="56,0,95,19" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+                    </VerticalLayout>
+                </HorizontalLayout>
+
+                <HorizontalLayout height="30" inset="20,0,10,0">
+                    <!--option-->
+                    
+                    <Option name="feedbackOption" text="留言" selected="true" width="90" group="AddUserGroup" bkimage="file='ServiceImages\tabs_off.png'  source='8,0,103,29' corner='15,0,15,0'" selectedimage="file='ServiceImages\tabs_on.png' source='8,0,103,29' corner='15,0,15,0'" />
+                    <Option name="SelectfeedOption" text="留言查询" width="90" group="AddUserGroup" bkimage="file='ServiceImages\tabs_off.png'  source='8,0,103,29' corner='15,0,15,0'" selectedimage="file='ServiceImages\tabs_on.png' source='8,0,103,29' corner='15,0,15,0'" />
+
+                </HorizontalLayout>
+
+
+                <TabLayout name="switchfeedItem" >
+
+                    <VerticalLayout name="FeedbackLayout"  inset="20,0,10,0">
+                        <!--<Control height="10" />-->
+                        <WebBrowser  name="FeedbackBrowser"  autonavi="true"/><!--width="550"  height="430"-->
+                    </VerticalLayout>
+
+                    <VerticalLayout name="SelectfeedLayout"  inset="20,0,10,0">
+                        <!--<Control height="10" />-->
+                        <WebBrowser  name="SelectFeedBrowser"  autonavi="true"/><!--width="550"  height="430"-->
+                    </VerticalLayout>
+                </TabLayout>
+                    
+                    
+                <Control height="10" />
+            </VerticalLayout>
+
+            <HorizontalLayout height="1" />
+
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

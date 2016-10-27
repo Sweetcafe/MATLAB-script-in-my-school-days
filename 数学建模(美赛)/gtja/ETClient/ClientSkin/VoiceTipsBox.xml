@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="290,175" mininfo="220,125" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+	   <Font name="微软雅黑" size="13" bold="false" default="true" />
+	   <Font name="宋体" size="12" bold="true"/>
+     <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />  
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+        	
+							
+              <VerticalLayout bkimage="file='Skin\jb.png' corner='2,30,2,2'">
+			               <HorizontalLayout height="30">
+												        <VerticalLayout width="40" inset="2,2,0,0">
+												          <Control name="logo" float="true" pos="9,3,0,0" width="19" height="21" bkimage="images\logo.png" />
+											          </VerticalLayout>
+											          <VerticalLayout width="70" inset="1,7,0,0">
+											          	<Label name="title" text="语音播放"  height="23" align="left"  />
+								            		</VerticalLayout>
+												        <VerticalLayout />
+												        <VerticalLayout width="49">
+												          <Button name="closebtn" float="true" tooltip="关闭" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+												        </VerticalLayout>
+										 </HorizontalLayout>
+										 
+										 <VerticalLayout height="75">
+												 <Control name="voicelogo"  float="true" pos="110,10,0,0" width="65" height="65" bkimage="images\voice_play_bg.png" />
+										</VerticalLayout>   
+										 
+										 <VerticalLayout height="20" /> 
+								    <VerticalLayout >  
+               	     	        	      
+               	    <VerticalLayout height="30" > 						    
+													<Control name="voicelogo" float="true" pos="20,0,0,0" width="250" height="23" bkimage="file='images\voice_bg_bar_.png' " /> 
+													<Label name="voiceseconds" text=" "  float="true" pos="240,1,0,0" height="22" width="22"/>  
+													<Progress name="voiceprogress" float="true" pos="51,10,0,0" height="4" width="184" foreimage="file='images\voice_loadingbar.png' corner='2,2,2,2'" min="0" max="96000" value="0" />                        
+                          <Button name="voiceplay" tooltip="播放" float="true" pos="20,0,0,0" height="23" width="23" normalimage="file='images\voice_play_gray.png'" hotimage="file='images\voice_play_blue.png'" pushedimage="file='images\voice_play_blue.png'" visible="false" />
+                          <Button name="voicestop" tooltip="停止" float="true" pos="20,0,0,0" height="23" width="23" normalimage="file='images\voice_stop_gray.png'" hotimage="file='images\voice_stop_blue.png'" pushedimage="file='images\voice_stop_blue.png'"/>
+
+                    </VerticalLayout>
+                        
+                     
+                     	
+                     </VerticalLayout>	         	 
+               	   
+               	     
+               	     									
+							</VerticalLayout> 
+							 
+							<HorizontalLayout height="1" /> 
+    		</VerticalLayout>
+  	</HorizontalLayout>
+</Window>
+

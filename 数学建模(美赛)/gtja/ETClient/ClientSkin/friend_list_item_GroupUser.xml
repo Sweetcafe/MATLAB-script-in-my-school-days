@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement>
+  	 <HorizontalLayout mouse="true"  menu="true">
+  	 	    <VerticalLayout width="20" mouse="false"  inset="3,8,3,8">
+			            <Control name="groupUserIdentity" />			            	   
+			    </VerticalLayout>
+  	 	    <VerticalLayout name="logo_container" width="30" mouse="false"  inset="5,5,5,5">
+			            <VerticalLayout name="logo"  borderround="3,3" >
+			            	    <Control  />
+			            	    <HorizontalLayout height="8">
+			            	    	  <Control  />
+			            					<Control name="logostatus" width="8" />
+			            			</HorizontalLayout>
+			            </VerticalLayout>
+			    </VerticalLayout>
+			    <VerticalLayout mouse="false">
+			    	     <HorizontalLayout />
+			          <HorizontalLayout mouse="false" height="22">
+			              <Label name="nickname"  mouse="false" text="" bordersize="0"  height="22" align="left"  />
+			          </HorizontalLayout>
+			          
+			          <HorizontalLayout  name="operation" height="24" visible="false">
+			              <Label name="description" text="" mouse="false" bordersize="0"  height="22" align="left" endellipsis="true" textcolor="#FF808080"/>
+			          </HorizontalLayout>	
+			          		          
+			    	     <HorizontalLayout />
+			    </VerticalLayout>
+			    
+			    <VerticalLayout name="syslogo_container" width="30" inset="8,6,8,6" mouse="false">
+			            <Control  name="SysLogo"  />
+			    </VerticalLayout>
+    </HorizontalLayout>
+  </ListContainerElement>
+</Window>

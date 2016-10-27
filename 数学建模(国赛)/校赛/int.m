@@ -1,0 +1,9 @@
+clear;clc
+f=[1000,2000,3000,4500]*-1
+A=[100,250,360,420;150,200,220,240]
+b=[156000;135200]
+intcon=1:4
+lb=zeros(1,4)
+ub=1000*ones(1,4)
+[x,fval]=intlinprog(f,intcon,A,b,[],[],lb,ub)
+fv=-1*fval

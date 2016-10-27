@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="482,409" mininfo="482,409" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+	   <Font name="宋体" size="12" bold="false" default="true" />
+	   <Font name="宋体" size="12" bold="true"/>
+     <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />  
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+        	<!--<VerticalLayout name="bg" bordersize="0"  width="482" height="409" bkimage="file='images\noticeMsg_bg.png' source='0,0,482,409' mask='0x00000000'">-->
+              <HorizontalLayout height="30">
+									        <VerticalLayout width="40" inset="2,2,0,0">
+									          <Control name="logo" float="true" pos="9,3,0,0" width="19" height="21" bkimage="images\logo.png" />
+								          </VerticalLayout>
+								          <VerticalLayout width="200" inset="2,2,0,0">
+								          	<Label name="title" text="通知公告"  width="200" height="23"  textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+					            		</VerticalLayout>
+									        <VerticalLayout />
+									        <VerticalLayout width="104">
+									          <Button name="minbtn" float="true" tooltip="最小化" pos="0,0,28,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_mini_normal.png'" hotimage="Skin\btn_mini_highlight.png" pushedimage="Skin\btn_mini_down.png"  />
+									          <Button name="maxbtn" float="true" tooltip="最大化" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_max_normal.png'" hotimage="Skin\btn_max_highlight.png" pushedimage="Skin\btn_max_down.png"  />
+									          <Button name="restorebtn" visible="false" float="true" tooltip="还原" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_restore_normal.png'" hotimage="Skin\btn_restore_highlight.png" pushedimage="Skin\btn_restore_down.png"  />
+									          <Button name="closebtn" float="true" tooltip="关闭" pos="56,0,95,19" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+									        </VerticalLayout>
+							</HorizontalLayout>
+							<HorizontalLayout bkimage="file='Skin\jb.png' corner='2,30,2,2'">
+								<HorizontalLayout width="12" /> 
+								 <VerticalLayout> 
+	            
+					              
+					               	<HorizontalLayout height="40" >
+							               		<HorizontalLayout />  
+							               		<HorizontalLayout  width="170" >
+										               	 		 <Label text="开始日期:" float="true" pos="0,13,0,0"  width="55" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+															           <Edit name="sDate" float="true" pos="55,13,0,0" readonly="true" text="2011-07-18"  width="80" height="22"
+															            	 bkcolor="#FFFFFFFF" bordercolor="#FF00A7B5" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+															           <Button name="sDateBtn"  bkimage="file='date_grid.png' mask='0xffffffff'" float="true" pos="140,13,0,0"  width="24" height="24" normalimage="file='date_grid.png' mask='0xffffffff'"  hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+							                  </HorizontalLayout>	
+														    <HorizontalLayout />  
+														    <HorizontalLayout  width="170">
+																				 <Label text="截止日期:" float="true" pos="0,13,0,0"  width="55" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+															           <Edit name="eDate" float="true" pos="55,13,0,0" readonly="true" width="80" height="22"
+															            	 bkcolor="#FFFFFFFF" bordercolor="#FF00A7B5" text="2011-11-18" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+															           <Button name="eDateBtn"  bkimage="file='date_grid.png' mask='0xffffffff'" float="true" pos="140,13,0,0"  width="24" height="24" normalimage="file='date_grid.png' mask='0xffffffff'"  hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+							                  </HorizontalLayout>	
+														    <HorizontalLayout />  
+														    <HorizontalLayout  width="100">
+															           <Button name="search" text="搜索" float="true" pos="5,13,0,0"  width="90" height="24"  textcolor="#FF1B4876" align="center" normalimage="file='images\btn_a.png' " hotimage="file='images\btn_hov.png' " pushedimage="file='images\btn_down.png' " />
+															  </HorizontalLayout>			       
+												     		<HorizontalLayout />     
+										      </HorizontalLayout>
+										      <VerticalLayout inset="10,10,10,0" >
+										      	 <List name="noticelist"  itemaltbk="true" vscrollbar="true" hscrollbar="false" bordercolor="#FFC0C0C0" itemalign="center"  menu="false" >
+					                        <ListHeader height="28" menu="true" bkcolor="#33333333" bordercolor="#FFC0C0C0">
+					                            <ListHeaderItem dragable="false" text="{b}作者{/b}" showhtml="true"   bordercolor="#FFC0C0C0" font="1" width="80" textcolor="#FF002B2B"  sepwidth="1" align="center"/>
+					                            <ListHeaderItem dragable="false"  text="{b}日期{/b}" showhtml="true"   bordercolor="#FFC0C0C0" font="1" width="80" textcolor="#FF002B2B"   sepwidth="1" align="center"/>
+					                            <ListHeaderItem dragable="false"  text="{b}标题{/b}" showhtml="true"   bordercolor="#FFC0C0C0" font="1" width="" textcolor="#FF002B2B"  sepwidth="1" align="center"/>
+					                            <ListHeaderItem dragable="false"  text="{b}操作{/b}" showhtml="true"  bordercolor="#FFC0C0C0" font="1" width="80" textcolor="#FF002B2B"  sepwidth="1" align="center"/>
+					                        </ListHeader>                                           
+					                    </List>
+										      </VerticalLayout>
+					               	<HorizontalLayout height="20" bkimage="file='images\box_bg.png'" padding="10,5,10,10" >
+					               		  <HorizontalLayout />  
+					               		<HorizontalLayout  width="200" >
+												      <Label name="lbtnText" text="第1页/共1页  共0条记录" float="true" pos="0,3,0,0" enabled="true"  width="200" height="22" align="center" textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+												    </HorizontalLayout>	
+												    <HorizontalLayout />  
+												    <HorizontalLayout  width="160">   
+												       <Button name="lbtnFirst" tooltip="第一页" float="true" pos="30,10,0,0" enabled="false"  width="8" height="8"  textcolor="#FF1B4876" align="center" normalimage="file='images\leftFirst_arrow.png' mask='0xffffffff'" disabledimage="file='images\leftFirst_arrow_disable.png' mask='0xffffffff'"  />
+															 <Button name="lbtnPrevious" tooltip="上一页" float="true" pos="60,10,0,0" enabled="false"  width="8" height="8"  normalimage="file='images\left_arrow.png' mask='0xffffffff'" disabledimage="file='images\left_arrow_disable.png' mask='0xffffffff'"  />
+															 <Button name="lbtnNext" tooltip="下一页" float="true" pos="90,10,0,0" enabled="false" width="8" height="8"  normalimage="file='images\right_arrow.png' mask='0xffffffff'" disabledimage="file='images\right_arrow_disable.png' mask='0xffffffff'"  />
+															 <Button name="lbtnLast" tooltip="最后页" float="true" pos="120,10,0,0" enabled="false" width="8" height="8"    normalimage="file='images\rightLast_arrow.png' mask='0xffffffff'" disabledimage="file='images\rightLast_arrow_disable.png' mask='0xffffffff'" />
+														</HorizontalLayout>			       
+												     <HorizontalLayout />            	 	
+												  </HorizontalLayout>
+												  <HorizontalLayout height="12" />  
+								 </VerticalLayout>
+								<HorizontalLayout width="12" />  
+							</HorizontalLayout>  
+    			<!--</VerticalLayout>-->    
+				      <HorizontalLayout height="1" /> 
+    		</VerticalLayout>
+  	</HorizontalLayout>
+</Window>

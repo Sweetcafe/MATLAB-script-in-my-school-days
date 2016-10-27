@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+  <Window  sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+
+    <Font name="微软雅黑" size="13" bold="false" default="true" />
+	  <Font name="微软雅黑" size="15" bold="false"/>
+    <!--Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='ServiceImages\scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='ServiceImages\scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='ServiceImages\scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='ServiceImages\scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='ServiceImages\scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='ServiceImages\scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='ServiceImages\scrollbar.png' source='0,16,16,32'&quot;" />  
+    <!--HorizontalLayout name="bg" bkimage="file='ServiceImages\bg0.png' corner='600,200,1,1'" hole="true">
+      <VerticalLayout bkimage="file='ServiceImages\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true"-->
+      <HorizontalLayout>	
+     	 <VerticalLayout width="12" />
+		   <VerticalLayout>
+        <VerticalLayout bordersize="0" bordercolor="#FF999933" inset="5,0,0,0" bkimage="file='Skin\chat_mid_bk.png' source='0,10,2,26'">
+          <!-------------------------------------------------------以下编写本页面代码---------------------------->
+					<!--HorizontalLayout height="29" bkcolor="#ffd6e7f1" >
+						<VerticalLayout  minwidth="70">
+							<Option name="chat" selected="true" group="leftMainPanel" text="聊天记录" bkimage="file='ServiceImages\tabs_off.png'  source='8,0,103,29' corner='15,0,15,0'" selectedimage="file='ServiceImages\tabs_on.png' source='8,0,103,29' corner='15,0,15,0'" />
+						</VerticalLayout> 
+						<VerticalLayout  minwidth="70"> 
+							<Option name="sms" group="leftMainPanel"  text="短信记录" bkimage="file='ServiceImages\tabs_off.png'  source='8,0,103,29' corner='15,0,15,0'" selectedimage="file='ServiceImages\tabs_on.png'  source='8,0,103,29' corner='15,0,15,0'" />
+						</VerticalLayout> 
+						<VerticalLayout  minwidth="20" > 
+							<Option name="message" group="leftMainPanel"  text="消息记录" bkimage="file='ServiceImages\tabs_off.png'  source='8,0,103,29' corner='15,0,15,0'" selectedimage="file='ServiceImages\tabs_on.png'  source='8,0,103,29' corner='15,0,15,0'" />
+						</VerticalLayout> 
+						<VerticalLayout  minwidth="20" > 
+							<Option name="email" group="leftMainPanel"  text="邮件记录" bkimage="file='ServiceImages\tabs_off.png'  source='8,0,103,29' corner='15,0,15,0'" selectedimage="file='ServiceImages\tabs_on.png'  source='8,0,103,29' corner='15,0,15,0'" />
+						</VerticalLayout> 
+					</HorizontalLayout-->
+					<VerticalLayout height="6" />
+					<HorizontalLayout height="30"  bkimage="file='images\box_bg.png'" inset="2,4,2,4" >
+						<VerticalLayout />
+						<Label text="时间"   align="center" width="40"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+						<Button name="sDate"  readonly="true" text="2011-07-18"  width="90" height="22"
+							bkcolor="#FFFFFFFF" bordercolor="#FF00A7B5" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+						<Label text="至"  width="22" align="center" textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+						<Button name="eDate"  readonly="true" width="90" height="22"
+							bkcolor="#FFFFFFFF" bordercolor="#FF00A7B5" text="2011-11-18" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+							<VerticalLayout />
+						<Button name="search" text="搜索"  width="50" height="24"  align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'" pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'"  textcolor="#FFFFFFFF"  />
+																			       
+					  <VerticalLayout />
+					</HorizontalLayout>
+					<VerticalLayout height="6" />
+ 					<VerticalLayout >
+						<ImageRichEdit name="ImageRichEdit" autovscroll="true" inset="5,5,5,5" menu="true" vscrollbar="true" readonly="true" />
+					</VerticalLayout>	
+					<VerticalLayout height="6" />
+					<VerticalLayout height="30" bkimage="file='images\box_bg.png'" >
+						<Label name="lbtnText" text="第1页/共1页  共0条记录" float="true" pos="13,4,0,0"  width="200" height="22" align="center" textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+						<Button name="lbtnFirst" tooltip="第一页" float="true" pos="230,7,0,0" width="16" height="16" 
+								bkimage = "file='images\leftFirst_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+								normalimage="file='images\leftFirst_arrow.png'  mask='0xffffffff' dest='4,4,12,12'" 
+								disabledimage="file='images\leftFirst_arrow_disable.png' mask='0xffffffff'  dest='4,4,12,12'" 
+								hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+								pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+						<Button name="lbtnPrevious" tooltip="上一页" float="true" pos="260,7,0,0" enabled="false" width="16" height="16" 
+								bkimage = "file='images\left_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+								normalimage="file='images\left_arrow.png' mask='0xffffffff' dest='4,4,12,12'" 
+								disabledimage="file='images\left_arrow_disable.png' mask='0xffffffff' dest='4,4,12,12'" 
+								hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+								pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+						<Button name="lbtnNext" tooltip="下一页" float="true" pos="290,7,0,0" enabled="false" width="16" height="16" 
+								bkimage = "file='images\right_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+								normalimage="file='images\right_arrow.png' mask='0xffffffff' dest='4,4,12,12'" 
+								disabledimage="file='images\right_arrow_disable.png' mask='0xffffffff' dest='4,4,12,12'" 
+								hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+								pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+						<Button name="lbtnLast" tooltip="最后页" float="true" pos="320,7,0,0" enabled="false" width="16" height="16" 
+								bkimage = "file='images\rightLast_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+								normalimage="file='images\rightLast_arrow.png' mask='0xffffffff' dest='4,4,12,12'" 
+								disabledimage="file='images\rightLast_arrow_disable.png' mask='0xffffffff' dest='4,4,12,12'" 
+								hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+								pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+					</VerticalLayout>		
+					<VerticalLayout height="6" />
+				</VerticalLayout>	
+				<VerticalLayout height="12" />
+			</VerticalLayout>	 				
+		</HorizontalLayout>
+					<!--HorizontalLayout>
+						<ImageRichEdit name="ImageRichEdit"  bordercolor="#000000" font="19" bordersize="0" inset="4,2,4,2" bkcolor="#FFFFFFFF" multiline="true" vscrollbar="true" autovscroll="true" enabled="true" rich="true" readonly="true" text="请选择好友，查看对应历史记录" textcolor ="ADAEB0" />
+          </HorizontalLayout>
+          <HorizontalLayout height="24" bkcolor="#ffd6e7f1">
+          	<HorizontalLayout>
+							<Button name="DateBtn"  bkimage="file='images\date_grid.png' mask='0xffffffff'" float="true" pos="20,0,0,0" width="24" height="24"  normalimage="file='images\date_grid.png' mask='0xffffffff'"  hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+							<Label name="date" text="2012-2-23" float="true" pos="60,2,0,0"  width="80" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+							<Label name="lbtnText" text="第1页/共1页  共0条记录" float="true" pos="130,2,0,0" enabled="true"  width="200" height="22" align="center" textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+							<Button name="lbtnFirst" tooltip="第一页"   enabled="false" float="true" pos="335,4,0,0" width="16" height="16" 
+								bkimage = "file='ServiceImages\leftFirst_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+								normalimage="file='ServiceImages\leftFirst_arrow.png'  mask='0xffffffff' dest='4,4,12,12'" 
+								disabledimage="file='ServiceImages\leftFirst_arrow_disable.png' mask='0xffffffff'  dest='4,4,12,12'" 
+								hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+								pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+														       	
+							<Button name="lbtnPrevious" tooltip="上一页"  enabled="false" float="true" pos="350,4,0,0"  width="16" height="16" 
+								bkimage = "file='ServiceImages\left_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+								normalimage="file='ServiceImages\left_arrow.png' mask='0xffffffff' dest='4,4,12,12'" 
+								disabledimage="file='ServiceImages\left_arrow_disable.png' mask='0xffffffff' dest='4,4,12,12'" 
+								hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+								pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+																	 	  
+							<Button name="lbtnNext" tooltip="下一页"  enabled="false" float="true" pos="365,4,0,0" width="16" height="16" 
+								bkimage = "file='ServiceImages\right_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+								normalimage="file='ServiceImages\right_arrow.png' mask='0xffffffff' dest='4,4,12,12'" 
+								disabledimage="file='ServiceImages\right_arrow_disable.png' mask='0xffffffff' dest='4,4,12,12'" 
+								hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+								pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+																	 	 
+							<Button name="lbtnLast" tooltip="最后页"  enabled="false" float="true" pos="380,4,0,0" width="16" height="16" 
+								bkimage = "file='ServiceImages\rightLast_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+								normalimage="file='ServiceImages\rightLast_arrow.png' mask='0xffffffff' dest='4,4,12,12'" 
+								disabledimage="file='ServiceImages\rightLast_arrow_disable.png' mask='0xffffffff' dest='4,4,12,12'" 
+								hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+								pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+						</HorizontalLayout>
+          </HorizontalLayout-->	
+          <!-------------------------------------------------------以上编写本页面代码---------------------------->
+        <!--/VerticalLayout-->
+        <!--HorizontalLayout height="1" /> 
+    	</VerticalLayout>
+  	</HorizontalLayout-->
+	</Window>

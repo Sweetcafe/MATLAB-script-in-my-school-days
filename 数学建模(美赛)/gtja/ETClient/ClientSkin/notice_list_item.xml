@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+   <ListContainerElement  height="28">
+	    <HorizontalLayout>											          
+	            <Label name="realName" mouse="false" align="center" bordercolor="#FFC0C0C0" bordersize="1" width="80" textcolor="#FF004040" disabledtextcolor="#FF808080" />
+	            <Label name="noticeTime" mouse="false" align="center" bordercolor="#FFC0C0C0"  bordersize="1" width="80" textcolor="#FF004040" disabledtextcolor="#FF808080" />
+	            <Label name="subject" mouse="false" textpadding="5,5,5,5" endellipsis ="true" bordercolor="#FFC0C0C0"   bordersize="1"   textcolor="#FF004040"/>
+	            <Button name="showview" bordercolor="#FFC0C0C0" text="查看"   bordersize="1"  width="80" textcolor="#FF004040"/>
+	            <Label name="notice" visible="false" bordercolor="#FFC0C0C0"   bordersize="1"  textcolor="#FF004040"/>
+	       			<Label name="id" visible="false" bordercolor="#FFC0C0C0"   bordersize="1"  textcolor="#FF004040"/>
+	            <Label name="khh" visible="false" bordercolor="#FFC0C0C0"   bordersize="1" textcolor="#FF004040"/>
+	    </HorizontalLayout>
+	</ListContainerElement>    
+</Window>

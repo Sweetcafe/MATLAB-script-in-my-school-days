@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+
+    <VerticalLayout>
+        <HorizontalLayout height="20" width="370">
+            <!--自定义声音-->
+            <Text text="自定义声音" font="0" textpadding="15,5,15,0"></Text>
+            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <HorizontalLayout height="35" inset="30,10,0,5">
+            <Button name="voice_close_checkbtn" text="关闭所有声音" font="0" userdata="noselected" textpadding="15,0,0,0" padding="4,0,0,4" width="105" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+        </HorizontalLayout>
+
+        <HorizontalLayout height="220" inset="30,0,0,0">
+            <List name="voice_voiList" header="true"   itemshowhtml="false" itemfont="2" vscrollbar="true" hscrollbar="false"  itemalign="left"  menu="false" 
+                  bkcolor="#FFF1F1F1" itembkimage="file='ServiceImages\icon_006.png' dest='335,4,351,18'">
+                <ListHeader height="32" menu="false" >
+                    <ListHeaderItem  text="声音类型" textcolor="#0F505050" font="3" width="95"   sepwidth="0" align="left" textpadding="5,0,0,0" bkcolor="#FFE0E1E3" />
+                    <ListHeaderItem  text="声音文件" textcolor="#0F505050" font="3"   sepwidth="0" align="left" textpadding="5,0,0,0" bkcolor="#FFBCC0C9" />
+                    <ListHeaderItem  text="" textcolor="#0F505050" font="3"  width="40"  sepwidth="0" align="left" textpadding="5,0,0,0" bkcolor="#FFBCC0C9" />
+                </ListHeader>
+
+            </List>
+        </HorizontalLayout>
+        
+        <HorizontalLayout height="15">
+        </HorizontalLayout>
+
+        <HorizontalLayout>
+            <HorizontalLayout>
+            </HorizontalLayout>
+            <Button name="voice_restore_btn" tooltip="Restore" text="恢复默认" font="0" textcolor="#FFFFFFFF"  padding="4,0,4,0" width="97" height="27"  normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'" pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7' "  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'"   />
+        </HorizontalLayout>
+        
+    </VerticalLayout>
+</Window>

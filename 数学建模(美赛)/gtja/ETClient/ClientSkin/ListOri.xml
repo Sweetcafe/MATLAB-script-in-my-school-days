@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="700,600" mininfo="700,600"  sizebox="4,4,4,4"  caption="0,0,0,30"  roundcorner="6,6,6,6" showdirty="false">
+    <!--<Window width="469" height="405" sizebox="0,0,0,0" roundcorner="5,5" caption="0,0,0,30" mininfo="469,405" showdirty="false">-->
+    <Font name="宋体" size="12" bold="true" />
+    <Font name="宋体" size="12"  />
+
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+   
+    <VerticalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true"     inset="0,0,0,0">
+        <!--bordersize="0" bordercolor="#FF15A4D0" borderround="5,5" bkcolor="#FFFFFFFF"-->
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+
+
+            <VerticalLayout bkimage="file='ServiceImages\jb.png' corner='2,30,2,2'">
+
+                <!--标题栏-->
+                <HorizontalLayout  height ="30" >
+                    <!--bkcolor="#FFDAEFFA" bkcolor2="#FFFFFFFF"-->
+                    <HorizontalLayout>
+                        <Container pos="4,3,30,24" float="true"  bkimage="file='ServiceImages\UcMsgResource\logo.png' source='0,0,26,21' dest='0,0,26,21'" />
+                        <Text text="消息列表" pos="33,7,200,28" float="true" textcolor="#FF004E96" font="0"/>
+                    </HorizontalLayout>
+                    <HorizontalLayout width="130">
+                        <Button name="minbtn" tooltip="最小化"  width="40" height="19"  normalimage="file='ServiceImages\btn_min_off.png'" hotimage="ServiceImages\btn_min_on.png" pushedimage="ServiceImages\btn_min_on.png"  />
+                        <Button name="maxbtn"  tooltip="最大化"  width="40" height="19"  normalimage="file='ServiceImages\btn_max_off.png'" hotimage="ServiceImages\btn_max_on.png" pushedimage="ServiceImages\btn_max_on.png"  />
+                        <Button name="restorebtn" visible="false"  tooltip="还原"  width="40" height="19"  normalimage="file='ServiceImages\btn_restore_off.png'" hotimage="ServiceImages\btn_restore_on.png" pushedimage="ServiceImages\btn_restore_on.png"  />
+                        <Button name="closebtn" tooltip="关闭"  width="50" height="19"   normalimage="file='ServiceImages\btn_close_off.png'" hotimage="ServiceImages\btn_close_on.png" pushedimage="ServiceImages\btn_close_on.png"  />
+                        <!--<Button float="true" pos="0,4,20,24" name="closebtn" maxwidth="20" maxheight="20" normalimage="file='ServiceImages\UcMsgResource\close.png' source='0,0,20,20'" hotimage="file='ServiceImages\UcMsgResource\close2.png' source='0,0,20,20'" pushedimage="file='ServiceImages\UcMsgResource\close2.png' source='0,0,20,20'"/>-->
+                    </HorizontalLayout>
+                </HorizontalLayout>
+
+                <!--主体-->
+                <VerticalLayout inset="5,4,5,5" >
+                    <!--bkcolor="#FFFFFFFF" bkcolor2="#FFEDF7FF"-->
+                    <!--主体上半部-->
+                    <VerticalLayout    bordersize="1" bordercolor="#FFA6D0E7" maxheight="200" height="175" inset="15,7,15,7"><!--height="144" width="455"-->
+                        <!--bkcolor="#FFF8FCFF" bkcolor2="#FFE2F3FB"-->
+                        <!--<HorizontalLayout height="15">-->
+                            <!--标题栏-->
+                            <!--<Text  text="标题" pos="20,0,80,15" float="true" align="center"/>-->
+                            <!--<Text  text="内容简要" pos="80,0,290,15" float="true" align="center"/>-->
+                            <!--<Text  text="时间" pos="290,0,410,15" float="true" align="center"/>-->
+                        <!--</HorizontalLayout>-->
+                        <!--<Container bordersize="1" bordercolor="#FFDCDCDC" pos="30,25,450,26"/>-->
+                        <HorizontalLayout height="3"></HorizontalLayout>
+
+                        <HorizontalLayout>
+
+                            <List name="msglist"   itemshowhtml="true" vscrollbar="true" hscrollbar="false"  itemalign="left" sepheight="2"  itemendellipsis="true" menu="false">
+                                <ListHeader height="15" menu="true" >
+                                    <!--<ListHeaderItem  text="" font="1" width="20"   sepwidth="1" align="center"/>-->
+                                    <ListHeaderItem  text="" font="1" width="28"   sepwidth="0"  align="center" />
+                                    <ListHeaderItem  text="标题" font="1" width="100"   sepwidth="1" sepimage="file='ServiceImages/UcMsgResource/sepimage.png' dest='0,4,1,11'" align="center"/>
+                                    <ListHeaderItem  text="内容简要" font="1"   sepwidth="1" sepimage="file='ServiceImages/UcMsgResource/sepimage.png' dest='0,4,1,11'" align="center"/>
+                                    <ListHeaderItem  text="时间" font="1" width="160"   align="center"/>
+                                </ListHeader>
+
+                                <!--<ListLabelElement text=" 全部" /> -->
+                                <!--<ListLabelElement text=" 英汉双向大辞典" /> -->
+                                <!--<ListLabelElement text=" 爱词霸网络词典"/> -->
+                                <!--<ListLabelElement text=" 用法词典" /> -->
+                                <!--<ListLabelElement text=" Wordnet英英词典"  /> -->
+                                <!--<ListLabelElement text=" 爱词霸词义百科" /> -->
+                                <!--<ListLabelElement text=" 全部" /> -->
+                                <!--<ListLabelElement text=" 英汉双向大辞典" /> -->
+                                <!--<ListLabelElement text=" 爱词霸网络词典"/> -->
+                                <!--<ListLabelElement text=" 用法词典" /> -->
+                                <!--<ListLabelElement text=" Wordnet英英词典"  /> -->
+                                <!--<ListLabelElement text=" 爱词霸词义百科" /> -->
+                            </List>
+                        </HorizontalLayout>
+
+                        <HorizontalLayout height="6"></HorizontalLayout>
+
+                        <HorizontalLayout height="21">
+                            <!--<Button width="13" height="13" name="msg_yougou" tooltip="全部不选" maxwidth="20" maxheight="20" normalimage="file='ServiceImages\UcMsgResource\radio_select.png'" hotimage="file='ServiceImages\UcMsgResource\radio_select.png'" pushedimage="file='ServiceImages\UcMsgResource\radio_select.png'" visible="false"/>
+                            <Button width="13" height="13" name="msg_wugou" tooltip="全选" maxwidth="20" maxheight="20" normalimage="file='ServiceImages\UcMsgResource\radio_noselect.png'" hotimage="file='ServiceImages\UcMsgResource\radio_noselect.png'" pushedimage="file='ServiceImages\UcMsgResource\radio_noselect.png'" visible="true"/>
+                            <Text name="tagselectreaded" width="40"  text="{a}{f 1}清除{/f}{/a}" tooltip="删除所选消息" showhtml="true"/>-->
+                            <HorizontalLayout></HorizontalLayout>
+                            <Text visible="true" name="ShowHistory" text="{a}{f 1}查看历史{/f}{/a}" tooltip="查看历史" showhtml="true"/>
+                        </HorizontalLayout>
+                    </VerticalLayout>
+
+                    <HorizontalLayout height="6">
+                    </HorizontalLayout>
+
+                    <!--主体下半部-->
+                    <VerticalLayout  bordersize="1" bordercolor="#FFA6D0E7" minheight="378"   inset="15,15,15,15"><!--width="455" height="212"-->
+                        <!--bkcolor="#FFF8FCFF" bkcolor2="#FFE2F3FB"-->
+                        <Text name="msg_type" text="来源：" textcolor="#FF6600"  /><!--width="425"-->
+                        <Text height="5" text="" textcolor="#FF6600" width="425" />
+                        <Text name="msg_title" text="标题：" textcolor="#FF6600"  /><!--width="425"-->
+                        <Text height="5" text="" textcolor="#FF6600" width="425" /><!---->
+                        <!--<Text name="msg_content" text="    " textcolor="#666666" showhtml="true"  width="425" />
+                        <ActiveX name="ie" clsid="{8856F961-340A-11D0-A96B-00C04FD705A2}" delaycreate="false"  bkcolor="#FFF8FCFF"/><!--width="425"-->
+                        <WebBrowser name="ie"  autonavi="true"/>
+                    </VerticalLayout>
+                </VerticalLayout>
+
+            </VerticalLayout>
+
+            <HorizontalLayout height="1" />
+        </VerticalLayout>
+
+    </VerticalLayout>
+</Window>

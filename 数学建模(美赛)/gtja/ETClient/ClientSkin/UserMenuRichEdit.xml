@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window >
+  <Font name="微软雅黑" size="12" bold="false" default="true" />
+  <Font name="微软雅黑" size="12" bold="true"/>
+  
+  <Default name="Menu" value="inset=&quot;2,2,2,2&quot; itemhotimage=&quot;file='ServiceImages\bg_menu_hot.png' source='1,0,128,28' corner='40,9,9,9'&quot; itemselectedimage=&quot;file='ServiceImages\bg_menu_selected.png' source='1,0,128,28' corner='40,9,9,9'&quot; itemtextpadding=&quot;40,0,0,0&quot; bkimage=&quot;file='ServiceImages\bg_menu.png' source='4,4,134,178' corner='40,9,9,9'&quot; hole=&quot;false&quot;" />
+  
+ 
+ <menu inset="2,2,2,2" itemtextpadding="40,0,0,0" 
+ 	itemhotimage="file='ServiceImages\bg_menu_hot.png' source='1,0,128,28' corner='40,9,9,9'" 
+ 	itemselectedimage="file='ServiceImages\bg_menu_selected.png' source='1,0,128,28' corner='40,9,9,9'" 
+ 	bkimage="file='ServiceImages\bg_menu.png' source='4,4,134,178' corner='40,9,9,9'"  >
+ 	
+			 <MenuElementRichEdit name="CutBtn" text="剪切" height="28"  >
+			 </MenuElementRichEdit>
+			 <MenuElementRichEdit name="CopyBtn" text="复制" height="28" >
+			 </MenuElementRichEdit>
+			 <MenuElementRichEdit name="PasteBtn" text="粘贴" height="28" >
+			 </MenuElementRichEdit>		
+			 <MenuElementRichEdit name="AllSelectBtn" text="全部选择" height="28" >
+			 	   
+			 </MenuElementRichEdit>	 
+   
+</menu>
+</Window>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="1120,600" mininfo="1120,500" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+	  <Font name="微软雅黑" size="13" bold="false" default="true" />
+	  <Font name="微软雅黑" size="15" bold="false"/>
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='ServiceImages\scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='ServiceImages\scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='ServiceImages\scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='ServiceImages\scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='ServiceImages\scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='ServiceImages\scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='ServiceImages\scrollbar.png' source='0,16,16,32'&quot;" />  
+    
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+   		<!--VerticalLayout bkcolor="#ffdacfc1" bkcolor2="#fff9f1db" inset="1,0,1,0" -->
+		  	<HorizontalLayout height="30">
+					<VerticalLayout width="10" />
+					<Text name="title" text="个人统计" font="1" textpadding="37,3,37,3" bkimage="file='ServiceImages\title_bk.png' corner='31,5,31,5'"  textcolor="#FFFFFFFF"  />
+					<VerticalLayout />
+					<VerticalLayout width="104" >
+                        <Button name="minbtn" float="true" tooltip="最小化" pos="0,0,28,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_mini_normal.png'" hotimage="Skin\btn_mini_highlight.png" pushedimage="Skin\btn_mini_down.png"  />
+                        <Button name="maxbtn" float="true" tooltip="最大化" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_max_normal.png'" hotimage="Skin\btn_max_highlight.png" pushedimage="Skin\btn_max_down.png"  />
+                        <Button name="restorebtn" visible="false" float="true" tooltip="还原" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_restore_normal.png'" hotimage="Skin\btn_restore_highlight.png" pushedimage="Skin\btn_restore_down.png"  />
+                        <Button name="closebtn" float="true" tooltip="关闭" pos="56,0,95,19" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+                    </VerticalLayout>
+				</HorizontalLayout>
+				<!--HorizontalLayout-->
+				<HorizontalLayout bkimage="file='Skin\jb.png' corner='2,30,2,2'">
+<!-------------------------------------------------------以下编写本页面代码---------------------------->
+	 <VerticalLayout bkimage="file='ServiceImages\im_tab\bg_arrow.png' source='0,10,8,20'" name="calc" >
+              	<HorizontalLayout>
+              		<VerticalLayout width="248" inset="10,10,10,40" >
+              			<HorizontalLayout visible="false" name = "SearchLayout" height="30" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'" >
+                     <Button name="search_tip" height="30"  textpadding="4,2,4,3" text="请输入客户姓名或者客户ID" textcolor="#FF999999"  font="0"  align="left" />
+                     <RichEdit visible="false" name="search_edit" inset="4,4,4,3" height="30" text=""  font="4"   multiline="false" rich="false" />
+                     <Button name="searchbtn" height="27" width="24"  bkimage="file='ServiceImages\icon_search.png' dest='4,8,18,23'"/>
+                    </HorizontalLayout>
+                    <Button name="call_clientgroup" height="35" text="客户分组" font="3" normalimage="file='ServiceImages\callcenter\bg.png'" hotimage="file='ServiceImages\callcenter\bg_hot.png'" />
+                    <VerticalLayout name="call_clientLayout">
+                    	<FriendList name="call_clientlist" header="hidden" itemhottextcolor="#FFFF0000" itemtextcolor="#FF000000" itemselectedbkcolor="#FFEFEADD" itemhotbkcolor="#FFCFEBFB" itemshowhtml="true" vscrollbar="true" />
+                    </VerticalLayout>	
+										<Button name="call_channelgroup" visible="false" height="35" text="通道分组" font="3" normalimage="file='ServiceImages\callcenter\bg.png'" hotimage="file='ServiceImages\callcenter\bg_hot.png'" />
+										<VerticalLayout name="call_channelLayout" inset="15,15,15,15"  visible="false" >
+										 <Option name="call_smsbtn" text="短信记录" textcolor="#FF373737" textpadding="10,0,0,0" height="30" font="4" normalimage="file='ServiceImages\bg_sets-menu.png'" hotimage="file='ServiceImages\bg_sets-menu-on.png'" pushedimage="file='ServiceImages\bg_sets-menu-on.png'" selectedimage="file='ServiceImages\bg_sets-menu-on.png'" group="setSelectTab" />
+										 <VerticalLayout name="call_smsLayout" bkcolor="#ffffffff" >
+										 	<Option name="yfs_dx" group="call_channel" selected="true" height="28" align="left" showhtml="true" text="{x 65}短信发送记录查询{/x}" hotimage="file='ServiceImages\callcenter\hot.png'" selectedimage="file='ServiceImages\callcenter\icon_arrow.png' dest='40,8,45,20'"/>
+										 </VerticalLayout>
+ 										 <Option name="call_msgbtn" text="消息记录" textcolor="#FF373737" textpadding="10,0,0,0" height="30" font="4" normalimage="file='ServiceImages\bg_sets-menu.png'" hotimage="file='ServiceImages\bg_sets-menu-on.png'" pushedimage="file='ServiceImages\bg_sets-menu-on.png'" selectedimage="file='ServiceImages\bg_sets-menu-on.png'" group="setSelectTab" />
+                     <VerticalLayout name="call_msgLayout" bkcolor="#ffffffff" visible="false" >
+										 	<Option name="yfs_xx" group="call_channel" height="28" align="left" showhtml="true" text="{x 65}消息发送记录查询{/x}" hotimage="file='ServiceImages\callcenter\hot.png'" selectedimage="file='ServiceImages\callcenter\icon_arrow.png' dest='40,8,45,20'"/>
+										  </VerticalLayout>
+  									 <Option name="call_mailbtn" text="邮件记录" textcolor="#FF373737" textpadding="10,0,0,0" height="30" font="4" normalimage="file='ServiceImages\bg_sets-menu.png'" hotimage="file='ServiceImages\bg_sets-menu-on.png'" pushedimage="file='ServiceImages\bg_sets-menu-on.png'" selectedimage="file='ServiceImages\bg_sets-menu-on.png'" group="setSelectTab" />
+                     <VerticalLayout name="call_mailLayout" bkcolor="#ffffffff" visible="false">
+										 	<Option name="yfs_mail" group="call_channel" height="28" align="left" showhtml="true" text="{x 65}邮件发送记录查询{/x}" hotimage="file='ServiceImages\callcenter\hot.png'" selectedimage="file='ServiceImages\callcenter\icon_arrow.png' dest='40,8,45,20'"/>
+										 </VerticalLayout>
+  									 <Option name="call_filebtn" text="彩信记录" textcolor="#FF373737" textpadding="10,0,0,0" height="30" font="4" normalimage="file='ServiceImages\bg_sets-menu.png'" hotimage="file='ServiceImages\bg_sets-menu-on.png'" pushedimage="file='ServiceImages\bg_sets-menu-on.png'" selectedimage="file='ServiceImages\bg_sets-menu-on.png'" group="setSelectTab" />
+                     <VerticalLayout name="call_fileLayout" bkcolor="#ffffffff" visible="false">
+										 	<Option name="yfs_cx" group="call_channel" height="28" align="left" showhtml="true" text="{x 65}彩信发送记录查询{/x}" hotimage="file='ServiceImages\callcenter\hot.png'" selectedimage="file='ServiceImages\callcenter\icon_arrow.png' dest='40,8,45,20'"/>
+										 </VerticalLayout>
+  									 <Option name="call_weibobtn" text="微博记录" textcolor="#FF373737" textpadding="10,0,0,0" height="30" font="4" normalimage="file='ServiceImages\bg_sets-menu.png'" hotimage="file='ServiceImages\bg_sets-menu-on.png'" pushedimage="file='ServiceImages\bg_sets-menu-on.png'" selectedimage="file='ServiceImages\bg_sets-menu-on.png'" group="setSelectTab" />
+                     <VerticalLayout name="call_weiboLayout" bkcolor="#ffffffff" visible="false">
+										 	<Option name="yfs_weibo" group="call_channel" height="28" align="left" showhtml="true" text="{x 65}微博发送记录查询{/x}" hotimage="file='ServiceImages\callcenter\hot.png'" selectedimage="file='ServiceImages\callcenter\icon_arrow.png' dest='40,8,45,20'"/>
+										 </VerticalLayout>
+                    </VerticalLayout>	
+              		</VerticalLayout>	
+              		<VerticalLayout inset="10,10,10,10">
+              			 <WebBrowser name="calcwebBrowser" autonavi="true"/>
+              		</VerticalLayout>	
+              	</HorizontalLayout>	
+              </VerticalLayout>	
+								
+<!-------------------------------------------------------以上编写本页面代码---------------------------->
+							</HorizontalLayout>  
+		    	  <HorizontalLayout height="2" /> 
+    		</VerticalLayout>
+  	</HorizontalLayout>
+</Window>

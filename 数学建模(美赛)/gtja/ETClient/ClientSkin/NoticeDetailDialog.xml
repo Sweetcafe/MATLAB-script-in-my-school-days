@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="482,409" mininfo="482,409" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+	   <Font name="宋体" size="12" bold="false" default="true" />
+	   <Font name="宋体" size="12" bold="true"/>
+     <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />  
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+               <HorizontalLayout height="30">
+									        <VerticalLayout width="40" inset="2,2,0,0">
+									          <Control name="logo" float="true" pos="9,3,0,0" width="19" height="21" bkimage="images\logo.png" />
+								          </VerticalLayout>
+								          <VerticalLayout width="200" inset="2,2,0,0">
+								          	<Label name="title" text="查看完整信息"  width="200" height="23"  textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+					            		</VerticalLayout>
+									        <VerticalLayout />
+									        <VerticalLayout width="104">
+									          <Button name="maxbtn" float="true" tooltip="最大化" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_max_normal.png'" hotimage="Skin\btn_max_highlight.png" pushedimage="Skin\btn_max_down.png"  />
+									          <Button name="restorebtn" visible="false" float="true" tooltip="还原" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_restore_normal.png'" hotimage="Skin\btn_restore_highlight.png" pushedimage="Skin\btn_restore_down.png"  />
+									          <Button name="closebtn" float="true" tooltip="关闭" pos="56,0,95,19" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+									        </VerticalLayout>
+							</HorizontalLayout>
+               <HorizontalLayout bkimage="file='Skin\jb.png' corner='2,30,2,2'">
+								<HorizontalLayout width="12" /> 
+								 <VerticalLayout> 
+	            
+					             
+			               	<VerticalLayout >
+			               		<VerticalLayout height="135">
+									        <Label text="主  题:" float="true" pos="13,43,0,0"  width="55" height="22"  textcolor="#FF178BFF" disabledtextcolor="#FFA7A6AA" />
+													<Label text="发件人:" float="true" pos="13,73,0,0"  width="55" height="22"  textcolor="#FF178BFF" disabledtextcolor="#FFA7A6AA" />
+									        <Label text="日  期:" float="true" pos="13,103,0,0"  width="55" height="22"  textcolor="#FF178BFF" disabledtextcolor="#FFA7A6AA" />
+													
+													<Label name="subject" text="" float="true" pos="70,43,0,0"  width="255" height="22"  textcolor="#FF178BFF" disabledtextcolor="#FFA7A6AA" />
+													<Label name="realName" text="" float="true" pos="70,73,0,0"  width="255" height="22"  textcolor="#FF178BFF" disabledtextcolor="#FFA7A6AA" />
+									        <Label name="noticeTime" text="" float="true" pos="70,103,0,0"  width="255" height="22"  textcolor="#FF178BFF" disabledtextcolor="#FFA7A6AA" />
+									      </VerticalLayout > 
+									      <HorizontalLayout  > 
+									      	<HorizontalLayout  width="70"> 
+									      		<Label text="{b}内 容:{/b}" showhtml="true" float="true" pos="13,0,0,0"  width="55" height="22"  textcolor="#FF178BFF" disabledtextcolor="#FFA7A6AA" />
+													</HorizontalLayout>  
+								        	<RichEdit name="notice"  inset="5,5,5,5"  bordercolor="#FF006FDD"  textcolor="#FF178BFF"
+								         	vscrollbar="true" bkcolor="#FFF1FAFF" readonly="true" roundcorner="4,4"	/>
+			               	 	</HorizontalLayout>  			       
+								      </VerticalLayout>
+								      <HorizontalLayout height="12" />  
+								 </VerticalLayout>
+								<HorizontalLayout width="12" />  
+							</HorizontalLayout>  
+							<HorizontalLayout height="1" /> 
+    		</VerticalLayout>
+  	</HorizontalLayout>
+</Window>
+

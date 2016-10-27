@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+  <ListContainerElement height="106" >
+  	<VerticalLayout height="106">
+  		<HorizontalLayout  height="40">
+  			<Control   width="5"/>
+  			<VerticalLayout width="32">
+  				<Control   height="4"/>
+  				<Control name="fileIcon"  height="32"/>
+  			</VerticalLayout>
+  			<Control   width="5"/>
+  			<VerticalLayout >
+  				<Label name="sendtitle" text="发送文件请求:"  height="20"  textcolor="#FFC0C0C0" />               	 	
+				  <Label name="filename" text=""   height="20" endellipsis="true"  textcolor="#FF000000"  />							               	 	
+  			</VerticalLayout>
+      </HorizontalLayout>
+      <Control   height="5"/>
+      <HorizontalLayout  height="8">
+      	<Control   width="5"/>
+      	<Progress name="fileprogress" borderround ="4,4"   width="144" height="8"
+									           				
+									           				bkimage="images\progressBK.png"
+									           				 bordersize="0" 
+									           				 align="center" foreimage="file='images\progress.png' corner='2,2,2,2'"
+									           				  min="0" max="100" value="0" hor="true" />
+				<Control   width="5"/>
+      </HorizontalLayout>
+      <Control   height="5"/>
+      <HorizontalLayout  height="18">
+      	<Control  />
+      	<Label name="filesize" text="" align="right" endellipsis="true" width="126"  textcolor="#FF000000"  />
+				<Control   width="5"/>
+      </HorizontalLayout>
+       <HorizontalLayout  height="20">
+      	<Control  />
+      	<Button name="AgreeFile" text="发送"  textcolor="#FF0B63B5" 	hottextcolor="#FF000000"  width="40" height="20"   />
+	      <Control   width="5"/>
+				<Button name="CancelFile" text="取消"  textcolor="#FF0B63B5" 	hottextcolor="#FF000000"  width="40" height="20"  />
+				<Control   width="5"/>
+      </HorizontalLayout>
+  	  
+    </VerticalLayout>
+  </ListContainerElement>
+</Window>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="322,320" mininfo="322,320" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+    <Font name="微软雅黑" size="12" bold="false" default="true" />
+    <Font name="微软雅黑" size="12" bold="true"/>
+    <Font name="微软雅黑" size="15" />
+    <Font name="微软雅黑" size="13" />
+
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+
+            <HorizontalLayout height="30">
+                <VerticalLayout width="40" inset="2,2,0,0">
+                    <Control name="logo" float="true" pos="9,3,0,0" width="21" height="23" bkimage="ServiceImages\logo_mini.png" />
+                </VerticalLayout>
+                <VerticalLayout width="200" inset="2,2,0,0">
+                    <Label name="title" text="新增服务器" textcolor="#FF333333" font="2" width="200" height="23"  disabledtextcolor="#FFA7A6AA" />
+                </VerticalLayout>
+                <VerticalLayout />
+                <HorizontalLayout width="50">
+                    <Button name="closebtn" tooltip="关闭"  width="50" height="19"   normalimage="file='ServiceImages\NewImages\btn_close.png'" hotimage="ServiceImages\NewImages\btn_close-red.png" pushedimage="ServiceImages\NewImages\btn_close-red.png"  />
+                </HorizontalLayout>
+            </HorizontalLayout>
+
+            <VerticalLayout bkimage="file='Skin\jb.png' corner='2,30,2,2'" >
+                <Control height="22"/>
+                <HorizontalLayout height="25" >
+                    <Control   width="25" />
+                    <Label text="名称:"   width="50" font="3" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="ServerName"    width="225" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                         bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                    <Control   />
+                </HorizontalLayout>
+
+                <Control height="22"/>
+                <HorizontalLayout height="16">
+                    <Text text="Web服务器地址" font="3" textcolor="#FF333333" textpadding="11,0,8,0"></Text>
+                    <Control  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,8,0,6" />
+                </HorizontalLayout>
+
+                <Control height="15"/>
+                <HorizontalLayout height="25" >
+                    <Control   width="25" />
+                    <Label text="IP/域名:"   width="50" font="3" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="WebAddress"    width="110" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                         bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                    <Control  width="15" />
+                    <Label text="IP端口:"  font="3" width="50" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="WebPort"  width="50"  bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                         bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                    <Control   />
+                </HorizontalLayout>
+
+                <Control height="22"/>
+                <HorizontalLayout height="16">
+                    <Text text="XMPP服务器地址" font="3" textcolor="#FF333333" textpadding="11,0,8,0"></Text>
+                    <Control  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,8,0,6" />
+                </HorizontalLayout>
+                
+                <Control height="15"/>
+                <HorizontalLayout height="25" >
+                    <Control   width="25" />
+                    <Label text="IP/域名:"   width="50" font="3" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="XmppAddress"    width="110" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                         bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                    <Control  width="15" />
+                    <Label text="IP端口:"  font="3" width="50" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="XmppPort"  width="50"  bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                         bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                    <Control   />
+                </HorizontalLayout>
+
+                <Control height="12"/>
+                
+                <HorizontalLayout height="20" >
+                    <Control  width="25" />
+                    <Control  width="50" />
+                    <Control  width="105" />
+                    <Control  width="5" />
+                    <Label text="http端口:"  font="3" width="65" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="XmpphttpPort"  width="50"  bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                         bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                    <Control   />
+                </HorizontalLayout>
+                
+                <Control />
+
+                <HorizontalLayout height="28">
+                    <Control />
+                    <Button name="btnOk" text="确定" font="3" textcolor="#FFFFFFFF" width="66"  align="center" normalimage="file='ServiceImages\btn_2_nor.png'" hotimage="file='ServiceImages\btn_2_focus.png'" pushedimage="file='ServiceImages\btn_2_over.png' "  disabledimage="file='ServiceImages\btn_2_disable.png'" />
+                    <Control width="10" />
+                    <Button name="btnCancel" text="取消"  font="3" textcolor="#FFFFFFFF" width="66"  align="center" normalimage="file='ServiceImages\btn_2_nor.png'" hotimage="file='ServiceImages\btn_2_focus.png'" pushedimage="file='ServiceImages\btn_2_over.png' "  disabledimage="file='ServiceImages\btn_2_disable.png'" />
+                    <Control width="12" />
+                </HorizontalLayout  >
+
+                <Control  height="10"/>
+            </VerticalLayout>
+            <HorizontalLayout height="1" />
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

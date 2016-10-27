@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="220,125" mininfo="220,125" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4" alpha="15">
+	   <Font name="宋体" size="12" bold="false" default="true" />
+	   <Font name="宋体" size="12" bold="true"/>
+     <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />  
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+        	
+							
+              <VerticalLayout bkimage="file='Skin\jb.png' corner='2,30,2,2'">
+			               <HorizontalLayout height="30">
+												        <VerticalLayout width="40" inset="2,2,0,0">
+												          <Control name="logo" float="true" pos="9,3,0,0" width="19" height="21" bkimage="images\logo.png" />
+											          </VerticalLayout>
+											          <VerticalLayout width="70" inset="2,2,0,0">
+											          	<Label name="title" text="上线提醒"  height="23" align="left"  />
+								            		</VerticalLayout>
+												        <VerticalLayout />
+												        <VerticalLayout width="49">
+												          <Button name="closebtn" float="true" tooltip="关闭" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+												        </VerticalLayout>
+										 </HorizontalLayout>
+               	 
+               	    <HorizontalLayout>
+               	    	<VerticalLayout  width="20"/>
+               	    	
+               	    	<VerticalLayout width="52" >
+               	    		<VerticalLayout />
+               	    		    <Control name="userPhotoIcon" width="46" height="46" bkimage="images\userPhoto.png" />
+               	    		<VerticalLayout />  
+               	      </VerticalLayout>
+               	      
+               	      <VerticalLayout>
+               	      	<VerticalLayout />
+               	      	<Text name="userName" text="asfasfdasdf" textcolor="#FF1E80E1" font="1" />
+               	        <VerticalLayout />
+               	      	<Text text="上线了"  font="1" />
+               	        <VerticalLayout />
+               	      </VerticalLayout>               	      	
+               	      <VerticalLayout  width="10"/>
+										</HorizontalLayout> 
+																				
+							</VerticalLayout> 
+							 
+							<HorizontalLayout height="1" /> 
+    		</VerticalLayout>
+  	</HorizontalLayout>
+</Window>
+

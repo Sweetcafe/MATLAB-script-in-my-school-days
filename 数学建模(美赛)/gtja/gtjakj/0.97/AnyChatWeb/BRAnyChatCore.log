@@ -1,0 +1,62 @@
+[2015-03-03 16:37:11(660)]	---------------------------AnyChat Platform Core SDK Client Log---------------------------
+[2015-03-03 16:37:11(661)]	Load BRAnyChatCore.dll success!(V5.1 Build Time:Nov  5 2014 22:20:51)
+[2015-03-03 16:37:11(716)]	Load BRMiscUtil.dll success!(V5.1 Build Time:Nov  5 2014 22:19:14)
+[2015-03-03 16:37:11(822)]	Load BRMediaUtil.dll success!(V5.2 Build Time:Nov  5 2014 22:19:26)
+[2015-03-03 16:37:11(831)]	Load BRMediaShow.dll success!(V5.1 Build Time:Nov  5 2014 22:19:19)
+[2015-03-03 16:37:11(844)]	Load BRMediaCore.dll success!(V5.1 Build Time:Nov  5 2014 22:19:39)
+[2015-03-03 16:37:23(460)]	Invoke	EnterRoom(roomid=4838236)
+[2015-03-03 16:37:23(467)]	Invoke	BRAC_Connect(spjz.gtja.com,8906)=0
+[2015-03-03 16:37:23(469)]	Invoke	LoginServer(username=4401061994102700190)
+[2015-03-03 16:37:23(471)]	Invoke	BRAC_Connect(spjz.gtja.com,8906)=0
+[2015-03-03 16:37:23(473)]	Invoke	LoginServer(username=4401061994102700190)
+[2015-03-03 16:37:23(556)]	CheckClientSocketLink	 Connect(ip=114.141.165.61,port=8906)
+[2015-03-03 16:37:23(768)]	Server version: V5.1(Build Time:2014-11-21 09:41:20, Server OS:Windows)
+[2015-03-03 16:37:23(991)]	Message	OnConnect(bSuccess:1, errorcode=0)
+[2015-03-03 16:37:24(493)]	Message	OnLoginSystem(userid=5940,errorcode=0,username=4401061994102700190), msg deliver worked(1)
+[2015-03-03 16:37:24(495)]	Invoke	SetSDKOption(BRAC_SO_AUDIO_VADCTRL,0)
+[2015-03-03 16:37:24(498)]	Server running time: 0 days, 13 hours, 41 minutes, license mode:1
+[2015-03-03 16:37:24(533)]	Success add upnp map(port:50598, tcp)
+[2015-03-03 16:37:24(575)]	Success add upnp map(port:61630, udp)
+[2015-03-03 16:37:24(629)]	Connection to streaming media server successfully!(udp delay:70ms)
+[2015-03-03 16:37:24(796)]	Message	OnEnterRoom(roomid=4838236,errorcode=0,siteindex=1)
+[2015-03-03 16:37:24(802)]	Invoke	UserCameraControl(userid=5940,bOpen=1)
+[2015-03-03 16:37:24(805)]	Invoke	UserSpeakControl(userid=5940,bOpen=1)
+[2015-03-03 16:37:24(806)]	Message	OnReceiveOnlineUser(count=2,roomid=4838236)
+[2015-03-03 16:37:24(859)]	WaveIn Audio Capture Driver(Âó¿Ë·ç (2- Realtek High Definit)
+[2015-03-03 16:37:24(860)]	Audio Init, error:0, device:0, 1, 16000, 16, capmode:0
+[2015-03-03 16:37:24(864)]	Audio codec init, handle:1, 11, 1, 16000, 16, 15850
+[2015-03-03 16:37:24(882)]	Audio Playback Device Init(0, 1, 16000, 16), WaveOut Playback Driver
+[2015-03-03 16:37:24(882)]	Audio FX Status: VAD:0, NS:1, AGC:1, AEC:1
+[2015-03-03 16:37:25(030)]	Invoke	UserCameraControl(userid=5939,bOpen=1)
+[2015-03-03 16:37:25(031)]	Invoke	UserSpeakControl(userid=5939,bOpen=1)
+[2015-03-03 16:37:25(236)]	On Remote UserSpeakControl(dwUserId:5939, bOpen:1)
+[2015-03-03 16:37:25(307)]	On Remote UserCameraControl(dwUserId:5939, bOpen:1)
+[2015-03-03 16:37:25(758)]	userid(5939) video decode delay:0ms
+[2015-03-03 16:37:26(029)]	MinCroppingSize(640, 480)	MaxCroppingSize(640, 480)	Format(YUY2, 0x32595559)
+[2015-03-03 16:37:26(030)]	MinCroppingSize(640, 480)	MaxCroppingSize(640, 480)	Format(YUY2, 0x8d2681)
+[2015-03-03 16:37:26(031)]	MinCroppingSize(160, 120)	MaxCroppingSize(160, 120)	Format(YUY2, 0x32595559)
+[2015-03-03 16:37:26(031)]	MinCroppingSize(160, 120)	MaxCroppingSize(160, 120)	Format(YUY2, 0x8d2681)
+[2015-03-03 16:37:26(032)]	MinCroppingSize(176, 144)	MaxCroppingSize(176, 144)	Format(YUY2, 0x32595559)
+[2015-03-03 16:37:26(033)]	MinCroppingSize(176, 144)	MaxCroppingSize(176, 144)	Format(YUY2, 0x8d2681)
+[2015-03-03 16:37:26(034)]	MinCroppingSize(320, 240)	MaxCroppingSize(320, 240)	Format(YUY2, 0x32595559)
+[2015-03-03 16:37:26(035)]	MinCroppingSize(320, 240)	MaxCroppingSize(320, 240)	Format(YUY2, 0x8d2681)
+[2015-03-03 16:37:26(036)]	MinCroppingSize(352, 288)	MaxCroppingSize(352, 288)	Format(YUY2, 0x32595559)
+[2015-03-03 16:37:26(036)]	MinCroppingSize(352, 288)	MaxCroppingSize(352, 288)	Format(YUY2, 0x8d2681)
+[2015-03-03 16:37:26(037)]	MinCroppingSize(640, 480)	MaxCroppingSize(640, 480)	Format(YUY2, 0x32595559)
+[2015-03-03 16:37:26(038)]	MinCroppingSize(640, 480)	MaxCroppingSize(640, 480)	Format(YUY2, 0x8d2681)
+[2015-03-03 16:37:26(042)]	Video Config Size(320, 240)	Format(YUY2, 25fps)
+[2015-03-03 16:37:26(064)]	video init finish:320x240, YUY2, fps:30
+[2015-03-03 16:37:26(708)]	video codec init:codec:1, 8fps, 320x240, bitrate:120kbps, quality:3, preset:2, gop:30, handle:4
+[2015-03-03 16:37:28(403)]	Message	OnP2PConnectState(userid=5939, state=2)
+[2015-03-03 16:37:33(615)]	Invoke	BRAC_Connect(spjz.gtja.com,8906)=0
+[2015-03-03 16:37:43(694)]	Invoke	BRAC_Connect(spjz.gtja.com,8906)=0
+[2015-03-03 16:37:53(798)]	Invoke	BRAC_Connect(spjz.gtja.com,8906)=0
+[2015-03-03 16:38:04(004)]	Invoke	BRAC_Connect(spjz.gtja.com,8906)=0
+[2015-03-03 16:38:14(084)]	Invoke	BRAC_Connect(spjz.gtja.com,8906)=0
+[2015-03-03 16:38:24(242)]	Invoke	BRAC_Connect(spjz.gtja.com,8906)=0
+[2015-03-03 16:38:29(648)]	Message	OnUserLeaveRoom(userid=5939,siteindex=0)
+[2015-03-03 16:38:34(518)]	Invoke	LeaveRoom(roomid=-1)	Elapse:203 ms
+[2015-03-03 16:38:34(553)]	Invoke	LogoutServer(userid=5940)	Elapse:234 ms
+[2015-03-03 16:38:34(555)]	Invoke	UserCameraControl(userid=5940,bOpen=0)
+[2015-03-03 16:38:34(555)]	Invoke	UserCameraControl(userid=5939,bOpen=0)
+[2015-03-03 16:39:17(706)]	Invoke	BRAC_Release	Elapse:47 ms

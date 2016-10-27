@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+
+    <VerticalLayout>
+        <HorizontalLayout height="20" width="370">
+            <!--启动/登录-->
+            <Text text="启动/登录选项" font="4" testcolor="#FF333333" textpadding="15,0,8,0"></Text>
+            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <VerticalLayout height="85" inset="30,0,0,0">
+            <HorizontalLayout height="25">
+                <Button name="Base_autoStart_checkbtn" text="开机时自动启动" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,3,0,3" width="105" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+            <HorizontalLayout  visible="false" height="25">
+                <Button name="Base_autoLogin_checkbtn" text="自动登录" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,3,0,3" width="70" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+            <!--HorizontalLayout >
+                <Button name="Base_InOrEx_checkbtn" text="开机时默认显示对客户端(否则默认显示对内部端)" font="0" userdata="noselected" align="left" textpadding="15,0,0,0" padding="0,4,0,4" width="280" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout-->
+			<Control height="10" />
+            <HorizontalLayout visible="false" height="24" >
+                <Text text="登录后状态："  textpadding="0,4,0,0" width="75" ></Text>
+                <Combo name="Base_loginState_combo" height="24"  itemfont="0"  width="80" itemalign="left" itemtextpadding="2,0,0,0" normalimage="file='ServiceImages\Combo2_nor.png' corner='2,2,28,2' " hotimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'" pushedimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'" focusedimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'">
+                    <ListLabelElement userdata="1" text="在线"  selected="true" />
+                    <ListLabelElement userdata="2" text="忙碌"   />
+                    <ListLabelElement userdata="3" text="离开"  />
+                    <ListLabelElement userdata="4" text="请勿打扰"   />
+                    <ListLabelElement userdata="5" text="隐身"  />
+                    <ListLabelElement userdata="9" text="离线"  />
+
+                </Combo>
+            </HorizontalLayout>
+           <Control />
+        </VerticalLayout>
+		<Control height="10" />
+        <HorizontalLayout  visible="false" height="20" width="370">
+            <!--状态切换-->
+            <Text text="状态切换" font="4" testcolor="#FF333333" textpadding="15,0,8,0"></Text>
+            <Container  height="2"  bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <VerticalLayout  visible="false" height="70" inset="30,0,0,0" >
+            <HorizontalLayout height="24" >
+                <HorizontalLayout width="70">
+                    <Button name="Base_leaveTime_checkbtn" padding="0,2,0,0" text="如果我在" font="0" userdata="noselected" align="left" textpadding="15,4,0,0"  height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+                </HorizontalLayout>
+                <VerticalLayout width="40" >
+                    <Combo name="Base_leaveTime_combo" height="24"  itemfont="0"  itemalign="left" itemtextpadding="2,0,0,0" normalimage="file='ServiceImages\Combo2_nor.png' corner='2,2,28,2' " hotimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'" pushedimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'" focusedimage="file='ServiceImages\Combo2_over.png' corner='2,2,28,2'">
+                        <ListLabelElement text="5"  />
+                        <ListLabelElement text="10"  selected="true" />
+                        <ListLabelElement text="30"  />
+                    </Combo>
+                </VerticalLayout>
+                <HorizontalLayout>
+                    <Text text="分钟内为非活动状态，则显示为“离开”" height="19" padding="0,2,0,0" textpadding="2,4,0,0" ></Text>
+                </HorizontalLayout>
+            </HorizontalLayout>
+            <!--HorizontalLayout >
+                <Button name="Base_autoLock_checkbtn" text="非活动状态离开时，自动锁定统一通讯平台" font="0" userdata="noselected" align="left" textpadding="15,0,0,0" padding="0,4,0,4" width="300" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout-->
+            <HorizontalLayout >
+                <Button name="Base_autoBusy_checkbtn" text="运行全屏程序或演讲文稿打开时，则显示“忙碌”" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,4,0,4" width="300" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+        </VerticalLayout>
+		
+        <HorizontalLayout height="20" width="370">
+            <!--主界面-->
+            <Text text="主界面" font="4" testcolor="#FF333333" textpadding="15,0,8,0"></Text>
+            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <VerticalLayout height="65" inset="30,0,0,0">
+            <HorizontalLayout >
+                <Button name="Base_topShow_checkbtn" text="始终在最前端" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,4,0,4" width="95" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+            <HorizontalLayout >
+                <Button name="Base_autoHide_checkbtn" text="停靠在桌面边缘时自动隐藏" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,4,0,4" width="190" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+            <HorizontalLayout >
+                <Button name="Base_minNoClose_checkbtn" text="关闭主面板时隐藏到任务栏" font="0" userdata="noselected" align="left" textpadding="15,4,0,0" padding="0,4,0,4" width="190" height="19"  bkimage="file='ServiceImages\radio_noselect.png' dest='0,3,13,16'"  />
+            </HorizontalLayout>
+        </VerticalLayout>
+		<Control height="15" />
+        <HorizontalLayout height="20" width="370">
+            <!--皮肤方案-->
+            <Text text="皮肤方案" font="4" testcolor="#FF333333" textpadding="15,0,8,0"></Text>
+            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <HorizontalLayout height="70" inset="30,0,0,0">
+            <HorizontalLayout name="Base_skin_layout" userdata="0" width="330" height="60"   >
+                <TabLayout name="Base_skin_tab" >
+                    <HorizontalLayout >
+                        <HorizontalLayout width="60" height="60" inset="1,1,1,1" >
+                            <Option name="Base_skin_option0" userdata="0"  width="58" height="58" bkcolor="#FF31CCFF" bkcolor2="#FF1E9DC8" normalimage="file='ServiceImages\skin\bg_m_00.png'" hotimage="file='ServiceImages\skin\bg_m_00.png'" selectedimage="file='ServiceImages\skin\bg_m_00.png' source='4,4,54,54' dest='4,4,54,54'"  disabledimage="file='ServiceImages\skin\bg_m_00.png'" group="Base_skin_option"  />
+                        </HorizontalLayout>
+                        <HorizontalLayout width="60" height="60" inset="1,1,1,1">
+                            <Option name="Base_skin_option1" userdata="1" width="58" height="58" bkcolor="#FF31CCFF" bkcolor2="#FF1E9DC8" normalimage="file='ServiceImages\skin\bg_m_01.png'" hotimage="file='ServiceImages\skin\bg_m_01.png'" selectedimage="file='ServiceImages\skin\bg_m_01.png' source='4,4,54,54' dest='4,4,54,54'"  disabledimage="file='ServiceImages\skin\bg_m_01.png'" group="Base_skin_option"    />
+                        </HorizontalLayout>
+                        <HorizontalLayout width="60" height="60" inset="1,1,1,1">
+                            <Option name="Base_skin_option2" userdata="2"  width="58" height="58" bkcolor="#FF31CCFF" bkcolor2="#FF1E9DC8" normalimage="file='ServiceImages\skin\bg_m_02.png'" hotimage="file='ServiceImages\skin\bg_m_02.png'" selectedimage="file='ServiceImages\skin\bg_m_02.png' source='4,4,54,54' dest='4,4,54,54'"  disabledimage="file='ServiceImages\skin\bg_m_02.png'" group="Base_skin_option"    />
+                        </HorizontalLayout>
+                        <HorizontalLayout width="60" height="60" inset="1,1,1,1">
+                            <Option name="Base_skin_option3" userdata="3"  width="58" height="58" bkcolor="#FF31CCFF" bkcolor2="#FF1E9DC8" normalimage="file='ServiceImages\skin\bg_m_03.png'" hotimage="file='ServiceImages\skin\bg_m_03.png'" selectedimage="file='ServiceImages\skin\bg_m_03.png' source='4,4,54,54' dest='4,4,54,54'"  disabledimage="file='ServiceImages\skin\bg_m_02.png'" group="Base_skin_option"    />
+                        </HorizontalLayout>
+                        <HorizontalLayout width="60" height="60" inset="1,1,1,1" >
+                            <Option name="Base_skin_option4" userdata="4"  width="58" height="58" bkcolor="#FF31CCFF" bkcolor2="#FF1E9DC8" normalimage="file='ServiceImages\skin\bg_m_04.png'" hotimage="file='ServiceImages\skin\bg_m_04.png'" selectedimage="file='ServiceImages\skin\bg_m_04.png' source='4,4,54,54' dest='4,4,54,54'"  disabledimage="file='ServiceImages\skin\bg_m_04.png'" group="Base_skin_option"    />
+                        </HorizontalLayout>
+                    </HorizontalLayout>
+                    <HorizontalLayout>
+                        <HorizontalLayout width="60" height="60" inset="1,1,1,1" >
+                            <Option name="Base_skin_option0" userdata="5"  width="58" height="58" bkcolor="#FF31CCFF" bkcolor2="#FF1E9DC8" normalimage="file='ServiceImages\skin\bg_m_05.png'" hotimage="file='ServiceImages\skin\bg_m_05.png'" selectedimage="file='ServiceImages\skin\bg_m_05.png' source='4,4,54,54' dest='4,4,54,54'"  disabledimage="file='ServiceImages\skin\bg_m_05.png'" group="Base_skin_option"  />
+                        </HorizontalLayout>
+                        <HorizontalLayout width="60" height="60" inset="1,1,1,1">
+                            <Option name="Base_skin_option1" userdata="6" width="58" height="58" bkcolor="#FF31CCFF" bkcolor2="#FF1E9DC8" normalimage="file='ServiceImages\skin\bg_m_06.png'" hotimage="file='ServiceImages\skin\bg_m_06.png'" selectedimage="file='ServiceImages\skin\bg_m_06.png' source='4,4,54,54' dest='4,4,54,54'"  disabledimage="file='ServiceImages\skin\bg_m_06.png'" group="Base_skin_option"    />
+                        </HorizontalLayout>
+                        <HorizontalLayout width="60" height="60" inset="1,1,1,1">
+                            <Option name="Base_skin_option2" userdata="7"  width="58" height="58" bkcolor="#FF31CCFF" bkcolor2="#FF1E9DC8" normalimage="file='ServiceImages\skin\bg_m_07.png'" hotimage="file='ServiceImages\skin\bg_m_07.png'" selectedimage="file='ServiceImages\skin\bg_m_07.png' source='4,4,54,54' dest='4,4,54,54'"  disabledimage="file='ServiceImages\skin\bg_m_07.png'" group="Base_skin_option"    />
+                        </HorizontalLayout>
+                        <HorizontalLayout width="60" height="60" inset="1,1,1,1">
+                            <Option name="Base_skin_option3" userdata="8"  width="58" height="58" bkcolor="#FF31CCFF" bkcolor2="#FF1E9DC8" normalimage="file='ServiceImages\skin\bg_m_08.png'" hotimage="file='ServiceImages\skin\bg_m_08.png'" selectedimage="file='ServiceImages\skin\bg_m_08.png' source='4,4,54,54' dest='4,4,54,54'"  disabledimage="file='ServiceImages\skin\bg_m_08.png'" group="Base_skin_option"    />
+                        </HorizontalLayout>
+                        <HorizontalLayout width="60" height="60" inset="1,1,1,1" >
+                            <Option name="Base_skin_option4" userdata="9"  width="58" height="58" bkcolor="#FF31CCFF" bkcolor2="#FF1E9DC8" normalimage="file='ServiceImages\skin\bg_m_09.png'" hotimage="file='ServiceImages\skin\bg_m_09.png'" selectedimage="file='ServiceImages\skin\bg_m_09.png' source='4,4,54,54' dest='4,4,54,54'"  disabledimage="file='ServiceImages\skin\bg_m_09.png'" group="Base_skin_option"    />
+                        </HorizontalLayout>
+                        
+                    </HorizontalLayout>
+                </TabLayout>
+                <HorizontalLayout width="25" height="60" >
+                    <Button name="Base_skinNext_btn" userdata="5" width="25" height="60"  normalimage="file='ServiceImages\btn_3_nor.png'" hotimage="file='ServiceImages\btn_3_over.png'" pushedimage="file='ServiceImages\btn_3_over.png' "  disabledimage="file='ServiceImages\btn_3_nor.png'"   />
+                </HorizontalLayout>
+            </HorizontalLayout>
+
+        </HorizontalLayout>
+
+        <HorizontalLayout />
+		
+    </VerticalLayout>
+</Window>

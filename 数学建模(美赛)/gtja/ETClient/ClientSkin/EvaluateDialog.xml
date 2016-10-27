@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="260,200" mininfo="260,200" maxinfo="260,200"  sizebox="4,4,4,4" caption="0,0,0,30"  roundcorner="6,6,6,6" showdirty="false">
+    <!--<Window size="260,200" sizebox="0,0,0,0" roundcorner="5,5" caption="0,0,0,30" mininfo="260,200" showdirty="false" >-->
+    <Font name="宋体" size="14" bold="true" />
+    <Font name="宋体" size="11" />
+    <Font name="宋体" size="12" />
+    <Font name="微软雅黑" size="11" />
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='ServiceImages\scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='ServiceImages\scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='ServiceImages\scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='ServiceImages\scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='ServiceImages\scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='ServiceImages\scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='ServiceImages\scrollbar.png' source='0,16,16,32'&quot;" />
+
+    <!--主界面-->
+    <VerticalLayout  name="bg" bkimage="file='ServiceImages\bg0.png' corner='600,200,1,1'" hole="true"  inset="0,0,0,0"  >
+        <!--bordersize="0" bordercolor="#FF15A4D0" borderround="5,5" inset="2,2,2,2" bkcolor="#FFFFFFFF"-->
+
+        <VerticalLayout bkimage="file='ServiceImages\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+
+
+            <VerticalLayout bkimage="file='ServiceImages\jb.png' corner='2,30,2,2'">
+
+                <!--标题栏-->
+                <HorizontalLayout  height ="30" >
+                    <!--bkcolor="#FFDAEFFA" bkcolor2="#FFFFFFFF"-->
+                    <HorizontalLayout>
+                        <Container pos="4,3,30,24" float="true"  bkimage="file='ServiceImages\UcMsgResource\logo.png' source='0,0,26,21' dest='0,0,26,21'" />
+                        <Text text="评价" pos="33,5,200,25" float="true" textcolor="#FF004E96" font="0"/>
+                    </HorizontalLayout>
+                    <HorizontalLayout width="50">
+                        <Button name="closebtn" tooltip="关闭"  width="50" height="19"   normalimage="file='ServiceImages\btn_close_off.png'" hotimage="ServiceImages\btn_close_on.png" pushedimage="ServiceImages\btn_close_on.png"  />
+                        <!--<Button float="true" pos="0,4,20,24" name="closebtn" maxwidth="20" maxheight="20" normalimage="file='ServiceImages\UcMsgResource\close.png' source='0,0,20,20'" hotimage="file='ServiceImages\UcMsgResource\close2.png' source='0,0,20,20'" pushedimage="file='ServiceImages\UcMsgResource\close2.png' source='0,0,20,20'"/>-->
+                    </HorizontalLayout>
+                </HorizontalLayout>
+
+                <!--正文部分-->
+                <VerticalLayout height="0" inset="7,7,7,7">
+
+                    <HorizontalLayout height="42">                       
+                        <Text name="notice_text" text="{b }多谢您对该次服务评价：{/ b}" textcolor="0xFF0080FF" showhtml="true"/>
+                        <HorizontalLayout />
+                    </HorizontalLayout>
+                    
+                    <!--名字部分-->
+                    <VerticalLayout height="66" inset="10,0,0,0">
+                        <!--<Edit name="changeNick_realName" text="" readonly="true" mouse="false" bkcolor="0xFFDDDDDD"/>
+                        <Text text="-" width="6" textpadding="2,4,2,0" />
+                        <Edit name="changeNick_name" text=""  />-->
+                        <!--float="true" pos="82,8,0,0"--><Option name="op_hig" text="{x 15}满意" userdata="5"  selected="true"  width="80" height="16"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="op_level"  textcolor="#FF1B4876" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13' dest='0,0,13,13'" />
+                        <HorizontalLayout height="4" />
+                        <!--float="true" pos="82,8,0,0"--><Option name="op_nor" text="{x 15}一般"  userdata="0"   width="80" height="16"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="op_level"  textcolor="#FF1B4876" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13' dest='0,0,13,13'" />
+                        <HorizontalLayout height="4" />
+                        <!--float="true" pos="82,8,0,0"--><Option name="op_low" text="{x 15}不满意" userdata="-5"   width="80" height="16"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="op_level"  textcolor="#FF1B4876" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13' dest='0,0,13,13'" />
+                    </VerticalLayout>
+
+                    <HorizontalLayout height="7" />
+                    
+                    <!--按钮部分-->
+                    <HorizontalLayout height="36">
+                        <HorizontalLayout />
+                        <Button name="evaluate_ok" padding="0,4,0,0" shortcut="S"  tooltip="确认" text="确认" width="65" height="26"  bkimage="file='images\loginBtn.png'" hotimage="file='images\loginBtn_over.png' corner='2,3,2,2'" pushedimage="file='images\loginBtn_push.png' corner='2,5,2,2'"  />
+                        <HorizontalLayout />
+                    </HorizontalLayout>
+
+                </VerticalLayout>
+
+            </VerticalLayout>
+
+            <HorizontalLayout height="1" />
+        </VerticalLayout>
+    </VerticalLayout>
+
+</Window>

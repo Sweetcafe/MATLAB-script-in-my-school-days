@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="350,220" mininfo="350,220" sizebox="0,0,0,0" caption="0,0,0,40"  roundcorner="4,4,4,4">
+	   <Font name="微软雅黑" size="12" bold="false" default="true" />
+	   <Font name="微软雅黑" size="12" bold="true"/>
+     <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />  
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+        	
+							
+              <VerticalLayout bkimage="file='ServiceImages\jb.png' corner='2,30,2,2'"  >
+			                            <HorizontalLayout height="30"> <!--标题栏-->
+												        <VerticalLayout width="40" inset="2,2,0,0">
+												          <Control name="logo" float="true" pos="9,3,0,0" width="19" height="21" bkimage="images\logo.png" />
+											          </VerticalLayout>
+											          <VerticalLayout width="70" inset="2,2,0,0">
+											          	<Label name="title" text="添加应用"  height="23" align="left"  />
+								            		</VerticalLayout>
+												        <VerticalLayout />
+												        <VerticalLayout width="50">
+												           <Button name="closebtn" float="true" tooltip="关闭"width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+											          </VerticalLayout>
+										 </HorizontalLayout>
+
+
+										 <VerticalLayout  height="125" inset="30,0,0,0">
+												<HorizontalLayout height="10"/>
+												<Label width="70" text="名称" height="20" width="60"  align="left"/>
+												
+												<Edit name="NameEdit" height="30" width="220"  maxchar="10"   autovscroll="true" bordersize="1" bordercolor="#FFA0A0A0" />
+												<HorizontalLayout height="12"/>
+												<Label visible="false" text="网址或文件路径" height="20" width="100"  align="left" />
+
+												<HorizontalLayout height="20">
+													 <Option name="NetUrlOption" selected="true"  height="20" width="45" group="mygroup" text="网址"   align="right"           
+																	normalimage="file='images\radio_unchecked.png'  dest='0,3,13,16'" 
+																	selectedimage="file='images\radio_checked.png' dest='0,3,13,16'" />
+
+													 <Control width="15" />
+								
+													<Option name="FilePathOption" height="20" width="66"  group="mygroup" text="文件路径"   align="right" 
+																	normalimage="file='images\radio_unchecked.png' dest='0,3,13,16'" 
+																	selectedimage="file='images\radio_checked.png' dest='0,3,13,16'"/>
+
+												</HorizontalLayout>
+
+												<HorizontalLayout height="3"/>
+																
+												<HorizontalLayout height="30" >
+												    <Edit  name="UrlEdit"  height="30" bkcolor="#FFFFFFFF" width="220"  autovscroll="true" bordersize="1" bordercolor="#FFA0A0A0"/>
+													<Control width="15" />
+													<Button name="SelectFileBtn" text="选择文件"  visible="false" padding="0,3,0,0"    width="60" height="24" align="center" bkimage="file='images\loginBtn.png' corner='5,5,5,5'" hotimage="file='images\loginBtn_over.png' corner='2,3,2,2'" pushedimage="file='images\loginBtn_push.png' corner='2,5,2,2'"  />
+											      
+												</HorizontalLayout>
+										 </VerticalLayout>
+										
+										<HorizontalLayout height="23" />
+
+										<HorizontalLayout height="24" >
+											 <HorizontalLayout  />
+											  <Button name="BtnCancel" text="取消"   width="60" height="24" align="center"  bkimage="file='images\loginBtn.png' corner='5,5,5,5'" hotimage="file='images\loginBtn_over.png' corner='2,3,2,2'" pushedimage="file='images\loginBtn_push.png' corner='2,5,2,2'"  />
+											  <HorizontalLayout width="40" />
+											  <Button name="BtnOK" text="确认"  width="60" height="24" align="center"  bkimage="file='images\loginBtn.png' corner='5,5,5,5'" hotimage="file='images\loginBtn_over.png' corner='2,3,2,2'" pushedimage="file='images\loginBtn_push.png' corner='2,5,2,2'"  />
+											 <HorizontalLayout  />
+										</HorizontalLayout>
+
+										<HorizontalLayout />
+										
+							</VerticalLayout>
+							 
+							<HorizontalLayout height="1" /> 
+    		</VerticalLayout>
+  	</HorizontalLayout>
+</Window>
+

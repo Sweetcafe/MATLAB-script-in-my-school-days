@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="310,150" mininfo="310,150" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+	  <Font name="微软雅黑" size="15" bold="false" default="true" />
+	  <Font name="微软雅黑" size="15" bold="false"/>
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='ServiceImages\scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='ServiceImages\scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='ServiceImages\scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='ServiceImages\scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='ServiceImages\scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='ServiceImages\scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='ServiceImages\scrollbar.png' source='0,16,16,32'&quot;" />  
+    <HorizontalLayout name="bg" bkimage="file='ServiceImages\bg1.png' corner='600,200,1,1'" hole="true">
+    <!--HorizontalLayout-->
+      <VerticalLayout bkimage="file='ServiceImages\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+   		<!--VerticalLayout bkcolor="#ffdacfc1" bkcolor2="#fff9f1db" inset="1,0,1,0" -->
+		  	<HorizontalLayout height="30">
+					<VerticalLayout width="10" />
+					<Text name="title" text="重新连接" font="1" textpadding="37,3,37,3" bkimage="file='ServiceImages\title_bk.png' corner='31,5,31,5'"  textcolor="#FFFFFFFF"  />
+					<VerticalLayout />
+					<HorizontalLayout width="50">
+						<Button name="closebtn" tooltip="关闭"  width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+					</HorizontalLayout>
+				</HorizontalLayout>
+				<!--HorizontalLayout-->
+				<HorizontalLayout bkimage="file='Skin\jb.png' corner='2,30,2,2'">
+<!-------------------------------------------------------以下编写本页面代码---------------------------->
+					<VerticalLayout inset="20,10,20,10">
+						<HorizontalLayout name="normaloffline" >
+							<Label width="150" text="您已经掉线,程序将在" />
+							<Label width="25" name="labtimes" text="60" textcolor="#ffff0000" />
+							<Label width="100" text="秒后自动重连" />
+						</HorizontalLayout>
+						<HorizontalLayout visible="false" name="kickoffline" >
+							<Label text="您的账号在另一地点登陆,您被迫下线。" />
+						</HorizontalLayout>
+						<HorizontalLayout height="30">
+							<Button name="relogin" width="90"  textcolor="#FFFFFFFF" text="立即重连" normalimage="ServiceImages\bg_btn.png" hotimage="ServiceImages\bg_btn-on.png" pushedimage="ServiceImages\bg_btn-on.png" />
+							<Control />
+							<Button name="cancel" width="90"  textcolor="#FFFFFFFF" text="取消" normalimage="ServiceImages\bg_btn.png" hotimage="ServiceImages\bg_btn-on.png" pushedimage="ServiceImages\bg_btn-on.png" />
+						</HorizontalLayout>	
+					</VerticalLayout>
+								
+<!-------------------------------------------------------以上编写本页面代码---------------------------->
+							</HorizontalLayout>  
+		    	  <HorizontalLayout height="1" /> 
+    		</VerticalLayout>
+  	</HorizontalLayout>
+</Window>

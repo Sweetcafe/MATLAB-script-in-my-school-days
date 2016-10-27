@@ -1,0 +1,21 @@
+%%体表面积（m2）= 0.0061×身长（cm）＋0.0128×体重（kg）－0.1529
+W=70;%%体重
+H=180;%%身高
+Vman=W;
+Sman=0.0061*H+0.0128*W-0.1529;
+Qman=1.1434*W;
+Rhead=H/16;
+Vhead=pi*R^2;
+Shead=2*pi*R;
+Srhead=2*pi*R/2
+
+%%%%%%%%%%躺姿
+qugan=13;
+shangzhi=9*2/5;
+xiazhi=(9*5+1)/4;
+tunbu=5;
+Spercent=(qugan+shangzhi+xiazhi+tunbu)/100;
+
+Sman_tub=Sman*Spercent;
+Sman_air=Sman*0.09;
+Sman_water=Sman-Sman_tub-Sman_air;

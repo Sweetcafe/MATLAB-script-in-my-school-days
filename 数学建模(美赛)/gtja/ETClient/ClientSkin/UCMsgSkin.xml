@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="290,210" mininfo="290,210"  sizebox="4,4,4,4" caption="0,0,0,30"  roundcorner="6,6,6,6" showdirty="false">
+    <!--<Window size="290,210" sizebox="0,0,0,0" roundcorner="5,5" caption="0,0,0,30" mininfo="290,210" showdirty="false" >-->
+    <Font name="宋体" size="14" bold="true" />
+    <Font name="宋体" size="11" />
+    <Font name="宋体" size="12" />
+    <Font name="微软雅黑" size="11" />
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+     
+    <!--主界面-->
+    <VerticalLayout  name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true"  inset="1,0,1,0"  >
+        <!--bordersize="0" bordercolor="#FF15A4D0" borderround="5,5" inset="2,2,2,2" bkcolor="#FFFFFFFF"-->
+
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+
+
+            <VerticalLayout bkimage="file='ServiceImages\jb.png' corner='2,30,2,2'">
+
+                <!--标题栏-->
+                <HorizontalLayout  height ="30" >
+                    <!--bkcolor="#FFDAEFFA" bkcolor2="#FFFFFFFF"-->
+                    <HorizontalLayout>
+                        <Container pos="4,3,30,24" float="true"  bkimage="file='ServiceImages\UcMsgResource\logo.png' source='0,0,26,21' dest='0,0,26,21'" />
+                        <Text name="msg_type" text="通知公告" pos="33,5,200,25" float="true" textcolor="#FF004E96" font="0"/>
+                    </HorizontalLayout>
+                    <HorizontalLayout width="50">
+                        <Button name="closebtn" tooltip="关闭"  width="50" height="19"   normalimage="file='ServiceImages\btn_close_off.png'" hotimage="ServiceImages\btn_close_on.png" pushedimage="ServiceImages\btn_close_on.png"  />
+                        <!--<Button float="true" pos="0,4,20,24" name="closebtn" maxwidth="20" maxheight="20" normalimage="file='ServiceImages\UcMsgResource\close.png' source='0,0,20,20'" hotimage="file='ServiceImages\UcMsgResource\close2.png' source='0,0,20,20'" pushedimage="file='ServiceImages\UcMsgResource\close2.png' source='0,0,20,20'"/>-->
+                    </HorizontalLayout>
+                </HorizontalLayout>
+
+                <!--正文部分-->
+                <VerticalLayout height="180" >
+                    <!--bkcolor="#FFFFFFFF" bkcolor2="#FFFFFFFF" bkcolor3="#F5DAEFFA"-->
+
+                    <!--消息标题-->
+                    <HorizontalLayout height="31">
+                        <HorizontalLayout width="37">
+                            <Container pos="15,15,36,31" float="true"  bkimage="file='ServiceImages\UcMsgResource\mail.png' source='0,0,21,16'" />
+                        </HorizontalLayout>
+                        <HorizontalLayout  inset="5,15,17,0">
+                            <Text name="msg_title" text="{a}{f 0}好消息，交易大厅有新版本啦{/f}{/a}" showhtml="true" />
+                        </HorizontalLayout>
+                    </HorizontalLayout>
+
+                    <!--消息内容-->
+                    <HorizontalLayout inset="15,10,17,2">
+                        <Text name="msg_content" text="{a}{f 2}{c #666666}    交易大厅新版本已经发布，新版本加入了为国泰客户服务的ET助手，用户可以随时通过ET来得到我们新版本加入了为国泰客户服务泰泰方法将飞拉萨的夹缝拉均等分裂撒的夹缝了啊立刻交电费{/nc}{/f}{/a}" showhtml="true"/>
+                    </HorizontalLayout>
+
+                    <!--消息时间以及翻页-->
+                    <HorizontalLayout height="25" inset="15,4,15,2">
+                        <HorizontalLayout>
+                            <Text name="msg_time" text=" " textcolor="#FF999999" font="1"/>
+                        </HorizontalLayout>
+                        <HorizontalLayout width="12">
+                            <Button float="true" pos="0,0,12,12" name="leftarr" maxwidth="12" maxheight="12" normalimage="file='ServiceImages\UcMsgResource\leftarr.png' source='0,0,12,12'" hotimage="file='ServiceImages\UcMsgResource\leftarr2.png' source='0,0,12,12'" pushedimage="file='ServiceImages\UcMsgResource\leftarr2.png' source='0,0,12,12'" disabledimage="file='ServiceImages\UcMsgResource\leftarr2_disable.png' source='0,0,12,12'"/>
+                        </HorizontalLayout>
+                        <HorizontalLayout width="53" inset="5,0,5,7">
+                            <HorizontalLayout></HorizontalLayout>
+                            <Text name="msg_Index" text="{f 3}1/12{/f}" showhtml="true" align="center"/>
+                            <!--<Text text="" showhtml="true" align="center" font="3"/>-->
+                            <!--<Text text="" showhtml="true" align="center"/>-->
+                            <HorizontalLayout></HorizontalLayout>
+                        </HorizontalLayout>
+                        <HorizontalLayout width="12" >
+                            <Button float="true" pos="0,0,12,12" name="rightarr" maxwidth="12" maxheight="12" normalimage="file='ServiceImages\UcMsgResource\rightarr.png' source='0,0,12,12'" hotimage="file='ServiceImages\UcMsgResource\rightarr2.png' source='0,0,12,12'" pushedimage="file='ServiceImages\UcMsgResource\rightarr2.png' source='0,0,12,12'" disabledimage="file='ServiceImages\UcMsgResource\rightarr2_disable.png' source='0,0,12,12'"/>
+                        </HorizontalLayout>
+                    </HorizontalLayout>
+
+                    <!--稍后提醒，忽略本条，忽略全部-->
+                    <HorizontalLayout height="30" inset="15,0,15,0">
+                        <HorizontalLayout>
+                            <Text name="waitmoment" text="{i dotarr.png} {a}{f 2}稍后提醒{/f}{/a}" showhtml="true"/>
+                        </HorizontalLayout>
+                        <HorizontalLayout>
+                            <Text name="ignore_theMsg" text="{i dotarr.png} {a}{f 2}忽略本消息{/f}{/a}" showhtml="true"/>
+                        </HorizontalLayout>
+                        <HorizontalLayout>
+                            <Text name="ignore_allMsg" text="{i dotarr.png} {a}{f 2}忽略全部{/f}{/a}" showhtml="true"/>
+                        </HorizontalLayout>
+                    </HorizontalLayout>
+
+                </VerticalLayout>
+
+            </VerticalLayout>
+
+            <HorizontalLayout height="1" />
+        </VerticalLayout>
+    </VerticalLayout>
+
+</Window>

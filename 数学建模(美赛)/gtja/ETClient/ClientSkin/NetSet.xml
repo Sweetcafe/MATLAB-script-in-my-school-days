@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="412,340" mininfo="412,295" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+    <Font name="微软雅黑" size="12" bold="false" default="true" />
+    <Font name="微软雅黑" size="12" bold="true"/>
+    <Font name="微软雅黑" size="15" />
+    <Font name="微软雅黑" size="13" />
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+            <!--<VerticalLayout  name="bg" bordersize="0"  width="482" height="409" bkimage="images\noticeMsg_bg.png">-->
+            <HorizontalLayout height="30">
+                <VerticalLayout width="40" inset="2,2,0,0">
+                    <Control name="logo" float="true" pos="9,3,0,0" width="19" height="21" bkimage="images\logo.png" />
+                </VerticalLayout>
+                <VerticalLayout width="200" inset="2,2,0,0">
+                    <Label name="title" text="登录设置"  width="200" height="23"  textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" />
+                </VerticalLayout>
+                <VerticalLayout />
+                <VerticalLayout width="104">
+                    <Button name="minbtn" float="true" tooltip="最小化" pos="0,0,28,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_mini_normal.png'" hotimage="Skin\btn_mini_highlight.png" pushedimage="Skin\btn_mini_down.png"  />
+                    <Button name="maxbtn" float="true" tooltip="最大化" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_max_normal.png'" hotimage="Skin\btn_max_highlight.png" pushedimage="Skin\btn_max_down.png"  />
+                    <Button name="restorebtn" visible="false" float="true" tooltip="还原" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_restore_normal.png'" hotimage="Skin\btn_restore_highlight.png" pushedimage="Skin\btn_restore_down.png"  />
+                    <Button name="closebtn" float="true" tooltip="关闭" pos="56,0,95,19" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+                </VerticalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout bkimage="file='Skin\jb.png' corner='2,30,2,2'">
+                <VerticalLayout>
+
+                    <VerticalLayout >
+                        <HorizontalLayout height="22"/>
+
+                        <HorizontalLayout height="16">
+                            <!--自动回复-->
+                            <Text text="网络设置" font="3" textcolor="#FF333333" textpadding="11,0,8,0"></Text>
+                            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,8,0,6" />
+                        </HorizontalLayout>
+
+                        <HorizontalLayout height="5"/>
+
+                        <HorizontalLayout height="53" >
+
+                            <HorizontalLayout width="11" />
+
+                            <VerticalLayout  width="137">
+                                <Label text="类型:"   height="25"  font="3" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                                <Combo name="proxyType"  height="28"  tooltip="请点击这里选择代理类型"
+                                   normalimage="file='ServiceImages\Combo2_nor.png' corner='2,2,28,2'"  hotimage="file='ServiceImages\combo2_over.png' corner='2,2,28,2'"
+                                   pushedimage="file='ServiceImages\combo2_over.png' corner='2,2,28,2'" focusedimage="file='ServiceImages\combo2_over.png'  corner='2,2,28,2'" textpadding="5,1,1,1" >
+                                    <ListLabelElement userdata="0" text="不使用代理" selected="true"  />
+                                    <ListLabelElement  userdata="9"  text="浏览器默认代理" />
+                                    <ListLabelElement  userdata="1"  text="http代理" />
+                                    <ListLabelElement  userdata="2"  text="socket4代理" />
+                                    <ListLabelElement  userdata="3"  text="socket5代理" />
+
+                                </Combo>
+                            </VerticalLayout >
+                            <HorizontalLayout width="10" />
+                            <VerticalLayout width="137">
+                                <Label text="地址:"  height="25"  font="3" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                                <Edit name="address"  height="28"  bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                                     bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+
+                            </VerticalLayout >
+                            <HorizontalLayout width="10" />
+                            <VerticalLayout width="97">
+                                <Label text="端口:"  height="25" font="3" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                                <Edit name="port"  height="28"  bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                                     bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                            </VerticalLayout >
+
+                        </HorizontalLayout>
+
+                        <HorizontalLayout height="19" />
+
+
+                        <HorizontalLayout height="53">
+                            <HorizontalLayout width="11" />
+
+                            <VerticalLayout  width="137">
+                                <Label text="用户名:"  height="25"  font="3" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                                <Edit name="acount" height="28" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                                    bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                            </VerticalLayout >
+                            <HorizontalLayout width="10" />
+                            <VerticalLayout width="137">
+                                <Label text="密码:" height="25"  font="3" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                                <Edit name="pwd" height="28"  password="true" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                                     bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                            </VerticalLayout >
+                            <HorizontalLayout width="10" />
+                            <VerticalLayout width="97">
+                                <Label text="域:"  height="25" font="3" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                                <Edit name="domain" height="28" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                                 bkcolor="#FFFFFFFF"  textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                            </VerticalLayout >
+                        </HorizontalLayout  >
+
+                        <HorizontalLayout height="25" />
+
+                        <HorizontalLayout height="16">
+                            <!--自动回复-->
+                            <Text text="服务器设置" font="3" textcolor="#FF333333" textpadding="11,0,8,0"></Text>
+                            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,8,0,6" />
+                        </HorizontalLayout>
+
+                        <HorizontalLayout height="10" />
+
+
+                        <HorizontalLayout height="28" >
+                            <Control width="11" />
+                            <Label text="服务器:"  height="25" width="45"  font="3" textcolor="#FF333333" disabledtextcolor="#FFA7A6AA" />
+                            <Control width="5" />
+                            <Combo name="ServerType"  height="28" width="140" tooltip="请点击这里选择服务器"
+                                         normalimage="file='ServiceImages\Combo2_nor.png' corner='2,2,28,2'"  hotimage="file='ServiceImages\combo2_over.png' corner='2,2,28,2'"
+                                         pushedimage="file='ServiceImages\combo2_over.png' corner='2,2,28,2'" focusedimage="file='ServiceImages\combo2_over.png'  corner='2,2,28,2'" textpadding="5,1,1,1" >
+
+
+                            </Combo>
+                            <Control width="5" />
+                            <Button name="btnAdd" text="+" tooltip="新增服务器" font="3" textcolor="#FFFFFFFF" width="20"  align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'" pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'" />
+                            <Control width="5" />
+                            <Button name="btnDel" text="-" tooltip="删除服务器" font="3" textcolor="#FFFFFFFF" width="20"  align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'" pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'" />
+
+                        </HorizontalLayout>
+
+
+                        <HorizontalLayout />
+
+                        <HorizontalLayout height="28">
+                            <HorizontalLayout />
+
+                            <Button name="btnOk" text="确定" font="3" textcolor="#FFFFFFFF" width="66"  align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'" pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'" />
+                            <HorizontalLayout width="10" />
+                            <Button name="btnCancel" text="取消"  font="3" textcolor="#FFFFFFFF" width="66"  align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'" pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'" />
+
+                            <HorizontalLayout width="12" />
+                        </HorizontalLayout  >
+
+                    </VerticalLayout>
+                    <HorizontalLayout height="12" />
+                </VerticalLayout>
+                <!--HorizontalLayout width="12" /-->
+            </HorizontalLayout>
+            <!--</VerticalLayout>-->
+            <HorizontalLayout height="1" />
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

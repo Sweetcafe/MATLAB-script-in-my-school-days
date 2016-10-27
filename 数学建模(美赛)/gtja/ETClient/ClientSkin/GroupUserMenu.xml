@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true" size="120,98"  roundcorner="4,4,4,4">
+ <Font name="宋体" size="13" bold="false"/>
+ <Font name="宋体" size="12"/>
+<VerticalLayout bkimage="file='ServiceImages\bg_menu.png' corner='40,9,9,9'">
+	 
+	 <VerticalLayout inset="5,7,8,7" > 
+	 	   <VerticalLayout height="0" visible="false">
+	 	   	   <Option name="AddGroupUser"  textcolor="#FF000000" height="28"
+		           			text="{x 35}邀请" align="left"  showhtml="true"
+		           			textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='40,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='40,5,5,5'"/> 
+			 </VerticalLayout>
+			 <VerticalLayout height="28">   
+					 <Option name="DeleteGroupUser" height="28" textcolor="#FF000000"
+				           			text="{x 35}请出" align="left"  showhtml="true"
+				           			disabledtextcolor="#FFA7A6AA" textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='40,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='40,5,5,5'"/> 
+			 </VerticalLayout>
+			 <VerticalLayout name="LayoutSet" height="28">   
+					 <Option name="SetManager" height="28" textcolor="#FF000000" 
+				           			text="{x 35}设为管理员" align="left"  showhtml="true"
+				           			disabledtextcolor="#FFA7A6AA" textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='40,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='40,5,5,5'"/> 
+			 </VerticalLayout>
+			 <VerticalLayout name="LayoutRemove" height="28">   
+					 <Option name="RemoveManager" height="28" textcolor="#FF000000" 
+				           			text="{x 35}取消管理员" align="left"  showhtml="true"
+				           			disabledtextcolor="#FFA7A6AA" textpadding="0,7,0,0" 
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='40,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='40,5,5,5'"/>
+			 </VerticalLayout>
+   </VerticalLayout> 
+   
+</VerticalLayout>
+</Window>

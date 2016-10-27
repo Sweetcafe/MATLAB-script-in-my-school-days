@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="585,508" mininfo="585,508" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+	  <Font name="微软雅黑" size="12" bold="false" default="true" />
+	  <Font name="微软雅黑" size="12" bold="true"/>
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+		   
+		       
+		          
+							 <VerticalLayout bkimage="file='ServiceImages\jb.png' corner='2,30,2,2'"> 
+							 	  <HorizontalLayout height="31">
+								          <VerticalLayout width="15" />
+								          
+								         <Text name="title" text="test" font="22" showhtml="true"  />
+					            		
+										     <VerticalLayout />
+								        <HorizontalLayout width="107">
+								          <Button name="minbtn"  tooltip="最小化"  width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_mini_normal.png'" hotimage="Skin\btn_mini_highlight.png" pushedimage="Skin\btn_mini_down.png"  />
+
+								          <Button name="maxbtn" tooltip="最大化" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_max_normal.png'" hotimage="Skin\btn_max_highlight.png" pushedimage="Skin\btn_max_down.png"  />
+                          <Button name="restorebtn" visible="false" tooltip="还原"  width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_restore_normal.png'" hotimage="Skin\btn_restore_highlight.png" pushedimage="Skin\btn_restore_down.png"  />
+                          <Button name="closebtn" tooltip="关闭"  width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+                       </HorizontalLayout>
+									</HorizontalLayout>
+		               <HorizontalLayout>
+		               	 <HorizontalLayout width="12" /> 
+										 <VerticalLayout  visible="true">
+											<WebBrowser name="HtmlBrowser"  autonavi="true"/>
+										 </VerticalLayout>
+										<HorizontalLayout width="12" />  
+		               </HorizontalLayout>
+		               <VerticalLayout height="15" />
+		           </VerticalLayout>       
+				       <HorizontalLayout height="1" />   
+		                    
+		    <!--</VerticalLayout>-->
+        </VerticalLayout>
+  	</HorizontalLayout>
+</Window>

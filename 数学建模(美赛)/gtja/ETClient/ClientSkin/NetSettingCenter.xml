@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+
+    <VerticalLayout>
+        <HorizontalLayout height="20" width="370">
+            <!--网络设置-->
+            <Text text="网络设置" font="0" textpadding="15,5,15,0"></Text>
+            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <VerticalLayout height="160" inset="30,10,0,5">
+            <HorizontalLayout height="45">
+                <VerticalLayout>
+                    <Label text="类型："   height="22"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                    <Combo name="net_net_proxyType"  height="22"  tooltip="请点击这里选择代理类型"
+                        normalimage="file='ServiceImages\Combo2_nor.png' corner='2,2,28,2'"
+                               hotimage="file='ServiceImages\combo2_over.png' corner='2,2,28,2'"
+        pushedimage="file='ServiceImages\combo2_over.png' corner='2,2,28,2'"
+         focusedimage="file='ServiceImages\combo2_over.png'  corner='2,2,28,2'" textpadding="5,1,1,1" >
+                        <ListLabelElement  userdata="0" text="不使用代理" selected="true"  />
+                        <ListLabelElement  userdata="9"  text="浏览器默认代理" />
+                        <ListLabelElement  userdata="1"  text="http代理" />
+                        <ListLabelElement  userdata="2"  text="socket4代理" />
+                        <ListLabelElement  userdata="3"  text="socket5代理" />
+                    </Combo>
+                </VerticalLayout >
+                <HorizontalLayout width="10" />
+                <VerticalLayout >
+                    <Label text="地址：" height="22"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="net_net_address"  height="22"  bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                         bkcolor="#FFFFFFFF" bordercolor="#00A0A0A4" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                </VerticalLayout >
+                <HorizontalLayout width="10" />
+                <VerticalLayout width="87">
+                    <Label text="端口：" height="22"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="net_net_port"  height="22" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                         bkcolor="#FFFFFFFF" bordercolor="#00A0A0A4" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                </VerticalLayout >
+            </HorizontalLayout>
+            <HorizontalLayout height="15">
+            </HorizontalLayout>
+            <HorizontalLayout height="45">
+                <VerticalLayout>
+                    <Label text="用户名："  height="22"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="net_net_acount" height="22" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                        bkcolor="#FFFFFFFF" bordercolor="#00A0A0A4" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                </VerticalLayout >
+                <HorizontalLayout width="10" />
+                <VerticalLayout >
+                    <Label text="密码：" height="22"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="net_net_pwd" height="22"  password="true" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                         bkcolor="#FFFFFFFF" bordercolor="#00A0A0A4" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                </VerticalLayout >
+                <HorizontalLayout width="10" />
+                <VerticalLayout width="87" >
+                    <Label text="域："  height="22"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                    <Edit name="net_domain" height="22" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'"
+                     bkcolor="#FFFFFFFF" bordercolor="#00A0A0A4" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFECECEC" />
+                </VerticalLayout >
+            </HorizontalLayout>
+        </VerticalLayout>
+
+
+        <!--<HorizontalLayout height="20" width="370">
+            <Text text="登录设置" font="0" textpadding="15,5,15,0"></Text>
+            <Container  height="2"   bkimage="file='ServiceImages\line_one.png'" padding="0,10,0,8" />
+        </HorizontalLayout>
+        <HorizontalLayout height="70" inset="30,10,0,0">
+            <VerticalLayout>
+                <Label text="类型："   height="22"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Combo name="net_login_proxyType"  height="22"  tooltip="请点击这里选择代理类型"
+                    normalimage="file='ServiceImages\Combo_nor.bmp' corner='2,2,121,2'" hotimage="file='ServiceImages\Combo_over.bmp' corner='2,2,121,2'"
+                    pushedimage="file='ServiceImages\Combo_over.bmp' corner='2,2,121,2'" focusedimage="file='ServiceImages\Combo_over.bmp'  corner='2,2,121,2'" textpadding="5,1,1,1" >
+                    <ListLabelElement  userdata="0" text="不使用代理" selected="true"  />
+                    <ListLabelElement  userdata="9"  text="浏览器默认代理" />
+                    <ListLabelElement  userdata="1"  text="http代理" />
+                    <ListLabelElement  userdata="2"  text="socket4代理" />
+                    <ListLabelElement  userdata="3"  text="socket5代理" />
+                </Combo>
+            </VerticalLayout >
+            <HorizontalLayout width="10" />
+            <VerticalLayout >
+                <Label text="地址：" height="22"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Edit name="net_login_address"  height="22"
+                     bkcolor="#FFFFFFFF" bordercolor="#00A0A0A4" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            </VerticalLayout >
+            <HorizontalLayout width="10" />
+            <VerticalLayout width="87">
+                <Label text="端口：" height="22"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                <Edit name="net_login_port"  height="22"
+                     bkcolor="#FFFFFFFF" bordercolor="#00A0A0A4" textpadding="4,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+            </VerticalLayout >
+        </HorizontalLayout>-->
+
+        <HorizontalLayout>
+        </HorizontalLayout>
+
+    </VerticalLayout>
+</Window>

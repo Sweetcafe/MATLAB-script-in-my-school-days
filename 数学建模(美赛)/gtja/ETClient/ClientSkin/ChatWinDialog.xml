@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="700,500" mininfo="700,500" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+    <Font name="微软雅黑" size="12" bold="false" default="true" />
+    <Font name="微软雅黑" size="12" bold="true"/>
+    <Font name="宋体" size="14" bold="false" />
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+
+
+
+            <VerticalLayout bkimage="file='ServiceImages\jb.png' corner='2,30,2,2'">
+                <HorizontalLayout height="70">
+
+                    <VerticalLayout width="70" height="70" inset="12,12,12,13">
+
+                        <Control  name="logo" width="46" height="45" bkimage="file='ServiceImages\UserPhone.jpg'" />
+
+                    </VerticalLayout>
+                    <VerticalLayout width="5" />
+                    <VerticalLayout>
+                        <VerticalLayout />
+                        <HorizontalLayout height="20" >
+                            <Text name="title" text="test" font="22" showhtml="true"  />
+                            <Button name="disclaimerBtn" text="免责声明"   width="70" height="20"  textcolor="#FFFF0000" align="center"  hotimage="file='images\btn_hov.png'" pushedimage="file='images\btn_down.png'" />
+                        </HorizontalLayout>
+                        <VerticalLayout />
+                        <Text name="description" text="中国股市伤不起啊伤不起,有木有"  textcolor="#FF666666" />
+                        <VerticalLayout />
+                    </VerticalLayout>
+                    <VerticalLayout width="104" >
+                        <Button name="minbtn" float="true" tooltip="最小化" pos="0,0,28,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_mini_normal.png'" hotimage="Skin\btn_mini_highlight.png" pushedimage="Skin\btn_mini_down.png"  />
+                        <Button name="maxbtn" float="true" tooltip="最大化" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_max_normal.png'" hotimage="Skin\btn_max_highlight.png" pushedimage="Skin\btn_max_down.png"  />
+                        <Button name="restorebtn" visible="false" float="true" tooltip="还原" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_restore_normal.png'" hotimage="Skin\btn_restore_highlight.png" pushedimage="Skin\btn_restore_down.png"  />
+                        <Button name="closebtn" float="true" tooltip="关闭" pos="56,0,95,19" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+                    </VerticalLayout>
+                </HorizontalLayout>
+
+                <VerticalLayout>
+                    <HorizontalLayout>
+
+                        <VerticalLayout width="12"/>
+                        <VerticalLayout >
+                            <VerticalLayout bordersize="0" bordercolor="#FF999933" inset="0,0,0,0" bkimage="file='Skin\chat_mid_bk.png' source='0,10,2,26'">
+                                <VerticalLayout height="26"  name="tipsBox"  visible="false" >
+                                    <HorizontalLayout name="tipsBoxBk" padding="2,2,2,2" bkcolor="#11000000" colorhsl="true" >
+                                        <Control width="2"/>
+                                        <Control name="tipsBoxIcon" width="14" height="15" padding="0,4,0,0" bkimage="file='images\icon_safe.png' fade='255'" />
+                                        <Control width="2"/>
+                                        <Label name="tipsText" colorhsl="true" text="交谈中请勿发送密码,勿轻信汇款、中奖信息,勿轻易拨打陌生电话." textcolor="#FFFF9999" />
+                                        <Button padding="0,5,0,0" name="tipsclosebtn" width="12" height="12" normalimage="file='close.png' source='0,0,12,12'" hotimage="file='close.png' source='12,0,24,12'" pushedimage="file='close.png' source='24,0,36,12'"/>
+                                        <Control width="2"/>
+                                    </HorizontalLayout>
+                                </VerticalLayout>
+                                <HorizontalLayout minheight="50" minwidth="50">
+                                    <ImageRichEdit minheight="50" minwidth="50"  name="msg_textVBox" padding="5,5,5,5" menu="true" vscrollbar="true" autovscroll="true" readonly="true"  roundcorner="4,4"	/>
+                                </HorizontalLayout>
+                            </VerticalLayout>
+                            <HorizontalLayout name="voiceBar" bkimage="file='Font\font_bk.bmp'" height="27" inset="4,4,4,4" visible="false">
+                                
+                                 <Label text="正在录音..." float="true" pos="3,3,68,0"  width="65" height="18"  textcolor="#FF000000"  />
+                                 <Label name="voiceseconds" text="" float="true" pos="90,3,135,0"  width="65" height="18"  textcolor="#FF000000"  />
+                                 <VerticalLayout />
+                                 
+                                 <VerticalLayout  width="85" height="26" name="voiceLayout" >
+                                    <Button name="voiceSendBtn" float="true" pos="0,0,35,26"text="发 送" width="35" height="19" textcolor="0xFFFFFFFF"
+                                  		normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'"
+                                  		hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'"
+                                  		pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                                  	<Button name="voiceCancelBtn" float="true" pos="45,0,80,26"text="取 消" width="35" height="19" textcolor="0xFFFFFFFF"
+                                  		normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'"
+                                  		hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'"
+                                  		pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                                </VerticalLayout>
+                            </HorizontalLayout>
+                            <HorizontalLayout name="askstockbar" bkimage="file='Font\font_bk.bmp'" height="30" inset="4,4,4,4">
+                                <HorizontalLayout  height="22" width="80" bkimage="file='ServiceImages\bg_tab_input.png' corner='3,3,3,3'" inset="1,1,1,1" >
+                                  <Edit name="stockcode" font="2" numberonly="true"  bkimage="file='ServiceImages\bg_gupiao.png' dest='0,0,78,20' "  maxchar="6"  />
+                                </HorizontalLayout>
+                                <Control width="10" />
+                                <Combo name="stockquestion" droptype="droplist" width="220" text="下周走势如何？" height="22" textpadding="4,1,1,1" normalimage="file='Font\combo.png' source='0,0,100,22' corner='2,2,20,2'" hotimage="file='Font\combo.png' source='0,22,100,44' corner='2,2,22,2'" pushedimage="file='Font\combo.png' source='0,44,100,66' corner='2,2,22,2'">
+                                    <ListLabelElement text="下周走势如何？"  selected="true" height="23" />
+																		<ListLabelElement  text="后市如何？" />
+																		<ListLabelElement  text="后市如何操作？" />
+																		<ListLabelElement  text="是否继续持股？" />
+                                </Combo>
+                                <Control width="5"/>
+                                <Button name="stockqs" text="{u }查看走势{/u}"  textcolor="#FF0000FF"  showhtml="true" width="60" />
+                                <Control width="5"/>
+                            </HorizontalLayout>
+                            <HorizontalLayout name="fontbar" bkimage="file='Font\font_bk.bmp'" height="30" inset="4,4,4,4" visible="false">
+                                <Combo name="font_type" droptype="droplist" width="100" height="22" textpadding="4,1,1,1"  normalimage="file='Font\combo.png' source='0,0,100,22' corner='2,2,20,2'" hotimage="file='Font\combo.png' source='0,22,100,44' corner='2,2,22,2'" pushedimage="file='Font\combo.png' source='0,44,100,66' corner='2,2,22,2'">
+                                    <ListLabelElement text="微软雅黑" height="23"/>
+                                    <ListLabelElement text="宋体" height="23" />
+                                    <ListLabelElement text="黑体" height="23" />
+                                    <ListLabelElement text="幼圆" height="23" />
+                                    <ListLabelElement text="楷体" height="23" />
+                                </Combo>
+                                <Combo name="font_size" droptype="droplist" width="50" height="22" textpadding="4,1,1,1" normalimage="file='Font\combo.png' source='0,0,100,22' corner='2,2,20,2'" hotimage="file='Font\combo.png' source='0,22,100,44' corner='2,2,22,2'" pushedimage="file='Font\combo.png' source='0,44,100,66' corner='2,2,22,2'">
+                                    <ListLabelElement text="9"  height="23" />
+                                    <ListLabelElement text="10" height="23" />
+                                    <ListLabelElement text="11" height="23" />
+                                    <ListLabelElement text="12" height="23" />
+                                    <ListLabelElement text="13" height="23" />
+                                    <ListLabelElement text="14" height="23" />
+                                    <ListLabelElement text="15" height="23" />
+                                    <ListLabelElement text="16" height="23" />
+                                    <ListLabelElement text="17" height="23" />
+                                    <ListLabelElement text="18" height="23" />
+                                    <ListLabelElement text="19" height="23" />
+                                    <ListLabelElement text="20" height="23" />
+                                    <ListLabelElement text="21" height="23" />
+                                    <ListLabelElement text="22" height="23" />
+                                    <ListLabelElement text="24" height="23" />
+                                    <ListLabelElement text="28" height="23" />
+                                    <ListLabelElement text="32" height="23" />
+                                </Combo>
+                                <Control width="5"/>
+                                <Option showhtml="true" name="boldbtn" width="22" height="22" text="{i Bold.png}{/i}" hotimage="file='Font\btn_hot.png' corner='2,3,2,2'" selectedimage="file='Font\btn_push.png' corner='2,5,2,2'"  />
+                                <Option showhtml="true" name="italicbtn"  width="22" height="22" text="{i Italic.png}{/i}" hotimage="file='Font\btn_hot.png' corner='2,3,2,2'" selectedimage="file='Font\btn_push.png' corner='2,5,2,2'"  />
+                                <Option showhtml="true" name="underlinebtn"  width="22" height="22" text="{i underline.png}{/i}" hotimage="file='Font\btn_hot.png' corner='2,3,2,2'" selectedimage="file='Font\btn_push.png' corner='2,5,2,2'"  />
+                                <Option showhtml="true" name="colorbtn"  width="22" height="22" text="{i color.png}{/i}" hotimage="file='Font\btn_hot.png' corner='2,3,2,2'" selectedimage="file='Font\btn_push.png' corner='2,5,2,2'"  />
+                            </HorizontalLayout>
+                            <HorizontalLayout height="34"  >
+                                <VerticalLayout width="45" name="fontlayout" >
+                                    <Option name="fontbtn"  height="29" width="43"   tooltip="选择字体" normalimage="file='Font\call\icon_input_text.png'" hotimage="file='Font\call\icon_input_text-blue.png'" selectedimage="file='Font\call\icon_input_text-blue.png'"  />
+                                </VerticalLayout>
+                                <VerticalLayout width="45" name="facelayout" >
+                                    <Button name="faceBtn" height="29" width="43"  tooltip="选择表情" normalimage="file='Font\call\icon_input_smile.png' " hotimage="file='Font\call\icon_input_smile-blue.png'"  />
+                                </VerticalLayout>
+                                <HorizontalLayout width="41" name="screenlayout" >
+                                    <Button name="screenBtn" height="29" width="28" tooltip="屏幕截图"  normalimage="file='Font\call\icon_prtscreen_01.png' source='8,0,36,32' " hotimage="file='Font\call\icon_prtscreen_05.png' source='8,0,36,32'"  />
+                                    <Button name="ishideselectBtn" height="29" width="13" tooltip="屏幕截图"  normalimage="file='Font\call\icon_prtscreen_01.png' source='35,0,48,32' " hotimage="file='Font\call\icon_prtscreen_05.png' source='35,0,48,32'"  />
+                                </HorizontalLayout>
+                                <VerticalLayout  width="45" name="piclayout" >
+                                    <Button name="picBtn" height="29" width="43" tooltip="发送图片" normalimage="file='Font\call\icon_input_pic.png'" hotimage="file='Font\call\icon_input_pic-blue.png'"  />
+                                </VerticalLayout>
+                                <VerticalLayout  width="45" name="upload_filelayout" >
+                                    <Button name="upload_file" height="29" width="43" tooltip="发送文件"  normalimage="file='Font\call\icon_input_file.png'" hotimage="file='Font\call\icon_input_file-blue.png'"  />
+                                </VerticalLayout>
+                                <VerticalLayout width="45" name="sharklayout" >
+                                    <Button name="sharkBtn" height="29" width="43" tooltip="向好友发送窗口抖动"  normalimage="file='Font\call\icon_input_finger.png' " hotimage="file='Font\call\icon_input_finger-blue.png'"  />
+                                </VerticalLayout>
+                                <VerticalLayout width="45" name="clearSClayout" >
+                                    <Button name="clearSC" height="29" width="43" tooltip="清屏"  normalimage="file='Font\call\icon_input_table.png'" hotimage="file='Font\call\icon_input_table-blue.png'"  />
+                                </VerticalLayout>
+                                <VerticalLayout  width="45" name="voicelayout" >
+                                    <Button name="voiceBtn" height="29" width="43" tooltip="语音消息" normalimage="file='Font\call\icon_voicemessage.png'" hotimage="file='Font\call\icon_voicemessage-blue.png'"  />
+                                </VerticalLayout>
+                                <VerticalLayout width="45" name="videochatlayout" >
+                                    <Button name="videochat" height="29" width="43" tooltip="视频"  normalimage="file='Font\call\icon_video_chat.png'" hotimage="file='Font\call\icon_video_chat-blue.png'"  />
+                                </VerticalLayout>
+                                <!--VerticalLayout width="45" name="newchatgrouplayout" >
+                                    <Button name="newchatgroup" height="29" width="43" tooltip="讨论组"  normalimage="file='Font\call\icon_newchatgroup.png'" hotimage="file='Font\call\icon_newchatgroup-blue.png'"  />
+                                </VerticalLayout-->
+                                <VerticalLayout width="45" name="remoteasslayout" >
+                                    <Button name="remoteass" height="29" width="43" tooltip="远程协助"  normalimage="file='Font\call\icon_remoteassistence.png'" hotimage="file='Font\call\icon_remoteassistence-blue.png'"  />
+                                </VerticalLayout>
+                                <VerticalLayout width="45" name="askstocklayout" >
+                                    <Option name="askstock" height="29" width="43" tooltip="快速提问"  selected="true" normalimage="file='Font\call\icon_askforstock.png'" hotimage="file='Font\call\icon_askforstock-blue.png'" selectedimage="file='Font\call\icon_askforstock-blue.png'"  />
+                                </VerticalLayout>
+
+                            </HorizontalLayout>
+                            <HorizontalLayout height="76" bkcolor="#FFFFFFFF" inset="5,0,0,0">
+                                <ImageRichEdit name="sendContentTextArea" menu="true" vscrollbar="true"  roundcorner="4,4"	autovscroll="true" />
+                            </HorizontalLayout>
+                            <HorizontalLayout height="34"  >
+
+                            <HorizontalLayout width="100" >
+                                <Button name="showHistory" visible="true" padding="0,4,0,0" width="96" height="26" text="聊天记录" tooltip="查看聊天记录" textcolor="0xFFFFFFFF" normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'" hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'" pushedimage="file='ServiceImages\btn_2_over.png'  corner='8,8,8,8'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='8,8,8,8'" />
+                                <!--<Button name="showHistory" text="{x 20}聊天记录"  tooltip="查看聊天记录" align="left"  showhtml="true" float="true" pos="5,10,0,0"  bkimage="file='Font\icon_chat.png' dest='0,1,18,19'" width="72" height="24"  textcolor="#FF1B4876"  />-->
+                            </HorizontalLayout>
+                            <HorizontalLayout />
+                            <HorizontalLayout width="80" >
+                                <Button name="closeBtn" padding="0,4,0,0"  tooltip="关闭" text="关闭" width="69" height="26" textcolor="0xFFFFFFFF"
+                                  normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'"
+                                  hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'"
+                                  pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                            </HorizontalLayout>
+                            <HorizontalLayout width="100" >
+                                <Button name="sendBtn" padding="0,4,0,0"   tooltip="发送" text="发送" width="69" height="26" 		textcolor="0xFFFFFFFF"
+                                  normalimage="file='ServiceImages\SendBtnL.png' corner='8,8,8,8'"
+                                  hotimage="file='ServiceImages\SendBtnLon.png' corner='8,8,8,8'"
+                                  pushedimage="file='ServiceImages\SendBtnL.png' corner='8,8,8,8'" />
+                                <Button name="sendDropBtn" padding="0,4,0,0"   tooltip="发送"  width="25" height="26" textcolor="0xFFFFFFFF"
+                                  normalimage="file='ServiceImages\SendBtnR.png' corner='8,8,8,8'"
+                                  hotimage="file='ServiceImages\SendBtnRon.png' corner='8,8,8,8'"
+                                  pushedimage="file='ServiceImages\SendBtnR.png' corner='8,8,8,8'" />
+                            </HorizontalLayout>
+                        </HorizontalLayout>
+                        </VerticalLayout>
+                        <!--
+                        <HorizontalLayout name="rightLayoutThree" width="165">
+-->
+                            <HorizontalLayout name="filesendLayoutID" width="165"  visible="false" >
+                                <VerticalLayout width="12"/>
+                                <VerticalLayout visible="false">
+                                    <VerticalLayout bordersize="0" bordercolor="#FF999933" inset="5,0,0,0" bkimage="file='Skin\chat_mid_bk.png' source='0,10,2,26'">
+                                        <VerticalLayout name="filesendbox" height="120" visible="false" >
+                                            <Label text="传送文件" float="true" pos="3,1,0,0"  width="55" height="18"  textcolor="#FF000000"  />
+                                            <Button name="filesendclosebtn" float="true" pos="135,3,0,0" width="12" height="12" normalimage="file='close.png' source='0,0,12,12'" hotimage="file='close.png' source='12,0,24,12'" pushedimage="file='close.png' source='24,0,36,12'"/>
+                                            <Control name="fileico" mouse="false" float="true" pos="4,42,0,0" width="18" height="18" bkimage="images\icon_file.png" />
+                                            <Label text="发送文件请求:" float="true" pos="23,31,0,0"  width="126" height="18"  textcolor="#FFC0C0C0" />
+                                            <Label name="filename" text="" endellipsis="true" float="true" pos="23,47,0,0"  width="126" height="18"  textcolor="#FF000000"  />
+                                            <Progress name="fileprogress"  float="true" pos="5,69,0,0"  borderround ="4,4"   width="144" height="8" bkimage="ServiceImages\progressBK.png" bordersize="0" align="center" foreimage="file='ServiceImages\progress.png' corner='2,2,2,2'" min="0" max="100" value="0" hor="true" />
+                                            <Label name="filesize" text="" align="right" endellipsis="true" float="true" pos="23,78,0,0"  width="126" height="18"  textcolor="#FF000000"  />
+                                            <Button name="agreeSend" text="发送" float="true" pos="40,98,0,0"  width="40" height="20" textcolor="#FFFFFFFF" align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'" hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'"  pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                                            <Button name="cancelSend" text="取消" float="true" pos="90,98,0,0"  width="40" height="20" textcolor="#FFFFFFFF" align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'" hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'"  pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+
+                                        </VerticalLayout>
+                                        <VerticalLayout name="filerecvbox" height="120" visible="false" >
+                                            <Label text="接收文件" float="true" pos="3,1,0,0"  width="55" height="18"  textcolor="#FF000000"  />
+                                            <Button name="filerecvclosebtn" float="true" pos="135,3,0,0" width="12" height="12" normalimage="file='close.png' source='0,0,12,12'" hotimage="file='close.png' source='12,0,24,12'" pushedimage="file='close.png' source='24,0,36,12'"/>
+                                            <Control name="recvfileico" mouse="false" float="true" pos="4,42,0,0" width="18" height="18" bkimage="images\icon_file.png" />
+                                            <Label text="接收文件请求:" float="true" pos="23,31,0,0"  width="126" height="18"  textcolor="#FFC0C0C0" />
+                                            <Label name="recvfilename" text="" endellipsis="true" float="true" pos="23,47,0,0"  width="126" height="18"  textcolor="#FF000000"  />
+
+                                            <Progress name="recvfileprogress"  float="true" pos="5,69,0,0"  borderround ="4,4"    width="144" height="8" bkimage="images\progressBK.png" bordersize="0"  align="center" foreimage="file='images\progress.png' corner='2,2,2,2'" min="0" max="100" value="0" hor="true" />
+                                            <Button name="agreeRecv" text="接收" float="true" pos="40,80,0,0"  width="40" height="20"  textcolor="#FF1B4876" align="center" normalimage="file='images\btn_a.png' mask='0xffffffff'" hotimage="file='images\btn_hov.png' mask='0xffffffff'" pushedimage="file='images\btn_down.png' mask='0xffffffff'" />
+                                            <Button name="cancelRecv" text="拒绝" float="true" pos="90,80,0,0"  width="40" height="20"  textcolor="#FF1B4876" align="center" normalimage="file='images\btn_a.png' mask='0xffffffff'" hotimage="file='images\btn_hov.png' mask='0xffffffff'" pushedimage="file='images\btn_down.png' mask='0xffffffff'" />
+
+                                        </VerticalLayout>
+                                    </VerticalLayout>
+                                    <VerticalLayout height="12"/>
+                                </VerticalLayout>
+                                <VerticalLayout>
+                                    <List name ="filesendlist" />
+                                </VerticalLayout>
+                            </HorizontalLayout>
+
+                            <HorizontalLayout name="remoteassRightLayout" width="165" visible="false" >
+                                <VerticalLayout width="5"/>
+                                <VerticalLayout>
+                                    <VerticalLayout name="remote_iscontrol" visible="false" bordersize="0" bordercolor="#FF999933" inset="5,30,0,0" bkimage="file='ServiceImages\chat_mid_bk.png' source='0,10,2,26'">
+                                        <HorizontalLayout  width="146" height="146" inset="3,3,3,3" bordersize="1" bordercolor="#FFADD2EE">
+                                            <Control   width="140" height="140" bkimage="ServiceImages\remoteimage.png" />
+                                        </HorizontalLayout>
+                                        <HorizontalLayout height="20" />
+                                        <HorizontalLayout height="50">
+                                            <HorizontalLayout />
+                                            <Text text="是否允许对方控制" />
+                                            <HorizontalLayout />
+                                        </HorizontalLayout>
+                                        <HorizontalLayout height="50">
+                                            <HorizontalLayout />
+                                            <Button name="remote_control__btn" text="受控"  width="40" height="20" textcolor="#FFFFFFFF" align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'" hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'" pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                                            <HorizontalLayout width="10" />
+                                            <Button name="remote_nocontrol_btn" text="不受控"  width="45" height="20" textcolor="#FFFFFFFF" align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'" hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'" pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                                            <HorizontalLayout />
+                                            <Button name="remote_iscontrol_cancel_btn" text="取消"  width="40" height="20" textcolor="#FFFFFFFF" align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'" hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'" pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                                            <HorizontalLayout />
+                                        </HorizontalLayout>
+                                        <VerticalLayout />
+                                    </VerticalLayout>
+                                    
+                                    <VerticalLayout name="remote_request" visible="false" bordersize="0" bordercolor="#FF999933" inset="5,30,0,0" bkimage="file='ServiceImages\chat_mid_bk.png' source='0,10,2,26'">
+                                        <HorizontalLayout  width="146" height="146" inset="3,3,3,3" bordersize="1" bordercolor="#FFADD2EE">
+                                            <Control   width="140" height="140" bkimage="ServiceImages\remoteimage.png" />
+                                        </HorizontalLayout>
+                                        <HorizontalLayout height="20" />
+                                        <HorizontalLayout height="50">
+                                            <HorizontalLayout />
+                                            <Text text="远程协助,等待对方同意" />
+                                            <HorizontalLayout />
+                                        </HorizontalLayout>
+                                        <HorizontalLayout height="50">
+                                            <HorizontalLayout />
+                                            <Button name="remoteass_cancel_btn" text="取消"  width="40" height="20" textcolor="#FFFFFFFF" align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'" hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'" pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                                            <HorizontalLayout />
+                                        </HorizontalLayout>
+                                        <VerticalLayout />
+                                    </VerticalLayout>
+
+                                    <VerticalLayout name="remote_response" visible="false" bordersize="0" bordercolor="#FF999933" inset="5,30,0,0" bkimage="file='ServiceImages\chat_mid_bk.png' source='0,10,2,26'">
+                                        <HorizontalLayout  width="146" height="146" inset="3,3,3,3" bordersize="1" bordercolor="#FFADD2EE">
+                                            <Control   width="140" height="140" bkimage="ServiceImages\remoteimage.png" />
+                                        </HorizontalLayout>
+                                        <HorizontalLayout height="20" />
+                                        <HorizontalLayout height="50">
+                                            <HorizontalLayout />
+                                            <Text text="对方请求远程协助，是否同意？" />
+                                            <HorizontalLayout />
+                                        </HorizontalLayout>
+                                        <HorizontalLayout height="50">
+                                            <HorizontalLayout />
+                                            <Button name="remoteass_agree_btn" text="同意"  width="40" height="20" textcolor="#FFFFFFFF" align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'" hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'" pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                                            <HorizontalLayout width="10" />
+                                            <Button name="remoteass_refuse_btn" text="拒绝"  width="40" height="20" textcolor="#FFFFFFFF" align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'" hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'" pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                                            <HorizontalLayout />
+                                        </HorizontalLayout>
+                                        <VerticalLayout />
+                                    </VerticalLayout>
+
+                                    <VerticalLayout name="remote_cut" visible="false" bordersize="0" bordercolor="#FF999933" inset="5,30,0,0" bkimage="file='ServiceImages\chat_mid_bk.png' source='0,10,2,26'">
+                                        <HorizontalLayout  width="146" height="146" inset="3,3,3,3" bordersize="1" bordercolor="#FFADD2EE">
+                                            <Control   width="140" height="140" bkimage="ServiceImages\remoteimage.png" />
+                                        </HorizontalLayout>
+                                        <HorizontalLayout height="20" />
+                                        <HorizontalLayout height="50">
+                                            <HorizontalLayout />
+                                            <Text text="远程协助中..." />
+                                            <HorizontalLayout />
+                                        </HorizontalLayout>
+                                        <HorizontalLayout height="50">
+                                            <HorizontalLayout />
+                                            <Button name="remoteass_cut_btn" text="中断"  width="40" height="20" textcolor="#FFFFFFFF" align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'" hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'" pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                                            <HorizontalLayout />
+                                        </HorizontalLayout>
+                                        <VerticalLayout />
+                                    </VerticalLayout>
+                                </VerticalLayout>
+                            </HorizontalLayout>
+
+                            <HorizontalLayout name="rightInfoLayoutID" width="165" visible="true" >
+                                <VerticalLayout width="12"/>
+                                <VerticalLayout >
+                                    <VerticalLayout bordersize="0" bordercolor="#FF999933" inset="5,0,0,0" bkimage="file='ServiceImages\chat_mid_bk.png' source='0,10,2,26'">
+
+                                        <VerticalLayout name="detailInfoLayout"  padding="2,2,2,2" >
+                                            <VerticalLayout  bkimage="file='Skin\chat_mid_bk.png' source='0,10,2,26'" >
+                                            	  <HorizontalLayout height="125">
+                                            	  	  <Control />
+                                                    <Control  name="empInfophoto"  width="125"  bkimage="file='images\con_photo_img.png' source='0,1,86,126' dest='19,0,105,125'" />
+                                            	  	  <Control />
+                                                </HorizontalLayout>
+                                                <!--float="true" pos="25,10,0,0"-->
+                                                <Control height="5" />
+                                                <VerticalLayout name ="empInfoLayout" vscrollbar="true" inset="5,0,0,0">
+                                                    <!--<Label text="姓名：" float="true" pos="5,125,0,0"  width="50" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+                                                <Label text="工号：" float="true" pos="5,147,0,0"  width="50" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+                                                <Label text="职务："  float="true" pos="5,169,0,0"  width="70" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+                                                <Label text="系统标签：" float="true" pos="5,191,0,0"  width="70" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+
+                                                <Label name="realName" float="true" endellipsis="true" pos="60,125,0,0"  width="70" height="22" textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+                                                <Label name="employeeId" float="true" endellipsis="true"  pos="60,147,0,0"  width="70" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+                                                <Label name="" float="true" endellipsis="true"  pos="80,169,0,0"  width="70" height="22" textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+                                                <Label name="position" endellipsis="true"  float="true" pos="60,169,0,0"  width="70" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />
+                                                <Label name="sysSign" endellipsis="true"  float="true" pos="60,191,0,0"  width="90" height="22"  textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" />-->
+
+                                                </VerticalLayout>
+                                            </VerticalLayout>
+
+                                            <HorizontalLayout name="evaluatelayout" visible="false" width="100" height ="24" inset="5,0,0,0">
+                                                <Button name="evaluatebtn" padding="0,4,0,0" shortcut="S" tooltip="评价" text="评价" width="57" height="20" maxheight="20" maxwidth="57" bkimage="file='images\loginBtn.png'" hotimage="file='images\loginBtn_over.png' corner='2,3,2,2'" pushedimage="file='images\loginBtn_push.png' corner='2,5,2,2'"  />
+                                                <HorizontalLayout />
+                                            </HorizontalLayout>
+
+                                            <Control height="15"/>
+                                            <WebBrowser name="AdvertisingBrowser" width="143" height="143" autonavi="true"/>
+                                            <!--
+                                            <RichEdit name="introduce" enabled="false" mouse="false" wantreturn="false" wantctrlreturn="false" inset="5,5,5,5" vscrollbar="true" bkcolor="#22F1FAFF" readonly="true"  roundcorner="4,4"	/>
+                                            -->
+                                            <Control height="5"/>
+                                        </VerticalLayout>
+
+                                    </VerticalLayout>
+                                    <VerticalLayout height="12"/>
+                                </VerticalLayout>
+                            </HorizontalLayout>
+                            <HorizontalLayout name="rightChatLayoutID" width="400"  visible="false" >
+                                <Histroydetail />
+                                
+                            </HorizontalLayout>
+                            <!--
+                        </HorizontalLayout>
+-->
+                        <VerticalLayout width="12"/>
+
+                    </HorizontalLayout>
+                </VerticalLayout>
+            </VerticalLayout>
+            <HorizontalLayout height="1" />
+
+            <!--</VerticalLayout>-->
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

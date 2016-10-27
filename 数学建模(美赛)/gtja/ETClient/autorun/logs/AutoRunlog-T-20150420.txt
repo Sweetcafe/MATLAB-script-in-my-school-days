@@ -1,0 +1,13 @@
+2015-04-20 13:50:08	命令行参数为: -softid:etimclient -param:&proxyType=0&address=&port=&acount=&&pwd=&&domain=&visible=0&StartEtParam=
+2015-04-20 13:50:08	不是admin版
+2015-04-20 13:50:08	国泰君安E.T助手已安装
+2015-04-20 13:50:08	国泰君安证券ET助手员工版没安装
+2015-04-20 13:50:08	自动更新程序启动......
+2015-04-20 13:50:08	开始执行CGetUpdateListNoDownload::Excute()
+2015-04-20 13:50:08	国泰君安E.T助手此版本可以升级
+2015-04-20 13:50:08	ini下载成功，C:\gtja\ETClient\autorun\iniServer\etimclient.ini
+2015-04-20 13:50:08	配置文件的日期一致，无需更新：C:\gtja\ETClient\localetimclient.ini
+2015-04-20 13:50:08	开始执行CCallBackFirstRun::operator ()
+2015-04-20 13:51:08	国泰君安E.T助手此版本可以升级
+2015-04-20 13:51:08	ini的url路径，http://dd.gtja.com/download/SoftManager/etimclient/etimclient.ini
+2015-04-20 13:51:08	ini的下载路径，C:\gtja\ETClient\autorun\iniServer\etimclient.ini

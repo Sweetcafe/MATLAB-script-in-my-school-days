@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Window>
+ <Font name="微软雅黑" size="12" bold="false" default="true" />
+  <VerticalLayout  width="98" height="106" >
+	   <VerticalLayout  float="true" pos="0,0,0,0" width="98" height="106">
+		   <ApplicationButton name="MyBtn" float="true" pos="12,12,0,0" width="74" height="74" 
+		   normalimage="file='ServiceImages\bg_app_add.png'"
+		   hotimage="file='ServiceImages\bg_app_add-on.png'" 
+		   pushedimage="file='ServiceImages\bg_app_add-on.png'" />
+		   <Control name="AddControl" visible="false" float="true" pos="12,12,0,0"  width="74" height="74"  mouse="false" />
+		   <Control name="IconControl" visible="false" float="true" pos="33,33,0,0"  width="32" height="32"  mouse="false" />
+		   <Label name="MyLabel" float="true" pos="12,86,0,0" width="74" height="20" align="center"  endellipsis="true" mouse="false"/>
+	   </VerticalLayout >
+	   <ApplicationButton name="MyRemoveBtn" visible="false" float="true"  pos="70,4,0,0"  width="24" height="24" normalimage="file='ServiceImages\icon_app_delete.png' " hotimage="file='ServiceImages\icon_app_delete-on.png'" selectedlimage="file='ServiceImages\icon_app_delete-on.png'" />
+  </VerticalLayout>
+</Window> 

@@ -1,0 +1,13 @@
+2015-04-20 13:50:08	命令行参数为: -noshifting -softid:fyjy -runpath:D:\国泰君安\bin\ -nostart -path:D:\国泰君安\ -enforce -code:4403 -customise -quit
+2015-04-20 13:50:08	代理配置信息：    UseProxy=No 
+2015-04-20 13:50:08	不是admin版
+2015-04-20 13:50:08	自动更新程序启动......
+2015-04-20 13:50:08	自动更新此版本可以升级
+2015-04-20 13:50:08	ini的url路径，http://dd.gtja.com/download/SoftManager/autorun/autorun.ini
+2015-04-20 13:50:08	ini的下载路径，C:\gtja\AutoRun\iniServer\autorun.ini
+2015-04-20 13:50:28	CurlGetOneFile，curl下载失败
+2015-04-20 13:50:28	ini下载成功，C:\gtja\AutoRun\iniServer\autorun.ini
+2015-04-20 13:50:28	配置文件的日期不一致，需更新：C:\gtja\AutoRun\localautorun.ini
+2015-04-20 13:50:28	更新自己：无更新内容。
+2015-04-20 13:50:35	富易配置文件里的版号为：2.2.0.5378
+2015-04-20 13:50:35	富易交易此版本已更新,不需要升级

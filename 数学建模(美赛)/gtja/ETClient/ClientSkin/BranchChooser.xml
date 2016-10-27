@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="320,430" mininfo="320,430" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+    <Font name="宋体" size="12" bold="false" default="true" />
+	  <Font name="宋体" size="12" bold="true"/>
+     <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />  
+		<HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+		        <!--<VerticalLayout  name="bg" bordersize="0" bkcolor="#FFD1E8F5" bkcolor2="#FFC6E0F1" bordercolor="#FF768D9B">-->
+			       <HorizontalLayout height="30">
+									        <VerticalLayout width="40" inset="2,2,0,0">
+									          <Control name="logo" float="true" pos="9,3,0,0" width="19" height="21" bkimage="images\logo.png" />
+								          </VerticalLayout>
+								          <VerticalLayout width="130" inset="2,2,0,0">
+								          	<Label name="title" text="营业部选择"  width="200" height="23"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+					            		</VerticalLayout>
+									        <VerticalLayout />
+									        <VerticalLayout width="104">
+									          <Button name="maxbtn" float="true" tooltip="最大化" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_max_normal.png'" hotimage="Skin\btn_max_highlight.png" pushedimage="Skin\btn_max_down.png"  />
+									          <Button name="restorebtn" visible="false" float="true" tooltip="还原" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_restore_normal.png'" hotimage="Skin\btn_restore_highlight.png" pushedimage="Skin\btn_restore_down.png"  />
+									          <Button name="closebtn" float="true" tooltip="关闭" pos="56,0,95,19" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+									        </VerticalLayout>
+							</HorizontalLayout>
+			       
+			        <HorizontalLayout   bkimage="file='Skin\jb.png' corner='2,30,2,2'">
+			        	  <HorizontalLayout width="12" /> 
+			        	  <VerticalLayout>
+			        	  	  <HorizontalLayout height="20" /> 
+					        	  <VerticalLayout height="90">
+					        	  	  <HorizontalLayout inset="1,5,1,5">
+					        	  	  	<Control />
+								        	  <Option name="branchAll" text="{x 15}所有" userdata="ALL"  width="90" height="15"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="true" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+								            <Control />
+								        	  <Option text="{x 15}华东" userdata="HD"  width="90" height="15"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="true" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+								            <Control />
+								        	  <Option text="{x 15}华南" userdata="HN"  width="90" height="15" showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="true" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+							              <Control />
+								        	</HorizontalLayout>
+							            <HorizontalLayout  inset="1,5,1,5">
+								            <Control />
+								        	  <Option text="{x 15}华中" userdata="HZ"   width="90" height="15"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="true" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+							            	<Control />
+								        	  <Option text="{x 15}华北" userdata="HB"   width="90" height="15"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="true" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+								            <Control />
+								        	  <Option text="{x 15}东北" userdata="DB"    width="90" height="15" showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="true" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+								            <Control />
+								        	</HorizontalLayout>
+							            <HorizontalLayout inset="1,5,1,5">
+								            <Control />
+								        	  <Option text="{x 15}西北" userdata="XB"    width="90" height="15" showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="true" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+					                  <Control />
+								        	  <Option text="{x 15}西南" userdata="XN"   width="90" height="15"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="true" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+							            	<Control />
+								        	  <Option text="{x 15}我的营业部" selected="true" userdata="MY"  width="90" height="15"  showhtml="true" align="left" normalimage="file='images\radio_unchecked.png' mask='0xffffffff' dest='0,0,13,13'" fitallArea="false" group="true" selectedtextcolor="#FF000000" selectedimage="file='images\radio_checked.png' mask='0xffffffff' dest='0,0,13,13'" />
+							              <Control />
+								        	</HorizontalLayout>
+					            </VerticalLayout>
+					            <HorizontalLayout height="5" /> 
+					            <VerticalLayout bordercolor="#00A0A0A4" inset="1,1,1,1" >
+					            	<List name="branchList"   header="hidden" itemtextcolor="#FF000000" itemselectedtextcolor="#FF000000" itemselectedbkcolor="#FFC1E3FF" itemhottextcolor="#FF000000" itemhotbkcolor="#FFE9F5FF" itemdisabledtextcolor="#FFCCCCCC" itemdisabledbkcolor="#FFFFFFFF" inset="1,0,1,0" vscrollbar="true" hscrollbar="true" />
+					            </VerticalLayout>
+					            <HorizontalLayout height="5" /> 
+					            <HorizontalLayout  height="30">	
+					            	
+											                	<HorizontalLayout width="2" /> 				            	              	 
+											                <HorizontalLayout  width="70">
+											            				<Button name="upgrade" text="更新"  height="24"   align="center"  normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'" pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'"  textcolor="#FFFFFFFF" />
+						                          </HorizontalLayout  >
+						                          
+											                	<HorizontalLayout width="2" /> 
+					            								<HorizontalLayout>
+					            									<Label name="errLabel"   textcolor="#FFFF0000"  /> 
+					            								</HorizontalLayout>
+					            								
+											                	<HorizontalLayout width="2" /> 
+											                <HorizontalLayout  width="70">
+											            			<Button name="search" text="确定"  height="24"   normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'" pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'"  textcolor="#FFFFFFFF" />
+						                          </HorizontalLayout  >
+						                          
+											                	<HorizontalLayout width="2" /> 
+						          </HorizontalLayout>
+						          <HorizontalLayout height="12" /> 
+						     </VerticalLayout>
+						     <HorizontalLayout width="12" /> 
+			        </HorizontalLayout>
+			    <!--</VerticalLayout>-->
+			    <HorizontalLayout height="1" /> 
+    		</VerticalLayout>
+  	</HorizontalLayout>
+			    
+</Window>

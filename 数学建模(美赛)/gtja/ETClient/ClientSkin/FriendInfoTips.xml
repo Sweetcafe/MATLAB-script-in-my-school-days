@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="280,170" mininfo="280,170" sizebox="4,4,4,4" roundcorner="4,4,4,4">
+	  <Font name="微软雅黑" size="14" bold="false" default="true" />
+	  <Font name="微软雅黑" size="12" bold="true" />
+	  <Font name="微软雅黑" size="12" bold="false" />
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='ServiceImages\scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='ServiceImages\scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='ServiceImages\scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='ServiceImages\scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='ServiceImages\scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='ServiceImages\scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='ServiceImages\scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='ServiceImages\scrollbar.png' source='0,16,16,32'&quot;" />  
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+    <!--HorizontalLayout-->
+      <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+				<VerticalLayout mousechild="false" bkimage="file='ServiceImages\jb.png' corner='2,30,2,2'">
+<!-------------------------------------------------------以下编写本页面代码---------------------------->
+					  <Control height="7" /> 
+						<HorizontalLayout  >
+							  <Control width="7" /> 
+								<HorizontalLayout name="userPhoto" width="90" bkimage="images\con_photo_img.png" >
+									<Control /> 
+									<VerticalLayout  width="8" >
+										<Control /> 
+										<Control  height="14" bkimage="images\icon_delta.png.png" /> 
+										<Control /> 
+									</VerticalLayout>
+								</HorizontalLayout>
+								<Control width="5"  bkcolor="#FFFFFFFF"  />
+								<VerticalLayout  bkcolor="#FFFFFFFF" >
+									
+									<Control />									
+									<HorizontalLayout  height="15">
+										<Text  text="姓名: " textcolor="#FF6F8DA7" font="1" />
+										<Label name="userName" endellipsis="true" textpadding="0,2,0,0" text="" font="2" />
+									</HorizontalLayout>	
+									<Control />
+									<HorizontalLayout  height="15">
+										<Text    text="岗位: " textcolor="#FF6F8DA7" font="1" />
+										<Label name="Position" endellipsis="true" textpadding="0,2,0,0" text="" font="2" />
+									</HorizontalLayout>	
+									<Control />
+									<HorizontalLayout  height="15">
+										<Text    text="执业证书编号: " textcolor="#FF6F8DA7" font="1" />
+										<Label name="No_ca" endellipsis="true" textpadding="0,2,0,0" text="" font="2" />
+									</HorizontalLayout>	
+									<Control  />
+									<HorizontalLayout  height="15">
+										<Text    text="电话: " textcolor="#FF6F8DA7" font="1" />
+										<Label name="Telephone" endellipsis="true" textpadding="0,2,0,0" text="" font="2" />
+									</HorizontalLayout>
+									<Control  />
+									<HorizontalLayout height="15">
+										<Text    text="部门: " textcolor="#FF6F8DA7" font="1" />
+										<Label name="Branchname" endellipsis="true" textpadding="0,2,0,0" text="" font="2" />
+									</HorizontalLayout>		
+									<Control  />						
+								</VerticalLayout>
+								<Control width="5"  bkcolor="#FFFFFFFF"  />
+								<Control width="7" /> 
+						</HorizontalLayout>
+						<Control height="7" /> 		
+<!-------------------------------------------------------以上编写本页面代码---------------------------->
+					</VerticalLayout>  
+		    	<Control height="1" /> 
+    		</VerticalLayout>
+  	</HorizontalLayout>
+</Window>

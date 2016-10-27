@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true" size="140,68"  roundcorner="4,4,4,4">
+ <Font name="宋体" size="13" bold="false"/>
+ <Font name="宋体" size="12"/>
+<VerticalLayout bkimage="file='ServiceImages\bg_menu.png' conner='25,5,5,5'" >
+	 
+	 
+	 <VerticalLayout inset="5,5,7,7" > 
+	 	   <VerticalLayout height="28">
+	 	   	   <Option name="statusOnlineBtn"  textcolor="#FF000000" height="28"
+		           			text="{x 35}在线" align="left"  showhtml="true"
+		           			textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+				   <Control  float="true" pos="5,5,0,0" mouse="false" width="17" height="17" bkimage="ServiceImages\status_online.png" />
+			 </VerticalLayout>
+			 <VerticalLayout height="28" visible="false">   
+					 <Option name="statusLeaveBtn"    height="28" textcolor="#FF000000" 
+				           			text="{x 35}离开" align="left"  showhtml="true"
+				           			disabledtextcolor="#FFA7A6AA" textpadding="0,7,0,0" 
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+				   <Control  float="true" pos="5,5,0,0" mouse="false" width="17" height="17" bkimage="ServiceImages\status_leave.png" />
+			 </VerticalLayout>
+			 <VerticalLayout height="28" visible="false">  
+					 <Option name="statusBusyBtn"   textcolor="#FF000000" height="28"
+		           			text="{x 35}忙碌" align="left"  showhtml="true"
+		           			disabledtextcolor="#FFA7A6AA" textpadding="0,7,0,0" 
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+				   <Control  float="true" pos="5,5,0,0" mouse="false" width="17" height="17" bkimage="ServiceImages\status_busy.png" />
+			 </VerticalLayout>
+			 <VerticalLayout height="28" visible="false">  
+					 <Option name="statusNoHarassBtn"   textcolor="#FF000000" height="28"
+		           			text="{x 35}请勿打扰" align="left"  showhtml="true"
+		           			disabledtextcolor="#FFA7A6AA" textpadding="0,7,0,0" 
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+				   <Control  float="true" pos="5,5,0,0" mouse="false" width="17" height="17" bkimage="ServiceImages\status_noharass.png" />
+			 </VerticalLayout>
+			 <VerticalLayout height="28" visible="false">  
+					 <Option name="statusStealthBtn"   textcolor="#FF000000" height="28"
+		           			text="{x 35}隐身" align="left"  showhtml="true"
+		           			disabledtextcolor="#FFA7A6AA" textpadding="0,7,0,0" 
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+				   <Control  float="true" pos="5,5,0,0" mouse="false" width="17" height="17" bkimage="ServiceImages\status_stealth.png" />
+			 </VerticalLayout>
+			 <VerticalLayout height="28" >  
+					 <Option name="statusOfflineBtn"   textcolor="#FF000000" height="28"
+		           			text="{x 35}离线" align="left"  showhtml="true"
+		           			disabledtextcolor="#FFA7A6AA" textpadding="0,7,0,0" 
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+				   <Control  float="true" pos="5,5,0,0" mouse="false" width="17" height="17" bkimage="ServiceImages\status_offline.png" />
+			 </VerticalLayout>
+    
+   </VerticalLayout> 
+   
+</VerticalLayout>
+</Window>

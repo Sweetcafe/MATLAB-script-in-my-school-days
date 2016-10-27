@@ -1,0 +1,12 @@
+close all;clear;clc;
+sumS=fliplr(xlsread('水资源总量.xls',1,'B5：L35'));
+surfaceS=fliplr(xlsread('地表水供水总量.xls',1,'B5：L35'));
+underS=fliplr(xlsread('地下水供水总量.xls',1,'B5：L35'));
+otherS=sumS-surfaceS-underS;
+%otherS=fliplr(xlsread('其他供水总量.xls',1,'B5：L35'));
+sumD=fliplr(xlsread('2004-2014 用水总量.xls',1,'B5：L35'));
+lifeD=fliplr(xlsread('生活用水总量.xls',1,'B5：L35'));
+indD=fliplr(xlsread('工业用水总量.xls',1,'B5：L35'));
+agrD=fliplr(xlsread('农业用水总量.xls',1,'B5：L35'));
+ecoD=fliplr(xlsread('生态用水总量.xls',1,'B5：L35'));
+predict=[sumS;surfaceS;underS;otherS;sumD;lifeD;indD;agrD;ecoD];

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window>
+  <ListContainerElement  name="ContainerItem"  height="26">
+  	 <HorizontalLayout name="FileItem" height="26" inset="5,0,0,0" menu="false">
+  	 	    <HorizontalLayout  name="logo_container" width ="16"  height="16" padding="0,5,0,0"  mouse="false"/>
+			<HorizontalLayout width ="5"  mouse="false" />
+		    <Label name="itemlabel"  width="160" align="left"  endellipsis="true" menu="false" mouse="false"/>	
+			<Control  mouse="false" width="10" />
+
+			<HorizontalLayout name="NormalLayout"  mouse="false">
+				<Label name="FileSizeLabel" width="80" align="center"  endellipsis="true" mouse="false"/>
+				
+				<HorizontalLayout inset="20,3,0,3" mouse="false" >
+					<HorizontalLayout name="DeleteFileTextLayout" width="60"   mouse="false">
+						<Text name="ItemDeleteFileText"  visible="false"  text="{a}删除{/a}"  showhtml="true"  height="20" />									
+					</HorizontalLayout>
+					<Text name="ItemDownloadFileText"  text="{a}下载{/a}" showhtml="true" height="20"  />
+					<Text name="ItemOpenFileText" visible="false" text="{a}打开{/a}" showhtml="true" height="20"  />
+				</HorizontalLayout>
+
+			</HorizontalLayout>
+
+			<HorizontalLayout name="DownloadLayout"  mouse="false"   visible="false">
+				<Control  mouse="false" width="17" />
+				<Progress name="TransferProgress"   padding="0,7,0,0" height="26"  width="100" borderround ="6,6"  height="12" bkimage="ServiceImages\progressBK.png" bordersize="0" align="center"  min="0" max="100" value="0"  foreimage="file='ServiceImages\progress.png' corner='2,2,2,2'"  />
+				<Control  mouse="false" width="23" />
+				<HorizontalLayout name="CancelDownloadLayout" width="60"  inset="20,3,0,3"   mouse="false">
+						<Text name="ItemCancelDownloadText"  text="{a}取消{/a}"  showhtml="true"  height="20" />									
+				</HorizontalLayout>
+				
+			</HorizontalLayout>
+
+
+
+    </HorizontalLayout>
+  </ListContainerElement>
+</Window>

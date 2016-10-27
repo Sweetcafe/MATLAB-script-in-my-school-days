@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window bktrans="false" size="500,500" >
+    <Font name="宋体" size="13" bold="false"  default="true" />
+    <Font name="宋体" size="19" bold="false" /> 
+	  
+    <VerticalLayout name="bg"  bordersize="0"  bkimage="file='TmpImage\cap.screen.bmp'" >
+    	<!---->
+   		<HorizontalLayout name="screen_Top" bordersize="0" height="98" bkcolor="#55000000" >
+   			             
+    	</HorizontalLayout>
+    	
+    	<HorizontalLayout name="screen_Height" height="80" bordersize="0" >
+    		<HorizontalLayout name="screen_Left" bordersize="0" width="100" bkcolor="#55000000" >
+   			             
+    		</HorizontalLayout>
+    		<HorizontalLayout name="screen_Width" bordersize="1" width="100" visible="false" bordercolor="#FF0000FF" >
+   			             
+    		</HorizontalLayout>
+    		<VerticalLayout  name="screen_Right" bordersize="0" bkcolor="#55000000" >
+   			             
+    		</VerticalLayout>
+
+			<CaptureUI name="CaptureRegion" float="true" visible="false"/>
+
+    	</HorizontalLayout >
+	    <VerticalLayout name="screen_Bottom" bordersize="0"  bkcolor="#55000000" >
+	   			             
+	    </VerticalLayout>	 
+    <!---->
+    <!--
+     <VerticalLayout bordersize="0"  bkcolor="#99000000" >
+	   			      <Control  name="screen" float="true" pos="20,20,40,40" bordersize="0"  bkimage="file='cap.800.600.100.jpg'" />       
+	   </VerticalLayout>
+       -->        
+        <Label   name="screenLabel" visible="false" float="true" minwidth="90" minheight="20"  maxwidth="90" maxheight="30" align="center" bordersize="0" textpadding="2,2,2,2" textcolor="#FFFFFFFF" bkcolor="#66000000" /> 
+		<ImageRichEdit name="TextEdit"  visible="false" float="true" width="60" height="40"  minwidth="60" minheight="40"    textcolor="0xFFFF0000"  bordercolor="0xFF4E99D2" bordersize="1"  font="1"  />
+		 <HorizontalLayout   name="ToolBar" visible="false" float="true" pos="20,20,80,40"   minwidth="220" minheight="26"  maxwidth="220" maxheight="30" inset="6,2,0,2" align="center" bordersize="1" bordercolor="0xFF4E99D2" bkcolor="#0xFFDEEEFF" >
+			
+				<Option name="RectangleBtn" width="26" height="22"  tooltip="矩形工具" bkimage="file='ServiceImages\capture\1.jpg' dest='3,1,23,21'"  
+				normalimage="file='ServiceImages\capture\1.jpg' dest='3,1,23,21'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" 
+				selectedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+
+				<Option name="EllipseBtn" width="26" height="22"  tooltip="椭圆工具" bkimage="file='ServiceImages\capture\2.jpg' dest='3,1,23,21'"  
+				normalimage="file='ServiceImages\capture\2.jpg' dest='3,1,23,21'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" 
+				selectedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+			
+				<Option name="ArrowLineBtn" width="26" height="22"  tooltip="箭头工具" bkimage="file='ServiceImages\capture\3.jpg' dest='3,1,23,21'"  
+				normalimage="file='ServiceImages\capture\3.jpg' dest='3,1,23,21'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" 
+				selectedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+			 
+			   <Option name="TextBtn" width="26" height="22"   tooltip="文字工具" bkimage="file='ServiceImages\capture\4.jpg' dest='3,1,23,21'"  
+				normalimage="file='ServiceImages\capture\4.jpg' dest='3,1,23,21'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" 
+				selectedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+
+				<Button name="CancelBtn" width="26" height="22"  tooltip="撤销编辑" bkimage="file='ServiceImages\capture\5.jpg' dest='3,1,23,21'"  
+				normalimage="file='ServiceImages\capture\5.jpg' dest='3,1,23,21'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+
+				<Button name="SaveBtn" width="26" height="22"  tooltip="保存" bkimage="file='ServiceImages\capture\6.jpg' dest='3,1,23,21'"  
+				normalimage="file='ServiceImages\capture\6.jpg' dest='3,1,23,21'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+
+				<Button name="ExitBtn" width="26" height="22"  tooltip="退出截图" bkimage="file='ServiceImages\capture\7.jpg' dest='3,1,23,21'"  
+				normalimage="file='ServiceImages\capture\7.jpg' dest='3,1,23,21'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+
+				<Button name="FinishBtn" width="26" height="22"  tooltip="完成截图" bkimage="file='ServiceImages\capture\8.jpg' dest='3,1,23,21''"  
+				normalimage="file='ServiceImages\capture\8.jpg' dest='3,1,23,21'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+		</HorizontalLayout>
+		
+		<HorizontalLayout name="PenBar" visible="false" float="true" pos="20,20,80,40"   minwidth="248" minheight="38"  maxwidth="248" maxheight="40" inset="6,0,0,0" bordercolor="0xFF4E99D2" bordersize="1"  bkcolor="#0xFFDEEEFF">
+			<HorizontalLayout  width="80" inset="0,7,0,7">
+				<Option name="LittlePenBtn"  group="LineGroup" selected="true" height="24" width="24" userdata="1"  
+				bkimage="file='ServiceImages\capture\9.jpg' dest='2,2,22,22'" 
+				normalimage="file='ServiceImages\capture\9.jpg' dest='2,2,22,22'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" 
+				selectedimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'"  />
+				<Control width="2" />
+				<Option name="MiddlePenBtn"  group="LineGroup"  height="24" width="24"   userdata="4" 
+				bkimage="file='ServiceImages\capture\10.jpg' dest='2,2,22,22'" 
+				normalimage="file='ServiceImages\capture\10.jpg' dest='2,2,22,22'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" 
+				selectedimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" />
+				<Control width="2" />
+				<Option name="LargePenBtn" group="LineGroup"  height="24" width="24"  userdata="8" 
+				bkimage="file='ServiceImages\capture\11.jpg' dest='2,2,22,22'" 
+				normalimage="file='ServiceImages\capture\11.jpg' dest='2,2,22,22'"
+				hotimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+				pushedimage="file='ServiceImages\allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" 
+				selectedimage="file='ServiceImages\allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" />
+				<Control />
+			</HorizontalLayout >
+
+			<VerticalLayout  width="30" height="30" padding="0,4,0,4"  inset="2,2,2,2"  bordercolor="0xFF000000" bordersize="1">
+				<VerticalLayout name = "SelectedColorLayout"  width="26" height="26" bkcolor="0xFFFF0000" />
+			</VerticalLayout> 
+			<Control width="2" />
+			<VerticalLayout width="126"   padding="0,4,0,4">
+				<HorizontalLayout width="126" height="14" >
+						<Button name="ColorBtn"  width="14" height="14" bkcolor="#FF000000"  bordercolor="#FF335B91" bordersize="1"/>
+						<Control  width="2" />
+						<Button name="ColorBtn" width="14" height="14" bkcolor="#FF808080"   bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button name="ColorBtn" width="14" height="14" bkcolor="#FF800000" bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button name="ColorBtn" width="14" height="14" bkcolor="#FF808000" bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button name="ColorBtn" width="14" height="14" bkcolor="#FF008000"  bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button name="ColorBtn" width="14" height="14" bkcolor="#FF000080"  bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button name="ColorBtn" width="14" height="14" bkcolor="#FF800080"  bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button name="ColorBtn" width="14" height="14" bkcolor="#FF008080"  bordercolor="#FF335B91" bordersize="1"/>
+				</HorizontalLayout>
+				<Control height="2" />
+				<HorizontalLayout width="126" height="14" >
+						<Button  name="ColorBtn"  width="14" height="14" bkcolor="#FFFFFFFF" bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button  name="ColorBtn" width="14" height="14" bkcolor="FFC0C0C0" bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button  name="ColorBtn" width="14" height="14" bkcolor="#FFFF0000" bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button  name="ColorBtn" width="14" height="14" bkcolor="#FFFFFF00" bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button  name="ColorBtn" width="14" height="14" bkcolor="#FF00FF00"  bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button  name="ColorBtn" width="14" height="14" bkcolor="#FF0000FF"  bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button  name="ColorBtn" width="14" height="14" bkcolor="#FFFF00FF"  bordercolor="#FF335B91" bordersize="1"/>
+						<Control width="2" />
+						<Button  name="ColorBtn" width="14" height="14" bkcolor="#FF00FFFF"  bordercolor="#FF335B91" bordersize="1"/>
+				</HorizontalLayout>
+			</VerticalLayout >
+				
+		</HorizontalLayout>
+
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="270,577" mininfo="270,577" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4">
+    <Font name="宋体" size="12" bold="false" default="true" />
+    <Font name="宋体" size="12" bold="true"/>
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+    <HorizontalLayout name="bg" bkimage="file='Skin\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout  float="true" pos="115,400,0,0" width="127" height="108" bkimage="images\gt.png" />
+        <VerticalLayout bkimage="file='ServiceImages\im_tab\bg-white.png' corner='5,5,5,5'">
+            <!--<VerticalLayout  name="bg"   width="244" height="577" bkimage="file='images\bg.png' source='11,11,255,588'" colorhsl="true">-->
+            <HorizontalLayout height="22">
+                <VerticalLayout width="140" inset="2,2,0,0">
+
+                </VerticalLayout>
+                <VerticalLayout />
+                <VerticalLayout width="76">
+                    <Button name="minbtn" float="true" tooltip="最小化" pos="0,0,28,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_mini_normal.png'" hotimage="Skin\btn_mini_highlight.png" pushedimage="Skin\btn_mini_down.png"  />
+                    <Button name="closebtn" float="true" tooltip="关闭" pos="28,0,95,19" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+                </VerticalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout height="110">
+
+                <Control name="title" float="true" pos="18,18,0,0" width="131" height="38" bkimage="images\loginTitle.png" />
+
+                <Control name="loget"   float="true" pos="146,10,0,0"  width="87" height="97" bkimage="images\loget.png" />
+            </HorizontalLayout>
+            <HorizontalLayout>
+                <HorizontalLayout width="8" />
+                <HorizontalLayout  bkimage="file='images\Login_dbg.png' corner='2,2,2,2'" >
+                    <HorizontalLayout width="8" />
+                    <VerticalLayout >
+                        <HorizontalLayout height="8" />
+                        <VerticalLayout name="webcallMain"   >
+                            <HorizontalLayout  height="5" />
+                            <HorizontalLayout height="18">
+                                <Label name="msg_show_loginForm" textcolor="#FFFF0000" align="center" text=""  height="22"  />
+                            </HorizontalLayout>
+                            <HorizontalLayout height="5"/>
+                            <HorizontalLayout height="22">
+                                <Label name="yybLabel" text="营业部" width="55" align="left"    textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                                <HorizontalLayout />
+                                <Button  name="yybselect" text="选择营业部" tooltip="选择营业部" align="right"   width="90"   textcolor="#FF0000FF" disabledtextcolor="#FFA7A6AA" />
+                            </HorizontalLayout>
+
+                            <HorizontalLayout height="24">
+                                <Edit name="branch"  enabled="false" bkimage="images\Edit.png"
+                                     bkcolor="#FFFFFFFF" bordercolor="#00B0CFE1" textpadding="8,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                                <Edit name="branchNum"  visible="false"
+                                     bkcolor="#FFFFFFFF" bordercolor="#00B0CFE1" textpadding="8,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            </HorizontalLayout>
+                            <HorizontalLayout />
+                            <HorizontalLayout height="22">
+                                <Label name="yybLabel" text="账号类型" align="left"   textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            </HorizontalLayout>
+                            <HorizontalLayout height="24">
+                                <Combo name="acountType" tooltip="请选择账户类型"
+                                   normalimage="file='images\Combo_nor.png' corner='2,2,24,2'" hotimage="file='images\Combo_push.png' corner='2,2,24,2'"
+                                   pushedimage="file='images\Combo_push.png' corner='2,2,24,2'" textpadding="1,1,1,1" >
+                                    <ListLabelElement userdata="0" text=" ----请选择----"/>
+                                    <ListLabelElement  userdata="2"  text=" 昵称" />
+                                    <ListLabelElement  userdata="14"  text=" 君弘卡号" />
+                                    <ListLabelElement  userdata="5"  text=" 资金帐号"  selected="true"  />
+                                    <ListLabelElement  userdata="8"  text=" 上海A股" />
+                                    <ListLabelElement  userdata="9"  text=" 上海B股" />
+                                    <ListLabelElement  userdata="6"  text=" 深圳A股" />
+                                    <ListLabelElement  userdata="7"  text=" 深圳B股" />
+                                    <ListLabelElement  userdata="10"  text=" 特殊转让" />
+                                    <ListLabelElement  userdata="13"  text=" [工行]牡丹国泰君安灵通卡" />
+                                    <ListLabelElement  userdata="13"  text=" [建行]国泰君安龙卡" />
+                                    <ListLabelElement  userdata="13"  text=" [招行]国泰君安银证直通卡" />
+                                    <ListLabelElement  userdata="13"  text=" [兴业]兴业国泰君安银证联名卡" />
+                                    <ListLabelElement  userdata="13"  text=" [交行]太平洋国泰君安卡" />
+                                    <!--<ListLabelElement  userdata="1"  text=" 客户号" />--仅测试用
+                                    <ListLabelElement  userdata="16"  text="员工工号" />-->
+                                </Combo>
+                            </HorizontalLayout>
+                            <HorizontalLayout />
+                            <HorizontalLayout height="22">
+                                <Label name="account_label" text="账号" align="left"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            </HorizontalLayout>
+                            <HorizontalLayout height="24">
+                                <Edit name="account_loginForm"  bkimage="images\Edit.png"
+                      bkcolor="#FFFFFFFF" bordercolor="#00B0CFE1" textpadding="8,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            </HorizontalLayout>
+                            <HorizontalLayout />
+                            <HorizontalLayout height="22">
+                                <Label name="password_label" text="服务密码" align="left"    textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            </HorizontalLayout>
+                            <HorizontalLayout height="24">
+                                <Edit name="password_loginForm"  align="left"   password="true"  bkimage="images\Edit.png"
+                      bkcolor="#FFFFFFFF" bordercolor="#00B0CFE1" textpadding="8,3,4,3" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                            </HorizontalLayout>
+                            <HorizontalLayout  height="8" />
+                            <HorizontalLayout height="24">
+                                <HorizontalLayout />
+                                <Option name="isChecked_loginForm" align="left" selected="true" showhtml="true" text="{x 5}记住我的账号" width="100" height="15"  textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='images\radio_noselect.png' dest='0,0,13,13'" selectedimage="file='images\radio_select.png' dest='0,0,13,13'" />
+                            </HorizontalLayout>
+                            <HorizontalLayout height="8" />
+                            <HorizontalLayout height="12">
+
+                                <Progress name="loginprogress"   borderround ="6,6"   height="12"
+									           				
+                                    bkimage="images\progressBK.png"
+                                     bordersize="0"
+                                     align="center" foreimage="file='images\progress.png' corner='2,2,2,2'"
+                                      min="0" max="50" value="0" hor="true" visible="false"/>
+                            </HorizontalLayout>
+                            <HorizontalLayout  height="8" />
+                            <HorizontalLayout height="34">
+                                <HorizontalLayout />
+                                <Button name="loginButton_loginForm"  width="156" height="34" textcolor="#FFFFFFFF" 
+									           			text="登录" font="3" align="center" 
+									           			 align="center" normalimage="ServiceImages\bg_btn.png" 
+									           			hotimage="ServiceImages\bg_btn-on.png" 
+									           			pushedimage="ServiceImages\bg_btn-on.png" />	
+                                <HorizontalLayout />
+                            </HorizontalLayout>
+                            <HorizontalLayout height="3" />
+                        </VerticalLayout>
+                        <HorizontalLayout height="8" />
+                    </VerticalLayout>
+                    <HorizontalLayout width="8" />
+                </HorizontalLayout>
+                <HorizontalLayout width="8" />
+            </HorizontalLayout>
+            <HorizontalLayout height="10" />
+            <HorizontalLayout height="24">
+                <HorizontalLayout>
+                </HorizontalLayout>
+                <HorizontalLayout width="86">
+
+                    <Control name="link_NetSettingIco"  width="24" height="24" bkimage="images\icon_setting.png" />
+                    <Button name="link_NetSetting"  showhtml="true" text="{x 4}网络设置" textpadding="0,7,0,0" align="left" textcolor="#00666666" showhtml="true" width="70" height="24"
+                     hottextcolor="#53333333"  
+                     tooltip="网络设置" />
+                </HorizontalLayout>
+                <HorizontalLayout>
+                </HorizontalLayout>
+                <HorizontalLayout width="116">
+                    <Control name="ykdjIco"  width="24" height="24" bkimage="images\visitorJump.png" />
+                    <Button  name="ykdj"  showhtml="true" text="{x 2}游客请点击此处" align="left" width="100" height="24"
+                     textcolor="#00666666" showhtml="true"  hottextcolor="#53333333" textpadding="0,7,0,0"
+                      tooltip="游客请点击此处" />
+                </HorizontalLayout>
+                <HorizontalLayout>
+                </HorizontalLayout>
+            </HorizontalLayout>
+            <HorizontalLayout height="16" />
+
+
+            <!--</VerticalLayout>-->
+        </VerticalLayout>
+
+    </HorizontalLayout>
+</Window>

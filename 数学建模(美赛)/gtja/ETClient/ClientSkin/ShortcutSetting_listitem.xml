@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Window>
+    <ListContainerElement name="shcut_item" height="23" inset="0,1,0,1">
+        <HorizontalLayout >
+            <HorizontalLayout width="95" >
+                <Text name="shcut_det_text" text="" textpadding="0,2,0,0" mouse="false" ></Text>
+            </HorizontalLayout>
+            <HorizontalLayout width="240">
+                <Text name="shcut_cont_text" text="" width="200" textpadding="0,2,0,0"  ></Text>
+                <!--<Edit name="shcut_cont_edit" readonly="false" width="200"  visible="false"></Edit>-->
+            </HorizontalLayout>
+            <HorizontalLayout name="shcut_btnHor_lay" width="40">
+                <Text name="shcut_state_text" text="正常" textpadding="0,2,0,0" mouse="false" ></Text>
+            </HorizontalLayout>
+        </HorizontalLayout>
+    </ListContainerElement>
+</Window>

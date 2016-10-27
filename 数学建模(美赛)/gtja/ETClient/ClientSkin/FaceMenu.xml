@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window size="487,199">
+  <Font name="微软雅黑" size="12" bold="false" default="true" />
+  <Font name="微软雅黑" size="12" bold="true"/>
+<VerticalLayout name="color" inset="4,4,4,4"   bkimage="ServiceImages\bg_face_frame.png">
+	<HorizontalLayout  height="32" > 
+	  <Button   userdata="[img:17]"  tooltip="微笑"      bkimage="file='face\0.jpg'  dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:1]"   tooltip="撇嘴"      bkimage="file='face\1.jpg'  dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:2]"   tooltip="色"        bkimage="file='face\2.jpg'  dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:3]"   tooltip="发呆"      bkimage="file='face\3.jpg'  dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:104]" tooltip="得意"      bkimage="file='face\4.jpg'  dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:4]"   tooltip="流泪"      bkimage="file='face\5.jpg'  dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:106]" tooltip="害羞"      bkimage="file='face\6.jpg'  dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />	  
+	  <Button   userdata="[img:107]" tooltip="闭嘴"      bkimage="file='face\7.jpg'  dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />	 
+	  <Button   userdata="[img:108]" tooltip="睡"        bkimage="file='face\8.jpg'  dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />	  
+	  <Button   userdata="[img:0]"   tooltip="大哭"      bkimage="file='face\9.jpg'  dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:110]" tooltip="尴尬"      bkimage="file='face\10.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:111]" tooltip="发怒"      bkimage="file='face\11.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:6]"   tooltip="调皮"      bkimage="file='face\12.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:7]"   tooltip="呲牙"      bkimage="file='face\13.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:8]"   tooltip="惊讶"      bkimage="file='face\14.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	</HorizontalLayout>                                                                                                                                                                                                                                                                 
+	<HorizontalLayout height="32" >                                                                                                                                          
+	  <Button   userdata="[img:9]"   tooltip="难过"      bkimage="file='face\15.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:10]"  tooltip="酷"        bkimage="file='face\16.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" /> 
+	  <Button   userdata="[img:117]" tooltip="冷汗"      bkimage="file='face\17.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:118]" tooltip="抓狂"      bkimage="file='face\18.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:119]" tooltip="吐"        bkimage="file='face\19.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:11]"  tooltip="偷笑"      bkimage="file='face\20.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:12]"  tooltip="可爱"      bkimage="file='face\21.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:13]"  tooltip="白眼"      bkimage="file='face\22.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />  
+	  <Button   userdata="[img:14]"  tooltip="傲慢"      bkimage="file='face\23.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:124]" tooltip="饥饿"      bkimage="file='face\24.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:15]"  tooltip="困"        bkimage="file='face\25.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:126]" tooltip="惊恐"      bkimage="file='face\26.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:16]"  tooltip="流汗"      bkimage="file='face\27.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:128]" tooltip="憨笑"      bkimage="file='face\28.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:129]" tooltip="大兵"      bkimage="file='face\29.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	</HorizontalLayout>                                                                                                                                                                                                                                                                 
+	<HorizontalLayout height="32" >                                                                                                                                          
+	  <Button   userdata="[img:18]"  tooltip="奋斗"      bkimage="file='face\30.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:131]" tooltip="咒骂"      bkimage="file='face\31.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:132]" tooltip="疑问"      bkimage="file='face\32.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:133]" tooltip="嘘..."     bkimage="file='face\33.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:19]"  tooltip="晕"        bkimage="file='face\34.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:135]" tooltip="折磨"      bkimage="file='face\35.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:20]"  tooltip="衰"        bkimage="file='face\36.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:21]"  tooltip="骷髅"      bkimage="file='face\37.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:22]"  tooltip="敲打"      bkimage="file='face\38.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:23]"  tooltip="再见"      bkimage="file='face\39.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:140]" tooltip="擦汗"      bkimage="file='face\40.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:141]" tooltip="抠鼻"      bkimage="file='face\41.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:142]" tooltip="鼓掌"      bkimage="file='face\42.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:143]" tooltip="糗大了"    bkimage="file='face\43.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:144]" tooltip="坏笑"      bkimage="file='face\44.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	</HorizontalLayout>                                                                                                                                                                                                                                                                 
+	<HorizontalLayout height="32" >                                                                                                                                          
+	  <Button   userdata="[img:145]" tooltip="左哼哼"    bkimage="file='face\45.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:146]" tooltip="右哼哼"    bkimage="file='face\46.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:147]" tooltip="哈欠"      bkimage="file='face\47.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:148]" tooltip="鄙视"      bkimage="file='face\48.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:149]" tooltip="委屈"      bkimage="file='face\49.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:150]" tooltip="快哭了"    bkimage="file='face\50.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:151]" tooltip="阴险"      bkimage="file='face\51.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:152]" tooltip="亲亲"      bkimage="file='face\52.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:5]"   tooltip="吓"        bkimage="file='face\53.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:154]" tooltip="可怜"      bkimage="file='face\54.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:155]" tooltip="菜刀"      bkimage="file='face\55.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:156]" tooltip="西瓜"      bkimage="file='face\56.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:157]" tooltip="啤酒"      bkimage="file='face\57.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:158]" tooltip="篮球"      bkimage="file='face\58.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:159]" tooltip="乒乓"      bkimage="file='face\59.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	</HorizontalLayout>                                                                                                                                                                                                                                                                 
+	<HorizontalLayout height="32" >                                                                                                                                          
+	  <Button   userdata="[img:160]" tooltip="咖啡"      bkimage="file='face\60.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:161]" tooltip="饭"        bkimage="file='face\61.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:162]" tooltip="猪头"     bkimage="file='face\62.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:163]" tooltip="玫瑰"     bkimage="file='face\63.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:164]" tooltip="凋谢"     bkimage="file='face\64.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:165]" tooltip="示爱"     bkimage="file='face\65.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:166]" tooltip="爱心"     bkimage="file='face\66.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:167]" tooltip="心碎"     bkimage="file='face\67.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:168]" tooltip="蛋糕"     bkimage="file='face\68.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:169]" tooltip="闪电"     bkimage="file='face\69.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:170]" tooltip="炸弹"     bkimage="file='face\70.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:171]" tooltip="刀"       bkimage="file='face\71.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:172]" tooltip="足球"     bkimage="file='face\72.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:173]" tooltip="瓢虫"     bkimage="file='face\73.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:174]" tooltip="便便"     bkimage="file='face\74.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	</HorizontalLayout>                                                                                                                                                                                                                                                                 
+	<HorizontalLayout height="32" >                                                                                                                                          
+	  <Button   userdata="[img:175]" tooltip="月亮"     bkimage="file='face\75.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:176]" tooltip="太阳"     bkimage="file='face\76.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:177]" tooltip="礼物"     bkimage="file='face\77.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:178]" tooltip="拥抱"     bkimage="file='face\78.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:179]" tooltip="强"       bkimage="file='face\79.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:180]" tooltip="弱"       bkimage="file='face\80.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:181]" tooltip="握手"     bkimage="file='face\81.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:182]" tooltip="胜利"     bkimage="file='face\82.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:183]" tooltip="抱拳"     bkimage="file='face\83.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:184]" tooltip="勾引"     bkimage="file='face\84.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:185]" tooltip="拳头"     bkimage="file='face\85.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:186]" tooltip="差劲"     bkimage="file='face\86.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:187]" tooltip="爱你"     bkimage="file='face\87.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:188]" tooltip="NO"       bkimage="file='face\88.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	  <Button   userdata="[img:189]" tooltip="OK"       bkimage="file='face\89.jpg' dest='4,4,28,28'"  hotimage="file='ServiceImages\bg_Face-on.png' corner='2,2,2,2' " width="32" height="32" />
+	                                                  
+	</HorizontalLayout>                               
+</VerticalLayout>                                   
+</Window>                                           
+
+                                                    

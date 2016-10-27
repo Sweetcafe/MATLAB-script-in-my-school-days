@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="408,489" mininfo="408,489" sizebox="4,4,4,4" caption="0,0,0,40"  roundcorner="4,4,4,4" showdirty="false">
+    <Font name="微软雅黑" size="12" bold="false" default="true" />
+    <Font name="微软雅黑" size="12" bold="true"/>
+    <Default name="VScrollBar" value="width=&quot;16&quot; button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+    <HorizontalLayout  name="bg" bkimage="file='ServiceImages\bg0.png' corner='600,200,1,1'" hole="true">
+        <VerticalLayout bkimage="file='Skin\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true" >
+            <VerticalLayout bkimage="file='ServiceImages\jb.png' corner='2,30,2,2'">
+                <!--上方水平条-->
+                <HorizontalLayout height="30" >
+
+                    <VerticalLayout width="15" />
+                    <Text name="groupname"  textpadding="30,5,30,0" bkimage="file='ServiceImages\title_bk.png' corner='31,5,31,5'"  textcolor="#FFFFFFFF"/>
+                    <VerticalLayout />
+
+                    <VerticalLayout width="104">
+                        <Button name="minbtn" float="true" tooltip="最小化" pos="0,0,28,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_mini_normal.png'" hotimage="Skin\btn_mini_highlight.png" pushedimage="Skin\btn_mini_down.png"  />
+                        <Button name="maxbtn" float="true" tooltip="最大化" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_max_normal.png'" hotimage="Skin\btn_max_highlight.png" pushedimage="Skin\btn_max_down.png"  />
+                        <Button name="restorebtn" visible="false" float="true" tooltip="还原" pos="28,0,56,19" width="28" height="19" maxheight="19" maxwidth="28"  normalimage="file='Skin\btn_restore_normal.png'" hotimage="Skin\btn_restore_highlight.png" pushedimage="Skin\btn_restore_down.png"  />
+                        <Button name="closebtn" float="true" tooltip="关闭" pos="56,0,95,19" width="39" height="19" maxheight="19" maxwidth="39"  normalimage="file='Skin\btn_close_normal.png'" hotimage="Skin\btn_close_highlight.png" pushedimage="Skin\btn_close_down.png"  />
+                    </VerticalLayout>
+                </HorizontalLayout>
+                <HorizontalLayout height="40" />
+
+                <!--下方水平条-->
+                <HorizontalLayout >
+                    <VerticalLayout width="12"/>
+
+                    <VerticalLayout >
+                        <VerticalLayout bordersize="0" bordercolor="#FF999933" inset="0,0,0,0" bkimage="file='Skin\chat_mid_bk.png' source='0,10,2,26'">
+                            <VerticalLayout height="26"  name="tipsBox"  visible="false" >
+                                <HorizontalLayout name="tipsBoxBk" padding="2,2,2,2" bkcolor="#11000000" colorhsl="true" >
+                                    <Control width="2"/>
+                                    <Control name="tipsBoxIcon" width="14" height="15" padding="0,4,0,0" bkimage="file='images\icon_safe.png' fade='255'" />
+                                    <Control width="2"/>
+                                    <Label name="tipsText" colorhsl="true" text="交谈中请勿发送密码,勿轻信汇款、中奖信息,勿轻易拨打陌生电话." textcolor="#FFFF9999" />
+                                    <Button padding="0,5,0,0" name="tipsclosebtn" width="12" height="12"
+                                        normalimage="file='close.png' source='0,0,12,12'"
+                                        hotimage="file='close.png' source='12,0,24,12'"
+                                        pushedimage="file='close.png' source='24,0,36,12'"/>
+                                    <Control width="2"/>
+                                </HorizontalLayout>
+                            </VerticalLayout>
+                            <HorizontalLayout minheight="50" minwidth="50">
+                                <ImageRichEdit minheight="50" minwidth="50"  name="msg_textVBox" padding="5,5,5,5" menu="true" vscrollbar="true" autovscroll="true" readonly="true"  roundcorner="4,4"	/>
+                            </HorizontalLayout>
+                        </VerticalLayout>
+                        <HorizontalLayout name="fontbar" bkimage="file='Font\font_bk.bmp'" height="30" inset="4,4,4,4" visible="false">
+                            <Combo name="font_type" droptype="droplist" width="100" height="22" textpadding="4,1,1,1"  normalimage="file='Font\combo.png' source='0,0,100,22' corner='2,2,20,2'"
+                                hotimage="file='Font\combo.png' source='0,22,100,44' corner='2,2,22,2'" pushedimage="file='Font\combo.png' source='0,44,100,66' corner='2,2,22,2'">
+                                <ListLabelElement text="微软雅黑" height="23"/>
+                                <ListLabelElement text="宋体" height="23" />
+                                <ListLabelElement text="黑体" height="23" />
+                                <ListLabelElement text="幼圆" height="23" />
+                                <ListLabelElement text="楷体" height="23" />
+                            </Combo>
+                            <Combo name="font_size" droptype="droplist" width="50" height="22" textpadding="4,1,1,1" normalimage="file='Font\combo.png' 
+								          	source='0,0,100,22' corner='2,2,20,2'" hotimage="file='Font\combo.png' source='0,22,100,44' corner='2,2,22,2'"
+                              pushedimage="file='Font\combo.png' source='0,44,100,66' corner='2,2,22,2'">
+                                <ListLabelElement text="9"  height="23" />
+                                <ListLabelElement text="10" height="23" />
+                                <ListLabelElement text="11" height="23" />
+                                <ListLabelElement text="12" height="23" />
+                                <ListLabelElement text="13" height="23" />
+                                <ListLabelElement text="14" height="23" />
+                                <ListLabelElement text="15" height="23" />
+                                <ListLabelElement text="16" height="23" />
+                                <ListLabelElement text="17" height="23" />
+                                <ListLabelElement text="18" height="23" />
+                                <ListLabelElement text="19" height="23" />
+                                <ListLabelElement text="20" height="23" />
+                                <ListLabelElement text="21" height="23" />
+                                <ListLabelElement text="22" height="23" />
+                                <ListLabelElement text="24" height="23" />
+                                <ListLabelElement text="28" height="23" />
+                                <ListLabelElement text="32" height="23" />
+                            </Combo>
+                            <Control width="5"/>
+                            <Option showhtml="true" name="boldbtn" width="22" height="22" text="{i Bold.png}{/i}" hotimage="file='Font\btn_hot.png' corner='2,3,2,2'" selectedimage="file='Font\btn_push.png' corner='2,5,2,2'"  />
+                            <Option showhtml="true" name="italicbtn"  width="22" height="22" text="{i Italic.png}{/i}" hotimage="file='Font\btn_hot.png' corner='2,3,2,2'" selectedimage="file='Font\btn_push.png' corner='2,5,2,2'"  />
+                            <Option showhtml="true" name="underlinebtn"  width="22" height="22" text="{i underline.png}{/i}" hotimage="file='Font\btn_hot.png' corner='2,3,2,2'" selectedimage="file='Font\btn_push.png' corner='2,5,2,2'"  />
+                            <Option showhtml="true" name="colorbtn"  width="22" height="22" text="{i color.png}{/i}" hotimage="file='Font\btn_hot.png' corner='2,3,2,2'" selectedimage="file='Font\btn_push.png' corner='2,5,2,2'"  />
+                        </HorizontalLayout>
+                        <HorizontalLayout height="34"  >
+                        	      <VerticalLayout width="45" name="fontlayout" >
+                                    <Option name="fontbtn"  height="29" width="43"   tooltip="选择字体" normalimage="file='Font\call\icon_input_text.png'" hotimage="file='Font\call\icon_input_text-blue.png'" selectedimage="file='Font\call\icon_input_text-blue.png'"  />
+                                </VerticalLayout>
+                                <VerticalLayout width="45" name="facelayout" >
+                                    <Button name="faceBtn" height="29" width="43"  tooltip="选择表情" normalimage="file='Font\call\icon_input_smile.png' " hotimage="file='Font\call\icon_input_smile-blue.png'"  />
+                                </VerticalLayout>
+                                <HorizontalLayout width="41" name="screenlayout" >
+                                    <Button name="screenBtn" height="29" width="28" tooltip="屏幕截图"  normalimage="file='Font\call\icon_prtscreen_01.png' source='8,0,36,32' " hotimage="file='Font\call\icon_prtscreen_05.png' source='8,0,36,32'"  />
+                                    <Button name="ishideselectBtn" height="29" width="13" tooltip="屏幕截图"  normalimage="file='Font\call\icon_prtscreen_01.png' source='35,0,48,32' " hotimage="file='Font\call\icon_prtscreen_05.png' source='35,0,48,32'"  />
+                                </HorizontalLayout>
+                                <VerticalLayout width="45" name="clearSClayout" >
+                                    <Button name="clearSC" height="29" width="43" tooltip="清屏"  normalimage="file='Font\call\icon_input_table.png'" hotimage="file='Font\call\icon_input_table-blue.png'"  />
+                                </VerticalLayout>
+                            <VerticalLayout />
+                            <HorizontalLayout width="100" >
+                               <Button name="showHistory" padding="0,4,0,0" width="96" height="26" text="聊天记录" tooltip="查看聊天记录" textcolor="0xFFFFFFFF"
+                                   bkimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'"
+                                   normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'"
+                                       hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'"
+                                       pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"
+									         	  />
+                            </HorizontalLayout>
+                        </HorizontalLayout>
+                        <HorizontalLayout height="76" bkcolor="#FFFFFFFF" inset="5,0,0,0">
+                            <ImageRichEdit name="sendContentTextArea" vscrollbar="true" menu="true" roundcorner="4,4"	autovscroll="true" />
+                        </HorizontalLayout>
+                        <HorizontalLayout height="34" >
+                            <!--最下方按钮-->
+
+                            <Combo name="membercombo"   width="100" height="22" padding="0,6,0,6" tooltip="请点击这里选择成员"
+                               normalimage="file='ServiceImages\Combo2_nor.png' corner='2,2,28,2'"
+                               hotimage="file='ServiceImages\combo2_over.png' corner='2,2,28,2'"
+        pushedimage="file='ServiceImages\combo2_over.png' corner='2,2,28,2'"
+         focusedimage="file='ServiceImages\combo2_over.png'  corner='2,2,28,2'"
+          textpadding="5,1,1,1" />
+
+                            <HorizontalLayout />
+
+                            <HorizontalLayout width="80" >
+                                <Button name="closeBtn" padding="0,4,0,0"  tooltip="关闭" text="关闭" width="69" height="26" textcolor="0xFFFFFFFF"
+                                  normalimage="file='ServiceImages\btn_2_nor.png' corner='8,8,8,8'"
+                                  hotimage="file='ServiceImages\btn_2_focus.png' corner='8,8,8,8'"
+                                  pushedimage="file='ServiceImages\btn_2_over.png' corner='8,8,8,8'"  />
+                            </HorizontalLayout>
+
+                            <HorizontalLayout width="100" >
+                                <Button name="sendBtn" padding="0,4,0,0"   tooltip="发送" text="发送" width="69" height="26" 			textcolor="0xFFFFFFFF"
+                                  normalimage="file='ServiceImages\SendBtnL.png' corner='8,8,8,8'"
+                                  hotimage="file='ServiceImages\SendBtnLon.png' corner='8,8,8,8'"
+                                  pushedimage="file='ServiceImages\SendBtnL.png' corner='8,8,8,8'" />
+                                <Button name="sendDropBtn" padding="0,4,0,0"   tooltip="发送"  width="25" height="26"
+                                  normalimage="file='ServiceImages\SendBtnR.png' corner='8,8,8,8'"
+                                  hotimage="file='ServiceImages\SendBtnRon.png' corner='8,8,8,8'"
+                                  pushedimage="file='ServiceImages\SendBtnR.png' corner='8,8,8,8'" />
+                            </HorizontalLayout>
+
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <VerticalLayout name="HideRightRegionLayout" width="10"  >
+                        <Control  />
+                        <Button name="HideRightRegionBtn" height="150" tooltip="隐藏侧边"  hotimage="ServiceImages\btn_4_over.png" pushedimage="ServiceImages\btn_4_over.png" />
+                        <Control  />
+                    </VerticalLayout>
+
+                    <HorizontalLayout name="filesendLayoutID" width="165"  visible="false" >
+                        <VerticalLayout width="12"/>
+                        <VerticalLayout>
+                        </VerticalLayout>
+                    </HorizontalLayout>
+
+
+
+                    <VerticalLayout name="rightInfoLayoutID"  minwidth="165"  maxwidth="400"  width="165" visible="false" >
+
+                        <HorizontalLayout name="LeftMainPanel" height="25" inset="0,0,0,0" >
+                            <VerticalLayout  minwidth="30">
+                                <Option name="GroupInfoBtn" selected="true" group="leftMainPanel" text="群信息" tooltip="群信息" bkimage="file='ServiceImages\tabs_off.png'  source='8,0,103,29' corner='15,0,15,0'" selectedimage="file='ServiceImages\tabs_on.png' source='8,0,103,29' corner='15,0,15,0'" />
+                            </VerticalLayout>
+                            <VerticalLayout  minwidth="30">
+                                <Option name="ShareFileBtn" group="leftMainPanel"  text="文件共享" tooltip="文件共享" bkimage="file='ServiceImages\tabs_off.png'  source='8,0,103,29' corner='15,0,15,0'" selectedimage="file='ServiceImages\tabs_on.png'  source='8,0,103,29' corner='15,0,15,0'" />
+                            </VerticalLayout>
+                            <VerticalLayout  name="HistoryOptionLayout" minwidth="30" visible="false">
+                                <Option name="HistoryBtn" group="leftMainPanel"  text="历史记录" tooltip="历史记录" bkimage="file='ServiceImages\tabs_off.png'  source='8,0,103,29' corner='15,0,15,0'" selectedimage="file='ServiceImages\tabs_on.png'  source='8,0,103,29' corner='15,0,15,0'" />
+                            </VerticalLayout>
+                        </HorizontalLayout>
+
+                        <TabLayout name="tabs" bkimage="file='Skin\chat_mid_bk.png'">
+
+
+                            <VerticalLayout name="NoticeLayoutTab"  width="165"  >
+
+                                <VerticalLayout height="93" >
+
+
+                                    <HorizontalLayout height="28"  bkimage="file='ServiceImages\bg_sets-menu.png'">
+                                        <Label  width="125"   text="群公告" textcolor="0xFF000000" textpadding="10,2,0,2"  align="left"/>
+                                        <HorizontalLayout inset="0,6,0,6">
+                                            <Button name="EditNoticeBtn" visible="false" width="16" height="15" tooltip="编辑"    normalimage="file='ServiceImages\Btn_edit.png'"  hotimage="file='ServiceImages\Btn_edit.png'" pushedimage="file='ServiceImages\Btn_edit.png'" />
+                                        </HorizontalLayout>
+                                    </HorizontalLayout>
+
+                                    <HorizontalLayout  name="NoticeLayout"  width="165" height="65">
+                                        <RichEdit   name="NoticeEdit" vscrollbar="true" readonly="true" inset="10,2,2,2"   textcolor="0xFF000000"  />
+                                    </HorizontalLayout>
+
+
+                                    <HorizontalLayout  name="NoticeEditLayout" minwidth="165" width="165" height="65">
+                                        <!--编辑群公告界面-->
+
+                                        <RichEdit name= "InputNoticeEdit"   width="132"   vscrollbar="true"  inset="10,2,2,2"   textcolor="0xFF000000"  bkcolor="#FFFFFFFF" />
+                                        <VerticalLayout  inset="8,5,8,5">
+                                            <Button name="EditNoticeConfirmBtn" width="16" height="15" tooltip="确定"    normalimage="file='ServiceImages\Btn_edit.png'"  hotimage="file='ServiceImages\Btn_edit.png'" pushedimage="file='ServiceImages\Btn_edit.png'" />
+                                            <HorizontalLayout  />
+                                            <Button name="EditNoticeCancelBtn" width="15" height="16" tooltip="取消"    normalimage="file='ServiceImages\Btn_delete.png'"  hotimage="file='ServiceImages\Btn_delete.png'" pushedimage="file='ServiceImages\Btn_delete.png'" />
+                                        </VerticalLayout>
+                                    </HorizontalLayout>
+
+                                </VerticalLayout>
+
+
+                                <VerticalLayout  width="165">
+                                    <Button  width="165"  height="30"  text="群成员列表" align="left"  textpadding="10,2,0,2"  textcolor="0xFF000000" normalimage="file='ServiceImages\bg_sets-menu.png'" hotimage="file='ServiceImages\bg_sets-menu-on.png'" pushedimage="file='ServiceImages\bg_sets-menu-on.png'" />
+                                    <VerticalLayout    width="165"  >
+                                        <FriendList  width="165" name="deptusers" header="hidden" itemhottextcolor="#FFFF0000" itemtextcolor="#FF000000" itemselectedbkcolor="#FFFCEAA3" itemhotbkcolor="#FFC2E2F8" itemshowhtml="true" vscrollbar="true" />
+                                    </VerticalLayout>
+
+                                </VerticalLayout>
+
+                            </VerticalLayout>
+
+                            <VerticalLayout name="ShareFileLayoutTab" minwidth="400" width="400"  >
+
+
+
+                                <VerticalLayout name="FileListLayout" menu="true">
+                                    <HorizontalLayout  height="30"  bkcolor="#FFFFFF" inset="20,5,0,5">
+                                        <HorizontalLayout name="UploadSharedFileBtnLayout" width="60">
+                                            <Button name="RefreshSharedFileBtn"  text="刷新" width="40" height="20" bkimage="file='ServiceImages\btn_advanced-search.png'"  textcolor="0xFFFFFFFF" normalimage="file='ServiceImages\btn_2_nor.png'" hotimage="file='ServiceImages\btn_2_focus.png'" pushedimage="file='ServiceImages\btn_2_over.png'" userdata="file='ServiceImages\btn_2_nor.png'"/>
+                                            <Control />
+                                        </HorizontalLayout>
+                                        <Button name="UploadSharedFileBtn" visible="false" text="上传" width="40" height="20" bkimage="file='ServiceImages\btn_advanced-search.png'"  textcolor="0xFFFFFFFF" normalimage="file='ServiceImages\btn_2_nor.png'" hotimage="file='ServiceImages\btn_2_focus.png'" pushedimage="file='ServiceImages\btn_2_over.png'" userdata="file='ServiceImages\btn_2_nor.png'"/>
+
+                                    </HorizontalLayout>
+                                    <List   name="sharedfiles" header="hidden" itemhottextcolor="#FFFF0000" itemtextcolor="#FF000000" itemselectedbkcolor="#FFFCEAA3" itemhotbkcolor="#FFC2E2F8" itemshowhtml="true" vscrollbar="true" />
+
+
+                                    <HorizontalLayout height="22" bkimage="file='images\box_bg.png'" width="400" padding="0,5,0,10" >
+                                        <HorizontalLayout width="20"/>
+                                        <HorizontalLayout >
+                                            <!--Label name="ShareFilePageLabel" width="140" text="第11页/共111页  共100条记录" float="true" pos="0,3,0,0" enabled="true"  height="22" align="center" textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA" /-->
+
+                                            <Text name="ShareFilePageLabel"  text="第1页/共1页  共0条记录"  textpadding="0,3,0,0" enabled="true"  height="22" align="center" textcolor="#FF1B4876" disabledtextcolor="#FFA7A6AA"  />
+
+
+                                        </HorizontalLayout>
+
+                                        <HorizontalLayout width="10"/>
+
+                                        <HorizontalLayout  width="160" height="22" childpadding="30" inset="2,4,2,2">
+                                            <Button name="FirstPageBtn" tooltip="第一页"   enabled="true"  width="16" height="16"
+                                             bkimage = "file='ServiceImages\leftFirst_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+                                             normalimage="file='ServiceImages\leftFirst_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+                                             disabledimage="file='ServiceImages\leftFirst_arrow_disable.png' mask='0xffffffff'  dest='4,4,12,12'"
+                                             hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'"
+                                             pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+
+                                            <Button name="PreviousPageBtn" tooltip="上一页"  enabled="true"  width="16" height="16"
+                                                 bkimage = "file='ServiceImages\left_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+                                       normalimage="file='ServiceImages\left_arrow.png' mask='0xffffffff' dest='4,4,12,12'"
+                                                 disabledimage="file='ServiceImages\left_arrow_disable.png' mask='0xffffffff' dest='4,4,12,12'"
+                                       hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'"
+                                       pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+
+                                            <Button name="NextPageBtn" tooltip="下一页"  enabled="false" width="16" height="16"
+                                                bkimage = "file='ServiceImages\right_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+                                       normalimage="file='ServiceImages\right_arrow.png' mask='0xffffffff' dest='4,4,12,12'"
+                                                disabledimage="file='ServiceImages\right_arrow_disable.png' mask='0xffffffff' dest='4,4,12,12'"
+                                       hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'"
+                                       pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"  />
+
+                                            <Button name="LastPageBtn" tooltip="最后页"  enabled="true" width="16" height="16"
+                                                  bkimage = "file='ServiceImages\rightLast_arrow.png'  mask='0xffffffff' dest='4,4,12,12'"
+                                       normalimage="file='ServiceImages\rightLast_arrow.png' mask='0xffffffff' dest='4,4,12,12'"
+                                                  disabledimage="file='ServiceImages\rightLast_arrow_disable.png' mask='0xffffffff' dest='4,4,12,12'"
+                                       hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'"
+                                       pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+
+                                        </HorizontalLayout>
+
+                                        <HorizontalLayout width="20"/>
+
+                                    </HorizontalLayout>
+                                </VerticalLayout>
+
+
+                            </VerticalLayout>
+
+                            <HorizontalLayout name="HistoryTab" minwidth="400" width="400"  visible="false" >
+                                <Histroydetail />
+                            </HorizontalLayout>
+
+                        </TabLayout>
+
+                        <VerticalLayout height="7" />
+
+                    </VerticalLayout>
+
+
+
+
+
+                    <VerticalLayout name="RightBorderLayout" width="12">
+                        <Control />
+                        <Button name="ShowRightRegionBtn"  visible ="false" tooltip="显示侧边" height="150" hotimage="ServiceImages\btn_4_over.png" pushedimage="ServiceImages\btn_4_over.png" />
+                        <Control />
+                    </VerticalLayout>
+                </HorizontalLayout>
+            </VerticalLayout>
+
+            <HorizontalLayout height="1" />
+
+        </VerticalLayout>
+    </HorizontalLayout>
+</Window>

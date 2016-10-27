@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window sizebox="4,4,6,6" caption="0,0,0,30" size="410,296" mininfo="410,296" opacity="true" transparency="0" >
+     <Font name="宋体" size="12" bold="false" default="true" />
+	   <Font name="宋体" size="12" bold="true"/>
+     <VerticalLayout  name="bg" bordersize="0"  width="410" height="296" bkimage="file='images\mzsm.jpg'">
+       	 
+       	
+         <Button name="closeBtn" text="确定" float="true" pos="310,270,0,0"  width="70" height="24" align="center" normalimage="file='images\btn_a.png'" hotimage="file='images\btn_hov.png' " pushedimage="file='images\btn_down.png' " />
+        
+    </VerticalLayout>
+</Window>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true" size="190,70"  roundcorner="4,4,4,4">
+ <Font name="宋体" size="13" bold="false"/>
+ <Font name="宋体" size="12"/>
+<VerticalLayout bkimage="file='ServiceImages\bg_menu.png' corner='55,5,5,5'" inset="5,7,8,7" >
+	 
+	 
+	 	   <VerticalLayout height="28">
+	 	   	   <Option name="hidewndBtn"  textcolor="#FF000000" height="28"
+		           			text="{x 35}截图时隐藏窗口" align="left"  showhtml="true"  
+		           			align="left" textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='55,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='55,5,5,5'"/> 
+			 </VerticalLayout>
+			 <VerticalLayout height="28">   
+					 <Option name="showwndBtn"    height="28" textcolor="#FF000000" 
+				           			text="{x 35}截图时不隐藏窗口" align="left"  showhtml="true"
+				           			disabledtextcolor="#FFA7A6AA" textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='55,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='55,5,5,5'"/> 
+			 </VerticalLayout>
+   
+</VerticalLayout>
+</Window>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true" size="140,180"  roundcorner="4,4,4,4">
+ <Font name="宋体" size="13" bold="false"/>
+ <Font name="宋体" size="12"/>
+<VerticalLayout bkimage="file='ServiceImages\bg_menu.png' conner='25,15,15,15'"  inset="5,5,7,7" >
+	<VerticalLayout height="28">
+	 	   	   <Option name="setCenterBtn"  textcolor="#FF000000" height="28"
+		           			text="{x 35}设置中心" align="left"  showhtml="true"
+		           			 textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+				   <Control  float="true" pos="5,5,0,0" mouse="false" width="19" height="21" bkimage="file='ServiceImages\SettingCenterImage\icon-ET.png'" />
+	</VerticalLayout>
+	<VerticalLayout height="28">
+	 	   	   <Option name="setEtFeedbackBtn"  textcolor="#FF000000" height="28"
+		           			text="{x 35}ET助手反馈" align="left"  showhtml="true"
+		           			 textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+	</VerticalLayout>
+	<VerticalLayout height="28">
+	 	   	   <Option name="setDownloadEtBtn"  textcolor="#FF000000" height="28"
+		           			text="{x 35}下载ET助手" align="left"  showhtml="true"
+		           			 textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+	</VerticalLayout>
+	<VerticalLayout height="28">
+	 	   	   <Option name="helpBtn"  textcolor="#FF000000" height="28"
+		           			text="{x 35}帮助" align="left"  showhtml="true" textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+	</VerticalLayout>
+	<VerticalLayout height="28">
+	 	   	   <Option name="aboutBtn"  textcolor="#FF000000" height="28"
+		           			text="{x 35}关于ET" align="left"  showhtml="true"
+		           			 textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+	</VerticalLayout>
+	
+  <VerticalLayout height="28">
+	 	   	   <Option name="quitBtn"  textcolor="#FF000000" height="28"
+		           			text="{x 35}退出" align="left"  showhtml="true"
+		           			 textpadding="0,7,0,0"
+		           			hotimage="file='ServiceImages\bg_menu_hot.png' corner='25,5,5,5'"  
+	 	   	   					selectedimage="file='ServiceImages\bg_menu_selected.png' corner='25,5,5,5'"/> 
+				   <Control  float="true" pos="5,5,0,0" mouse="false" width="18" height="18" bkimage="images\quit.png" />
+	</VerticalLayout>
+         			
+ 
+</VerticalLayout>
+</Window>

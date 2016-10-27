@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window bktrans="true" size="180,212"  roundcorner="4,4,4,4">
+    <Font name="宋体" size="12" bold="false" default="true" />
+	  <Font name="宋体" size="12" bold="true"/>
+  <VerticalLayout name="bg" bordersize="0"  width="180" height="212"  inset="4,0,4,0" bkimage="file='images\datePicker_bg.png'">
+	  <VerticalLayout height="24" hole="false" bold="false" >
+	  	
+	  	  <Button name="PreviousYearBtn"  tooltip="上一年"  float="true"  pos="0,6,0,0"  width="16" height="15" 
+	  	  	 bkimage="file='images\PreviousYearBtn.png'"
+	  	  	 normalimage="file='images\PreviousYearBtn.png'" 
+	  	  	 hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+	  		 pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+	  	  <Button name="PreviousBtn"  tooltip="上个月"  float="true" textcolor="#FF002B2B" pos="20,6,0,0"  width="16" height="15" 
+	  	  	 bkimage="file='images\PreviousBtn.png'"
+	  	  	 normalimage="file='images\PreviousBtn.png'" 
+	  	  	 hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+	  		 pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+	  	   <Label name="MonthLabel" text="{b}2011年 12月{/b}" showhtml="true"  align="center"float="true"  pos="38,6,0,0"  width="95" height="16"  textcolor="#FF1B4876" />	
+		    <Button name="NextBtn"  tooltip="下个月"   float="true" textcolor="#FF002B2B" pos="135,6,0,0"  width="16" height="15"
+		    	bkimage="file='images\NextBtn.png'"
+	  	  	 normalimage="file='images\NextBtn.png'" 
+	  	  	 hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+	  		 pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+	  	   <Button name="NextYearBtn" tooltip="下一年"  float="true" textcolor="#FF002B2B" pos="155,6,0,0"  width="16" height="15"
+	  	   	bkimage="file='images\NextYearBtn.png'"
+	  	  	 normalimage="file='images\NextYearBtn.png'" 
+	  	  	 hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" 
+	  		 pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+	  </VerticalLayout> 
+	  <HorizontalLayout height="24" inset="2,0,2,0">	
+	  	 <Label text="{b}日{/b}" showhtml="true"  align="center" width="24" height="24"  textcolor="#FF1B4876" />	  	
+		   <Label text="{b}一{/b}" showhtml="true"  align="center" width="24" height="24"  textcolor="#FF1B4876" />	  	
+		   <Label text="{b}二{/b}" showhtml="true"  align="center" width="24" height="24"  textcolor="#FF1B4876" />	  	
+		   <Label text="{b}三{/b}" showhtml="true"  align="center" width="24" height="24"  textcolor="#FF1B4876" />	  	
+		   <Label text="{b}四{/b}" showhtml="true"  align="center" width="24" height="24"  textcolor="#FF1B4876" />	  	
+		   <Label text="{b}五{/b}" showhtml="true"  align="center" width="24" height="24"  textcolor="#FF1B4876" />	  	
+		   <Label text="{b}六{/b}" showhtml="true"  align="center" width="24" height="24"  textcolor="#FF1B4876" />			  
+	  </HorizontalLayout> 
+		<HorizontalLayout height="24" inset="2,0,2,0">		  	
+		  <Button name="dateBtn1" width="24" height="24" text="27" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn2"  width="24" height="24" text="28" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn3"  width="24" height="24" text="29" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn4"  width="24" height="24" text="30" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn5"  width="24" height="24" text="1" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn6"  width="24" height="24" text="2" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn7"  width="24" height="24" text="3" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  
+	  </HorizontalLayout> 
+		<HorizontalLayout height="24" inset="2,0,2,0">		  	
+		  <Button name="dateBtn8"  width="24" height="24" text="4" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn9"  width="24" height="24" text="5" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn10"  width="24" height="24" text="6" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn11"  width="24" height="24" text="7" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn12"  width="24" height="24" text="8" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn13"  width="24" height="24" text="9" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn14"  width="24" height="24" text="10" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  
+	  </HorizontalLayout> 
+		<HorizontalLayout height="24" inset="2,0,2,0">		  	
+		  <Button name="dateBtn15"  width="24" height="24" text="11" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn16"  width="24" height="24" text="12" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn17"  width="24" height="24" text="13" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn18"  width="24" height="24" text="14" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn19"  width="24" height="24" text="15" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn20"  width="24" height="24" text="16" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn21"  width="24" height="24" text="17" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  
+	  </HorizontalLayout>  
+		<HorizontalLayout height="24" inset="2,0,2,0">		  	
+		  <Button name="dateBtn22"  width="24" height="24" text="18" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn23"  width="24" height="24" text="19" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn24"  width="24" height="24" text="20" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn25"  width="24" height="24" text="21" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn26"  width="24" height="24" text="22" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn27"  width="24" height="24" text="23" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn28"  width="24" height="24" text="24" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  
+	  </HorizontalLayout>   
+		<HorizontalLayout height="24" inset="2,0,2,0">		  	
+		  <Button name="dateBtn29"  width="24" height="24" text="25" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn30"  width="24" height="24" text="26" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn31"  width="24" height="24" text="27" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn32"  width="24" height="24" text="28" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn33"  width="24" height="24" text="29" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn34"  width="24" height="24" text="30" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn35"  width="24" height="24" text="31" textcolor="#FF002B2B" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+	  </HorizontalLayout>   
+		<HorizontalLayout height="24" inset="2,0,2,0">		  	
+		  <Button name="dateBtn36"  width="24" height="24" text="1" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn37"  width="24" height="24" text="2" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn38"  width="24" height="24" text="3" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn39"  width="24" height="24" text="4" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn40"  width="24" height="24" text="5" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+		  <Button name="dateBtn41"  width="24" height="24" text="6" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'"/>
+		  <Button name="dateBtn42"  width="24" height="24" text="7" textcolor="#FF868686" hotimage="file='allbtn_over.png' corner='2,2,2,2' mask='0xffffffff'" pushedimage="file='allbtn_down.png' corner='2,2,2,2'  mask='0xffffffff'" />
+	  </HorizontalLayout>
+	  <HorizontalLayout height="24" inset="2,0,2,0">		  	
+		  <Button name="todayBtn" text="今天" float="true" textcolor="#FF002B2B" pos="100,0,0,0" visible="false" width="40" height="22" align="center" normalimage="file='images\btn_a.png' mask='0xffffffff'" hotimage="file='images\btn_hov.png' mask='0xffffffff'" pushedimage="file='images\btn_down.png' mask='0xffffffff'" />
+		</HorizontalLayout>
+</VerticalLayout>
+</Window>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window sizebox="4,4,6,6" caption="0,0,0,30" size="355,211" mininfo="355,211" opacity="true" transparency="0"  >
+    <Font name="宋体" size="12" bold="false" default="true" />
+    <Font name="宋体" size="12" bold="true"/>
+    <!--<VerticalLayout  name="bg" bordersize="0"  width="355" height="211" bkimage="file='images\about_bg.jpg' ">-->
+    <VerticalLayout  name="bg" width="355" height="211" bkimage="file='ServiceImages\bg0.png' corner='600,200,1,1'" hole="true"   inset="0,0,0,0"  >
+        <!--bordersize="0" bordercolor="#FF15A4D0" borderround="5,5" inset="2,2,2,2" bkcolor="#FFFFFFFF"-->
+
+        <VerticalLayout bkimage="file='ServiceImages\border.png' corner='5,5,5,5'" inset="1,0,1,0" hole="true">
+
+
+            <VerticalLayout bkimage="file='ServiceImages\jb.png' corner='2,30,2,2'">
+
+                <Container pos="22,22,265,44" float="true"  bkimage="file='ServiceImages\gt-et.png' " />
+
+                <Label text="国泰君安E.T.助手软件版V" float="true" pos="29,60,0,0"  width="138" height="25" textcolor="#FF003973" />
+                <Label name="version" text="" float="true" pos="167,60,0,0"  width="100" height="25" textcolor="#FF003973" />
+                <Label text="版权所有 1999-2012 国泰君安证券股份有限公司" float="true" pos="29,80,0,0"  width="300" height="25" textcolor="#FF003973" />
+                <Label text="技术支持:北京中软万维网络有限公司" float="true" pos="29,100,0,0"  width="300" height="25" textcolor="#FF003973" />
+                <Label text="公司网址:http://www.gtja.com" float="true" pos="29,120,0,0"  width="300" height="25" textcolor="#FF003973" />
+                <Label  text="更新时间:" float="true" pos="29,140,0,0"  width="55" height="25" textcolor="#FF003973" />
+                <Label name="updateTime" text="更新时间:2013-07-16 15:21" float="true" pos="84,140,0,0"  width="150" height="25" textcolor="#FF003973" />
+                <Button name="closeBtn" text="确定" float="true" pos="240,170,0,0"  width="70" height="24" align="center" normalimage="file='ServiceImages\btn_2_nor.png' corner='7,7,7,7'" hotimage="file='ServiceImages\btn_2_focus.png' corner='7,7,7,7'" pushedimage="file='ServiceImages\btn_2_over.png' corner='7,7,7,7'"  disabledimage="file='ServiceImages\btn_2_disable.png' corner='7,7,7,7'"  textcolor="#FFFFFFFF" />
+
+            </VerticalLayout>
+        </VerticalLayout>
+
+    </VerticalLayout>
+</Window>
